@@ -1,0 +1,56 @@
+@import "shared/css/main.scss";
+
+.Header-mainMenu,
+.Header-mainMenu.ui.menu {
+  background: #181819 !important;
+  border-radius: 0px !important;
+  box-shadow: 0px 0px 5px 0px #181819 !important;
+  border: none;
+  padding: 0;
+  height: 95px;
+}
+
+.Header-links {
+  font-size: 1.2rem;
+  margin: 13px 10px 15px 57px;
+}
+
+.Header-link.active {
+  border-bottom: 5px solid #60da9a;
+  color: white;
+}
+
+.Header-link {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 24px;
+  color: rgba(209, 215, 224, 0.5);
+  display: inline-block;
+  margin: 23px 10px 20px 56px;
+}
+
+.ui.menu .item.Header-menuItem {
+  &-settings,
+  &-user {
+    color: white;
+  }
+}
+
+.ui.menu .item.Header-menuItem {
+  &-settings:hover,
+  &-user:hover {
+    color: white;
+  }
+}
+
+#Header-settings-tooltip:hover:after {
+  content: "Settings";
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+}
