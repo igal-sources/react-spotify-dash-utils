@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import classNames from "classnames";
 import { Menu, Icon } from "semantic-ui-react";
+import Logout from "../logout/Logout";
 import * as types from "shared/types";
 import allActions from "../../../actions";
 import config from "../../../config";
@@ -10,7 +11,6 @@ import { fetchUser } from "../../../apis/spotify-service";
 import "./header.scss";
 
 const Header = () => {
-  //const [accessToken, setAccessToken] = useState("");
   const authorizeUrl = `${config.AUTHORIZE_URL}?client_id=${config.CLIENT_ID}&redirect_uri=${config.REDIRECT_URI}&scope=${config.SCOPE}&response_type=token`;
   const { pathname } = useLocation();
   const history = useHistory();
@@ -34,7 +34,6 @@ const Header = () => {
     while ((e = r.exec(q))) {
       hashParams[e[1]] = decodeURIComponent(e[2]);
     }
-    console.log("hashParams.access_token: ", hashParams.access_token);
 
     if (!hashParams.access_token) {
       window.location.href = authorizeUrl;
@@ -92,14 +91,7 @@ const Header = () => {
         >
           <Icon id="Header-settings-tooltip" size="big" name="setting" />
         </Menu.Item>
-        <Menu.Item
-          className="Header-menuItem-user"
-          active={pathname.startsWith("user", 1)}
-          as={Link}
-          to={"/user"}
-        >
-          {currentUser.loggedIn && currentUser.user.display_name}
-        </Menu.Item>
+        <Menu.Item as={Logout}></Menu.Item>
       </Menu>
     </>
   );
