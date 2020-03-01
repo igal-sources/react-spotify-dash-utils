@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import classNames from "classnames";
 import { Menu, Icon } from "semantic-ui-react";
@@ -7,7 +7,7 @@ import Logout from "../logout/Logout";
 import * as types from "shared/types";
 import allActions from "../../../actions";
 import config from "../../../config";
-import { fetchUser } from "../../../apis/spotify-service";
+import { fetchUser } from "../../../apis/spotifyService";
 import "./header.scss";
 
 const Header = () => {
@@ -15,8 +15,6 @@ const Header = () => {
   const { pathname } = useLocation();
   const history = useHistory();
   const path = pathname.split("/").pop();
-
-  const currentUser = useSelector(state => state.currentUser);
   const dispatch = useDispatch();
 
   const getUser = accessToken => {

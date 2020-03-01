@@ -1,13 +1,19 @@
-import React from "react";
-import { Artist } from "react-spotify-api";
+import React, { useState } from "react";
+import { useToken } from "../../services/hooks/use-selectors";
+import { fetchArtist } from "../../apis/artistsService";
 
 const Dashboard = () => {
+  const [artist, setArtist] = useState("");
+  const token = useToken();
+
+  fetchArtist(token, "3PhoLpVuITZKcymswpck5b", artist => {
+    setArtist(artist.name);
+  });
+
   return (
     <div>
       <h1>Dashboard</h1>
-      <Artist id="3PhoLpVuITZKcymswpck5b">
-        {(artist, loading, error) => (artist ? <h1>{artist.name}</h1> : null)}
-      </Artist>
+      <h3>{artist}</h3>
     </div>
   );
 };
