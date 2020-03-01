@@ -9,7 +9,7 @@ export const ApiConfig = {
   POSTER_SIZE: "w500"
 };
 
-const API_URL = "https://api.themoviedb.org/3/";
+const API_URL = "https://accounts.spotify.com/authorize";
 const API_KEY = "67a6282843d3951c480df57aad82eaef";
 
 // Images
