@@ -17,13 +17,12 @@ const Header = () => {
   const path = pathname.split("/").pop();
 
   const currentUser = useSelector(state => state.currentUser);
-  console.log("currentUser: ", currentUser);
-  const accessToken = useSelector(state => state.tokenReducer);
   const dispatch = useDispatch();
 
   const getUser = accessToken => {
-    fetchUser(accessToken, data => {
-      dispatch(allActions.userActions.setUser({ name: data.display_name }));
+    fetchUser(accessToken, user => {
+      console.log("data: ", user);
+      dispatch(allActions.userActions.setUser({ ...user }));
     });
   };
 
@@ -41,8 +40,6 @@ const Header = () => {
       window.location.href = authorizeUrl;
     } else {
       dispatch(allActions.tokenActions.setToken(hashParams.access_token));
-      //setAccessToken(hashParams.access_token);
-      console.log("accessToken: ", accessToken);
       getUser(hashParams.access_token);
 
       history.push("./");
@@ -101,7 +98,7 @@ const Header = () => {
           as={Link}
           to={"/user"}
         >
-          {currentUser.loggedIn && currentUser.user.name}
+          {currentUser.loggedIn && currentUser.user.display_name}
         </Menu.Item>
       </Menu>
     </>
