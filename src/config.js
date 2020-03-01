@@ -1,27 +1,10 @@
-// Configuration for TMDB
-// To se the latest configuration fetch it from https://api.themoviedb.org/3/configuration?api_key=67a6282843d3951c480df57aad82eaef
-
-export const ApiConfig = {
-  API_KEY: "67a6282843d3951c480df57aad82eaef",
-  BASE_URL: "https://api.themoviedb.org/3",
-  IMAGE_BASE_URL: "http://image.tmdb.org/t/p/",
-  BACKDROP_SIZE: "w1280",
-  POSTER_SIZE: "w500"
+const config = {
+  CLIENT_ID: "148e8fbc32114f91b63719aa9001df97",
+  BASE_URL: "https://api.spotify.com/v1",
+  REDIRECT_URI: "http://localhost:3000/callback",
+  SCOPE:
+    "playlist-read-private playlist-read-collaborative playlist-modify-public user-read-recently-played playlist-modify-private ugc-image-upload user-follow-modify user-follow-read user-library-read user-library-modify user-read-private user-read-email user-top-read user-read-playback-state",
+  AUTHORIZE_URL: "https://accounts.spotify.com/authorize"
 };
 
-const API_URL = "https://accounts.spotify.com/authorize";
-const API_KEY = "67a6282843d3951c480df57aad82eaef";
-
-// Images
-// An image URL looks like this example:
-// http://image.tmdb.org/t/p/w780/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg
-
-const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
-
-//Sizes: w300, w780, w1280, original
-const BACKDROP_SIZE = "w1280";
-
-// w92, w154, w185, w342, w500, w780, original
-const POSTER_SIZE = "w500";
-
-export { API_URL, API_KEY, IMAGE_BASE_URL, BACKDROP_SIZE, POSTER_SIZE };
+export default config;

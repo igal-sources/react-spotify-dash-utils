@@ -1,3 +1,4 @@
+
 const setUser = userObj => {
   return {
     type: "SET_USER",
@@ -10,5 +11,7 @@ const logOut = () => {
     type: "LOG_OUT"
   };
 };
+
+
 
 export default { setUser, logOut };
