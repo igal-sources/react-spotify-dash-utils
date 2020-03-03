@@ -1,5 +1,6 @@
 import axios from "axios";
 import config from "../config";
+import { HTTP } from "shared/types";
 
 export const fetchUser = (accessToken, callback) => {
   fetchData(buildUrl("/me"), accessToken, response => callback(response));
@@ -17,11 +18,14 @@ export const GetUsersProfile = (accessToken, userId, callback) => {
 
 export const buildUrl = query => `${config.BASE_URL}${query}`;
 
-export const fetchData = async (url, accessToken, callback) => {
+export const fetchData = async (url, token,  callback, method = HTTP.method.GET, requestBody = {}) => {
   try {
-    const response = await axios(`${url}`, {
+    const response = await axios({
+      method,
+      url,
+      data: requestBody,
       headers: {
-        Authorization: `Bearer ${accessToken}`
+        Authorization: `Bearer ${token}`
       }
     });
 

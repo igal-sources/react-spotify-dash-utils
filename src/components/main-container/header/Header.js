@@ -5,9 +5,9 @@ import classNames from "classnames";
 import { Menu, Icon } from "semantic-ui-react";
 import Logout from "../logout/Logout";
 import * as types from "shared/types";
-import allActions from "../../../actions";
-import config from "../../../config";
-import { fetchUser } from "../../../apis/spotifyService";
+import allActions from "actions";
+import config from "config";
+import { fetchUser } from "apis/spotifyService";
 import "./header.scss";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
 
   const getUser = accessToken => {
     fetchUser(accessToken, user => {
-      console.log("data: ", user);
+      console.log("user data: ", user);
       dispatch(allActions.userActions.setUser({ ...user }));
     });
   };
@@ -38,7 +38,6 @@ const Header = () => {
     } else {
       dispatch(allActions.tokenActions.setToken(hashParams.access_token));
       getUser(hashParams.access_token);
-
       history.push("./");
     }
 

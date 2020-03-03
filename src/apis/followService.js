@@ -1,10 +1,11 @@
 import * as service from "./spotifyService";
+import {HTTP} from "../shared/types";
 
-export const fetchUnfollowArtistsOrUsers = (accessToken, type, ids, callback) => {
+export const unfollowArtistsOrUsers = (accessToken, type, ids, callback) => {
   service.fetchData(
     service.buildUrl(`/me/following?type=${type}&ids=${ids}`),
     accessToken,
-    response => callback(response)
+    response => callback(response), HTTP.method.DELETE
   );
 };
 
@@ -45,9 +46,7 @@ export const fetchFollowArtistsOrUsers = (accessToken, type, ids, callback) => {
 };
 
 export const fetchFollowPlaylist = (accessToken, playlistId, callback) => {
-  service.fetchData(
-    service.buildUrl(`/playlists/${playlistId}/followers`),
-    accessToken,
-    response => callback(response)
+  service.fetchData(service.buildUrl(`/playlists/${playlistId}/followers`), accessToken, response =>
+    callback(response)
   );
 };

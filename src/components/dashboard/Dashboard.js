@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { useToken } from "../../services/hooks/use-selectors";
-import { fetchArtist } from "../../apis/artistsService";
+import { useToken } from "services/hooks";
+import { fetchArtist } from "apis";
+
 
 const Dashboard = () => {
   const [artist, setArtist] = useState("");

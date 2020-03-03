@@ -11,10 +11,19 @@
   margin-bottom: -50px;
 }
 
+.App-sidebar {
+  --main-column-height: calc(100vh - 170px);
+  height: calc(100vh - var(--main-header-height));
+  background: #9ab8ca;
+  margin-top: 10px;
+}
+
 .App-content {
   --main-column-height: calc(100vh - 170px);
   height: calc(100vh - var(--main-header-height));
   background: #9ab8ca;
+  padding: 0 !important;
+  margin-top: 15px;
 }
 
 .App-footer {
@@ -25,4 +34,3 @@
   height: 3%;
   bottom: 0;
 }
-

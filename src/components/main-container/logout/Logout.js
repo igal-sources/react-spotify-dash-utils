@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import allActions from "../../../actions";
+import allActions from "actions";
 import { Button, Menu } from "semantic-ui-react";
 import ConfirmLogout from "./ConfirmLogout";
-import { useUserMail } from "../../../services/hooks/use-selectors";
+import { useUserMail } from "services/hooks/use-selectors";
 import "./logout.scss";
 
 export const Logout = () => {
