@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
-import { Button, Menu } from "semantic-ui-react";
+import { Button, Menu, Popup } from "semantic-ui-react";
 import ConfirmLogout from "./ConfirmLogout";
-import { useUserMail } from "services/hooks/use-selectors";
+import { useUserMail, useUserName } from "services/hooks/use-selectors";
 import "./logout.scss";
 
 export const Logout = () => {
@@ -11,7 +11,8 @@ export const Logout = () => {
   const [confirm, setConfirm] = useState(false);
   const dispatch = useDispatch();
 
-  const username = useUserMail();
+  const userEmail = useUserMail();
+  const userName = useUserName();
 
   const extractFirstLetters = (userEmail = "?") => {
     const emailSplittedArray = userEmail
@@ -37,14 +38,28 @@ export const Logout = () => {
     return null;
   };
 
+  const style = {
+    borderRadius: 5,
+    opacity: 0.7,
+    padding: "1.5em"
+  };
+
   return (
     <>
       <ConfirmLogout show={isOpen} close={onClose} confirm={onConfirm} id="Logout-ConfirmLogout" />
       <Menu.Item>
-        <Button onClick={open} className="item Header-menuItem">
-          <div className="circle">{extractFirstLetters(username)}</div>
-          {confirm ? <Navigate id="Logout_Navigate" /> : <div />}
-        </Button>
+        <Popup
+          content={userName}
+          position="bottom center"
+          size="mini"
+          style={style}
+          trigger={
+            <Button onClick={open} className="item Header-menuItem">
+              <div className="circle user-tooltip">{extractFirstLetters(userEmail)}</div>
+              {confirm ? <Navigate id="Logout_Navigate" /> : <div />}
+            </Button>
+          }
+        />
       </Menu.Item>
     </>
   );

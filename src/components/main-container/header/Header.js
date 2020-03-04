@@ -39,7 +39,7 @@ const Header = () => {
     } else {
       dispatch(allActions.tokenActions.setToken(hashParams.access_token));
       getUser(hashParams.access_token);
-      history.push("./");
+      history.push('./');
     }
 
     return () => {};

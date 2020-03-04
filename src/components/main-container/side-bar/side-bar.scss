@@ -20,12 +20,13 @@ hr {
   font-size: 1.2rem;
   padding-bottom: 1rem;
   color: black;
+  cursor: pointer;
 }
-.Sidebar-link.active {
+.Sidebar-link.active,
+.Sidebar-link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: -3px;
   color: white;
 }
-

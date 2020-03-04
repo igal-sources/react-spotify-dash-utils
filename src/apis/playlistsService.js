@@ -24,8 +24,9 @@ export const CreatePlaylist = (token, playlistData, callback) => {
   );
 };
 
-export const GetListOfCurrentUsersPlaylists = (token, callback) => {
-  fetchData(buildUrl(`/me/playlists`), token, response => callback(response));
+//https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d/playlists?offset=0&limit=50
+export const currentUsersPlaylists = (token, callback) => {
+  fetchData(buildUrl(`/me/playlists?limit=50`), token, response => callback(response));
 };
 
 export const GetPlaylist = (token, callback) => {

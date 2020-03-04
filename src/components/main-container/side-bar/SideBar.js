@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-import { Link, useLocation, useHistory } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import classNames from "classnames";
 import * as types from "shared/types";
 
 import "./side-bar.scss";
 
 const Sidebar = () => {
-  const token = localStorage.getItem("token");
   const { pathname } = useLocation();
-  const history = useHistory();
   const path = pathname.split("/").pop();
 
   const dashboardClassName = classNames({
@@ -45,7 +43,7 @@ const Sidebar = () => {
             Search
           </Link>
           <hr/>
-          <Link to="/songs" className={albumsClassName}>
+          <Link to="/songs" className={songsClassName}>
             Songs
           </Link>
           <Link to="/albums" className={albumsClassName}>

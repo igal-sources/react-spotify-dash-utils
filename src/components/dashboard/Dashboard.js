@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { fetchArtist, GetCurrentUsersSavedTracks } from "apis";
+import { fetchArtist } from "apis";
 
 const Dashboard = () => {
   const [artist, setArtist] = useState("");
@@ -7,10 +7,6 @@ const Dashboard = () => {
   fetchArtist(localStorage.getItem("token"), "3PhoLpVuITZKcymswpck5b", artist => {
     setArtist(artist.name);
   });
-
-  // GetCurrentUsersSavedTracks(localStorage.getItem("token"), songs => {
-  //   console.log("songs: ", songs);
-  // });
 
   return (
     <div>

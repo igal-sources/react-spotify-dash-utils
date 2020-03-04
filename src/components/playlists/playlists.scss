@@ -1,0 +1,6 @@
+
+.playlist-items {
+  display: grid;
+  grid-template-columns: repeat(6, 110px);
+  grid-gap: 100px;
+}
