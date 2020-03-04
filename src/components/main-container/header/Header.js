@@ -17,8 +17,8 @@ const Header = () => {
   const path = pathname.split("/").pop();
   const dispatch = useDispatch();
 
-  const getUser = accessToken => {
-    fetchUser(accessToken, user => {
+  const getUser = token => {
+    fetchUser(token, user => {
       console.log("user data: ", user);
       dispatch(allActions.userActions.setUser({ ...user }));
     });
@@ -28,7 +28,8 @@ const Header = () => {
     let hashParams = {};
     let e,
       r = /([^&;=]+)=?([^&;]*)/g,
-      q = window.location.hash.substring(1);
+      q 
+      = window.location.hash.substring(1);
     while ((e = r.exec(q))) {
       hashParams[e[1]] = decodeURIComponent(e[2]);
     }

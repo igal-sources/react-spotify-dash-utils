@@ -1,52 +1,41 @@
-import * as service from "./spotifyService";
-import {HTTP} from "../shared/types";
+import { fetchData, buildUrl } from "./spotifyService";
+import { HTTP } from "../shared/types";
 
-export const unfollowArtistsOrUsers = (accessToken, type, ids, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/following?type=${type}&ids=${ids}`),
-    accessToken,
-    response => callback(response), HTTP.method.DELETE
+export const unfollowArtistsOrUsers = (token, type, ids, callback) => {
+  fetchData(
+    buildUrl(`/me/following?type=${type}&ids=${ids}`),
+    token,
+    response => callback(response),
+    HTTP.method.DELETE
   );
 };
 
-export const fetchUnfollowPlaylist = (accessToken, playlistId, callback) => {
-  service.fetchData(service.buildUrl(`/playlists/${playlistId}/followers`), accessToken, response =>
+export const fetchUnfollowPlaylist = (token, playlistId, callback) => {
+  fetchData(buildUrl(`/playlists/${playlistId}/followers`), token, response => callback(response));
+};
+
+export const fetchIfCurrentUserFollowsArtistsOrUsers = (token, type, ids, callback) => {
+  fetchData(buildUrl(`/me/following/contains?type=${type}&ids=${ids}`), token, response =>
     callback(response)
   );
 };
 
-export const fetchIfCurrentUserFollowsArtistsOrUsers = (accessToken, type, ids, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/following/contains?type=${type}&ids=${ids}`),
-    accessToken,
-    response => callback(response)
-  );
+export const fetchFollowedArtists = (token, artist, callback) => {
+  fetchData(buildUrl(`/me/following?type=${artist}`), token, response => callback(response));
 };
 
-export const fetchFollowedArtists = (accessToken, artist, callback) => {
-  service.fetchData(service.buildUrl(`/me/following?type=${artist}`), accessToken, response =>
+export const fetchIfUsersFollowPlaylist = (token, playlistId, ids, callback) => {
+  fetchData(buildUrl(`/playlists/${playlistId}/followers/contains?ids=${ids}`), token, response =>
     callback(response)
   );
 };
 
-export const fetchIfUsersFollowPlaylist = (accessToken, playlistId, ids, callback) => {
-  service.fetchData(
-    service.buildUrl(`/playlists/${playlistId}/followers/contains?ids=${ids}`),
-    accessToken,
-    response => callback(response)
-  );
-};
-
-export const fetchFollowArtistsOrUsers = (accessToken, type, ids, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/following?type=${type}&ids=${ids}`),
-    accessToken,
-    response => callback(response)
-  );
-};
-
-export const fetchFollowPlaylist = (accessToken, playlistId, callback) => {
-  service.fetchData(service.buildUrl(`/playlists/${playlistId}/followers`), accessToken, response =>
+export const fetchFollowArtistsOrUsers = (token, type, ids, callback) => {
+  fetchData(buildUrl(`/me/following?type=${type}&ids=${ids}`), token, response =>
     callback(response)
   );
+};
+
+export const fetchFollowPlaylist = (token, playlistId, callback) => {
+  fetchData(buildUrl(`/playlists/${playlistId}/followers`), token, response => callback(response));
 };

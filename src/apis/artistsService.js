@@ -1,23 +1,21 @@
 import { fetchData, buildUrl } from "./spotifyService";
 
-export const fetchArtist = (accessToken, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}`), accessToken, response => callback(response));
+export const fetchArtist = (token, id, callback) => {
+  fetchData(buildUrl(`/artists/${id}`), token, response => callback(response));
 };
 
-export const fetchArtistsAlbums = (accessToken, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}/albums`), accessToken, response => callback(response));
+export const fetchArtistsAlbums = (token, id, callback) => {
+  fetchData(buildUrl(`/artists/${id}/albums`), token, response => callback(response));
 };
 
-export const fetchArtistsRelatedArtists = (accessToken, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}/related-artists`), accessToken, response =>
-    callback(response)
-  );
+export const fetchArtistsRelatedArtists = (token, id, callback) => {
+  fetchData(buildUrl(`/artists/${id}/related-artists`), token, response => callback(response));
 };
 
-export const fetchArtistsTopTracks = (accessToken, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}/top-tracks`), accessToken, response => callback(response));
+export const fetchArtistsTopTracks = (token, id, callback) => {
+  fetchData(buildUrl(`/artists/${id}/top-tracks`), token, response => callback(response));
 };
 
-export const fetchArtistsByIds = (accessToken, ids, callback) => {
-  fetchData(buildUrl(`/artists?ids${ids}`), accessToken, response => callback(response));
+export const fetchArtistsByIds = (token, ids, callback) => {
+  fetchData(buildUrl(`/artists?ids${ids}`), token, response => callback(response));
 };

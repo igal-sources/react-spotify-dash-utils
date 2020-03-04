@@ -2,6 +2,8 @@
 export const ALBUMS = "albums";
 export const ARTISTS = "artists";
 export const PLAYLISTS = "playlists";
+export const SONGS = "songs";
+export const SEARCH = "search";
 
 //Axios return
 export const HTTP = {

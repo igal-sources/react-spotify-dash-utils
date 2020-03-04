@@ -19,3 +19,8 @@ export const useToken = () => {
   const { token } = useSelector(state => state.tokenReducer);
   return token;
 };
+
+export const useArtistIds = () => {
+  const { artistIds } = useSelector(state => state.artistsReducer);
+  return artistIds;
+};

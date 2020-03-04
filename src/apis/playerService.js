@@ -1,89 +1,63 @@
-import * as service from "./spotifyService";
+import { fetchData, buildUrl } from "./spotifyService";
 
-export const AddItemUsersPlaybackQueue = (accessToken, uri, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/add-to-queue?uri=${uri}`), accessToken, response =>
+export const AddItemUsersPlaybackQueue = (token, uri, callback) => {
+  fetchData(buildUrl(`/me/player/add-to-queue?uri=${uri}`), token, response => callback(response));
+};
+
+export const GetUsersAvailableDevices = (token, callback) => {
+  fetchData(buildUrl(`/me/player/devices`), token, response => callback(response));
+};
+
+export const GetInfoAboutUsersCurrentPlayback = (token, callback) => {
+  fetchData(buildUrl(`/me/player`), token, response => callback(response));
+};
+
+export const GetCurrentUsersRecentlyPlayedTracks = (token, callback) => {
+  fetchData(buildUrl(`/me/player/recently-played`), token, response => callback(response));
+};
+
+export const GetUsersCurrentlyPlayingTrack = (token, callback) => {
+  fetchData(buildUrl(`/me/player/currently-playing`), token, response => callback(response));
+};
+
+export const PauseUsersPlayback = (token, callback) => {
+  fetchData(buildUrl(`/me/player/pause`), token, response => callback(response));
+};
+
+export const SeekToPositionInCurrentlyPlayingTrack = (token, position, callback) => {
+  fetchData(buildUrl(`/me/player/seek?position_ms=${position}`), token, response =>
     callback(response)
   );
 };
 
-export const GetUsersAvailableDevices = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/devices`), accessToken, response =>
+export const SetRepeatModeOnUsersPlayback = (token, callback) => {
+  fetchData(buildUrl(`/me/player/repeat?state=context`), token, response => callback(response));
+};
+
+export const SetVolumeForUsersPlayback = (token, volumePercent, callback) => {
+  fetchData(buildUrl(`/me/player/volume?volume_percent=${volumePercent}`), token, response =>
     callback(response)
   );
 };
 
-export const GetInfoAboutUsersCurrentPlayback = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player`), accessToken, response => callback(response));
+export const SkipUsersPlaybackToNextTrack = (token, callback) => {
+  fetchData(buildUrl(`/me/player/next`), token, response => callback(response));
 };
 
-export const GetCurrentUsersRecentlyPlayedTracks = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/recently-played`), accessToken, response =>
+export const SkipUsersPlaybackToPreviousTrack = (token, callback) => {
+  fetchData(buildUrl(`/me/player/previous`), token, response => callback(response));
+};
+
+export const StartResumeUsersPlayback = (token, callback) => {
+  fetchData(buildUrl(`/me/player/play`), token, response => callback(response));
+};
+
+export const ToggleShuffleForUsersPlayback = (token, callback) => {
+  fetchData(buildUrl(`/me/player/shuffle?state=true`), token, response => callback(response));
+};
+
+export const TransferUsersPlayback = (token, deviceIds, callback) => {
+  fetchData(buildUrl(`/me/player {device_ids: ${deviceIds}}`), token, response =>
     callback(response)
-  );
-};
-
-export const GetUsersCurrentlyPlayingTrack = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/currently-playing`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const PauseUsersPlayback = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/pause`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const SeekToPositionInCurrentlyPlayingTrack = (accessToken, position, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/player/seek?position_ms=${position}`),
-    accessToken,
-    response => callback(response)
-  );
-};
-
-export const SetRepeatModeOnUsersPlayback = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/repeat?state=context`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const SetVolumeForUsersPlayback = (accessToken, volumePercent, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/player/volume?volume_percent=${volumePercent}`),
-    accessToken,
-    response => callback(response)
-  );
-};
-
-export const SkipUsersPlaybackToNextTrack = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/next`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const SkipUsersPlaybackToPreviousTrack = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/previous`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const StartResumeUsersPlayback = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/play`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const ToggleShuffleForUsersPlayback = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/me/player/shuffle?state=true`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const TransferUsersPlayback = (accessToken, deviceIds, callback) => {
-  service.fetchData(
-    service.buildUrl(`/me/player {device_ids: ${deviceIds}}`),
-    accessToken,
-    response => callback(response)
   );
 };

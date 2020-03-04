@@ -1,47 +1,33 @@
-import * as service from "./spotifyService";
+import { fetchData, buildUrl } from "./spotifyService";
 
-export const fetchAvailableGenreSeeds = (accessToken, callback) => {
-  service.fetchData(
-    service.buildUrl(`/recommendations/available-genre-seeds`),
-    accessToken,
-    response => callback(response)
-  );
-};
-
-export const fetchListOfBrowseCategories = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/browse/categories`), accessToken, response =>
+export const fetchAvailableGenreSeeds = (token, callback) => {
+  fetchData(buildUrl(`/recommendations/available-genre-seeds`), token, response =>
     callback(response)
   );
 };
 
-export const fetchSingleBrowseCategories = (accessToken, categoryId, callback) => {
-  service.fetchData(service.buildUrl(`/browse/categories/${categoryId}`), accessToken, response =>
+export const fetchListOfBrowseCategories = (token, callback) => {
+  fetchData(buildUrl(`/browse/categories`), token, response => callback(response));
+};
+
+export const fetchSingleBrowseCategories = (token, categoryId, callback) => {
+  fetchData(buildUrl(`/browse/categories/${categoryId}`), token, response => callback(response));
+};
+
+export const fetchCategoriesPlaylists = (token, categoryId, callback) => {
+  fetchData(buildUrl(`/browse/categories/${categoryId}/playlists`), token, response =>
     callback(response)
   );
 };
 
-export const fetchCategoriesPlaylists = (accessToken, categoryId, callback) => {
-  service.fetchData(
-    service.buildUrl(`/browse/categories/${categoryId}/playlists`),
-    accessToken,
-    response => callback(response)
-  );
+export const fetchListOfFeaturedPlaylists = (token, callback) => {
+  fetchData(buildUrl(`/browse/featured-playlists`), token, response => callback(response));
 };
 
-export const fetchListOfFeaturedPlaylists = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/browse/featured-playlists`), accessToken, response =>
-    callback(response)
-  );
+export const fetchListOfNewReleases = (token, callback) => {
+  fetchData(buildUrl(`/browse/new-releases`), token, response => callback(response));
 };
 
-export const fetchListOfNewReleases = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/browse/new-releases`), accessToken, response =>
-    callback(response)
-  );
-};
-
-export const fetchRecommendationsBasedOnSeeds = (accessToken, callback) => {
-  service.fetchData(service.buildUrl(`/recommendations`), accessToken, response =>
-    callback(response)
-  );
+export const fetchRecommendationsBasedOnSeeds = (token, callback) => {
+  fetchData(buildUrl(`/recommendations`), token, response => callback(response));
 };

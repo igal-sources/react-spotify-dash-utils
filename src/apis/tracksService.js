@@ -1,31 +1,21 @@
-import * as service from "./spotifyService";
+import { fetchData, buildUrl } from "./spotifyService";
 
-export const GetAudioAnalysisForTrack = (accessToken, id, callback) => {
-  service.fetchData(service.buildUrl(`/audio-analysis/${id}`), accessToken, response =>
-    callback(response)
-  );
+export const GetAudioAnalysisForTrack = (token, id, callback) => {
+  fetchData(buildUrl(`/audio-analysis/${id}`), token, response => callback(response));
 };
 
-export const GetAudioFeaturesForTrack = (accessToken, id, callback) => {
-  service.fetchData(service.buildUrl(`/audio-features/${id}`), accessToken, response =>
-    callback(response)
-  );
+export const GetAudioFeaturesForTrack = (token, id, callback) => {
+  fetchData(buildUrl(`/audio-features/${id}`), token, response => callback(response));
 };
 
-export const GetAudioFeaturesForSeveralTracks = (accessToken, ids, callback) => {
-  service.fetchData(service.buildUrl(`/audio-features?ids=${ids}`), accessToken, response =>
-    callback(response)
-  );
+export const GetAudioFeaturesForSeveralTracks = (token, ids, callback) => {
+  fetchData(buildUrl(`/audio-features?ids=${ids}`), token, response => callback(response));
 };
 
-export const GetSeveralTracks = (accessToken, ids, callback) => {
-  service.fetchData(service.buildUrl(`/tracks?ids=${ids}`), accessToken, response =>
-    callback(response)
-  );
+export const GetSeveralTracks = (token, ids, callback) => {
+  fetchData(buildUrl(`/tracks?ids=${ids}`), token, response => callback(response));
 };
 
-export const GetTrack = (accessToken, id, callback) => {
-  service.fetchData(service.buildUrl(`/tracks/${id}`), accessToken, response =>
-    callback(response)
-  );
+export const GetTrack = (token, id, callback) => {
+  fetchData(buildUrl(`/tracks/${id}`), token, response => callback(response));
 };

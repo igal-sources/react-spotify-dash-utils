@@ -1,7 +1,5 @@
-import * as service from "./spotifyService";
+import { fetchData, buildUrl } from "./spotifyService";
 
-export const GetUsersTopArtistsAndTracks = (accessToken, type, callback) => {
-  service.fetchData(service.buildUrl(`/me/top/${type}`), accessToken, response =>
-    callback(response)
-  );
+export const GetUsersTopArtistsAndTracks = (token, type, callback) => {
+  fetchData(buildUrl(`/me/top/${type}`), token, response => callback(response));
 };
