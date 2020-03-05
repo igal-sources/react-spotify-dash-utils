@@ -1,4 +1,5 @@
 import { fetchData, buildUrl } from "./spotifyService";
+import { HTTP } from "shared/types";
 
 export const AddItemUsersPlaybackQueue = (token, uri, callback) => {
   fetchData(buildUrl(`/me/player/add-to-queue?uri=${uri}`), token, response => callback(response));
@@ -48,8 +49,14 @@ export const SkipUsersPlaybackToPreviousTrack = (token, callback) => {
   fetchData(buildUrl(`/me/player/previous`), token, response => callback(response));
 };
 
-export const StartResumeUsersPlayback = (token, callback) => {
-  fetchData(buildUrl(`/me/player/play`), token, response => callback(response));
+export const startResumeUsersPlayback = (token, data, callback) => {
+  fetchData(
+    buildUrl(`/me/player/play`),
+    token,
+    response => callback(response),
+    HTTP.method.PUT,
+    data
+  );
 };
 
 export const ToggleShuffleForUsersPlayback = (token, callback) => {

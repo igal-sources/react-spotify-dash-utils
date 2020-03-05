@@ -19,7 +19,7 @@
 }
 
 .App-content {
-  --main-column-height: calc(100vh - 170px);
+  --main-column-height: calc(100vh - 270px);
   height: calc(100vh - var(--main-header-height));
   background: #9ab8ca;
   padding: 0 !important;
@@ -32,6 +32,6 @@
   display: block;
   background-color: #f3e5f5;
   border: 1px solid #ab47bc;
-  height: 3%;
+  height: 6%;
   bottom: 0;
 }

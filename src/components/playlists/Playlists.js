@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { currentUsersPlaylists } from "apis";
+import { useDispatch } from "react-redux";
+import allActions from '../../actions'
+import { CurrentUsersPlaylists } from "apis";
 import PlaylistItem from "./PlaylistItem";
 import "./playlists.scss";
 
 const Playlists = () => {
   const [playlists, setPlaylists] = useState([]);
   console.log("playlists: ", playlists);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    currentUsersPlaylists(localStorage.getItem("token"), playlists => {
+    CurrentUsersPlaylists(localStorage.getItem("token"), playlists => {
+      dispatch(allActions.playlistActions.fetchPlaylistMenuSuccess(playlists.items));
       setPlaylists(playlists.items);
     });
     return () => {};

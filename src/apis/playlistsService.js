@@ -1,3 +1,4 @@
+
 import { fetchData, buildUrl } from "./spotifyService";
 import { useUserId } from "services/hooks/use-selectors";
 import { HTTP } from "shared/types";
@@ -25,8 +26,13 @@ export const CreatePlaylist = (token, playlistData, callback) => {
 };
 
 //https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d/playlists?offset=0&limit=50
-export const currentUsersPlaylists = (token, callback) => {
-  fetchData(buildUrl(`/me/playlists?limit=50`), token, response => callback(response));
+
+export const CurrentUsersPlaylists = (token, callback) => {
+
+  fetchData(buildUrl(`/me/playlists?limit=50`), token, response => {
+    
+    callback(response);
+  });
 };
 
 export const GetPlaylist = (token, callback) => {
@@ -37,7 +43,7 @@ export const GetPlaylistCoverImage = (token, playlistId, callback) => {
   fetchData(buildUrl(`/playlists/${playlistId}/images`), token, response => callback(response));
 };
 
-export const GetPlaylistsTracks = (token, playlistId, callback) => {
+export const getPlaylistsTracks = (token, playlistId, callback) => {
   fetchData(buildUrl(`/playlists/${playlistId}/tracks`), token, response => callback(response));
 };
 
