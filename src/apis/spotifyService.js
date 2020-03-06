@@ -2,8 +2,8 @@ import axios from "axios";
 import config from "../config";
 import { HTTP } from "shared/types";
 
-export const fetchUser = (token, callback) => {
-  fetchData(buildUrl("/me"), token, response => callback(response));
+export const fetchUser = async (token, callback) => {
+  await fetchData(buildUrl("/me"), token, response => callback(response));
 };
 
 export const search = (token, query, type, callback) => {

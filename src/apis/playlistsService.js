@@ -1,4 +1,3 @@
-
 import { fetchData, buildUrl } from "./spotifyService";
 import { useUserId } from "services/hooks/use-selectors";
 import { HTTP } from "shared/types";
@@ -10,7 +9,7 @@ export const AddTracksToPlaylist = (token, playlistId, uris, callback) => {
 };
 
 export const ChangePlaylistsDetails = (token, playlistId, uris, callback) => {
-  fetchData(buildUrl(`/playlists/{playlistId}`), token, response => callback(response));
+  fetchData(buildUrl(`/playlists/${playlistId}`), token, response => callback(response));
 };
 
 export const CreatePlaylist = (token, playlistData, callback) => {
@@ -26,25 +25,20 @@ export const CreatePlaylist = (token, playlistData, callback) => {
 };
 
 //https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d/playlists?offset=0&limit=50
-
-export const CurrentUsersPlaylists = (token, callback) => {
-
-  fetchData(buildUrl(`/me/playlists?limit=50`), token, response => {
-    
-    callback(response);
-  });
+export const CurrentUsersPlaylists = async (token, callback) => {
+  await fetchData(buildUrl(`/me/playlists?limit=50`), token, response => callback(response));
 };
 
-export const GetPlaylist = (token, callback) => {
-  fetchData(buildUrl(`/playlists/{playlist_id}`), token, response => callback(response));
+export const getPlaylist = async (token, playlistId, callback) => {
+  await fetchData(buildUrl(`/playlists/${playlistId}`), token, response => callback(response));
 };
 
 export const GetPlaylistCoverImage = (token, playlistId, callback) => {
   fetchData(buildUrl(`/playlists/${playlistId}/images`), token, response => callback(response));
 };
 
-export const getPlaylistsTracks = (token, playlistId, callback) => {
-  fetchData(buildUrl(`/playlists/${playlistId}/tracks`), token, response => callback(response));
+export const getPlaylistsTracks = async (token, playlistId, callback) => {
+  await fetchData(buildUrl(`/playlists/${playlistId}/tracks`), token, response => callback(response));
 };
 
 export const RemoveTracksFromPlaylist = (token, playlistId, callback) => {

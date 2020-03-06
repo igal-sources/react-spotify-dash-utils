@@ -28,8 +28,7 @@ const Header = () => {
     let hashParams = {};
     let e,
       r = /([^&;=]+)=?([^&;]*)/g,
-      q 
-      = window.location.hash.substring(1);
+      q = window.location.hash.substring(1);
     while ((e = r.exec(q))) {
       hashParams[e[1]] = decodeURIComponent(e[2]);
     }
@@ -39,7 +38,7 @@ const Header = () => {
     } else {
       dispatch(allActions.tokenActions.setToken(hashParams.access_token));
       getUser(hashParams.access_token);
-      history.push('./');
+      history.push("./");
     }
 
     return () => {};

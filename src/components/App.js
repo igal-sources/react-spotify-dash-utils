@@ -19,10 +19,10 @@ const App = () => {
       <div className="App-main">
         <Header />
         <Grid>
-          <Grid.Column className="App-sidebar" width={3}>
+          <Grid.Column className="App-sidebar" width={2}>
             <Sidebar />
           </Grid.Column>
-          <Grid.Column className="App-content" width={13}>
+          <Grid.Column className="App-content" width={14}>
               <Routes />
           </Grid.Column>
         </Grid>

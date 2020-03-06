@@ -1,7 +1,7 @@
 import { fetchData, buildUrl } from "./spotifyService";
 
-export const fetchArtist = (token, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}`), token, response => callback(response));
+export const fetchArtist = async (token, id, callback) => {
+  await fetchData(buildUrl(`/artists/${id}`), token, response => callback(response));
 };
 
 export const fetchArtistsAlbums = (token, id, callback) => {

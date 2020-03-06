@@ -1,19 +1,26 @@
-export const fetchPlaylistMenuPending = () => {
+export const fetchPlaylistItemsPending = () => {
   return {
-    type: "FETCH_PLAYLIST_MENU_PENDING"
+    type: "FETCH_PLAYLIST_ITEMS_PENDING"
   };
 };
 
-export const fetchPlaylistMenuSuccess = playlists => {
+export const fetchPlaylistItemsSuccess = playlists => {
   return {
-    type: "FETCH_PLAYLIST_MENU_SUCCESS",
+    type: "FETCH_PLAYLIST_ITEMS_SUCCESS",
     playlists
   };
 };
 
-export const fetchPlaylistMenuError = () => {
+export const fetchSelectedPlaylist = playlist => {
   return {
-    type: "FETCH_PLAYLIST_MENU_ERROR"
+    type: "FETCH_SELECTED_PLAYLIST",
+    playlist
+  };
+};
+
+export const fetchPlaylistItemsError = () => {
+  return {
+    type: "FETCH_PLAYLIST_ITEMS_ERROR"
   };
 };
 
@@ -44,9 +51,10 @@ export const fetchPlaylistSongsError = () => {
 };
 
 export default {
-  fetchPlaylistMenuSuccess,
-  fetchPlaylistMenuError,
+  fetchPlaylistMenuSuccess: fetchPlaylistItemsSuccess,
+  fetchPlaylistMenuError: fetchPlaylistItemsError,
   addPlaylistItem,
   fetchPlaylistSongsSuccess,
-  fetchPlaylistSongsError
+  fetchPlaylistSongsError,
+  fetchSelectedPlaylist
 };
