@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import allActions from "../../actions";
 import { getPlaylist, getPlaylistsTracks } from "../../apis";
 import "./play-list-item.scss";
 
 const PlaylistItem = ({ name, images, id }) => {
   const [playlist, setPlaylist] = useState();
   const [playlistItems, setPlaylistItems] = useState();
-  const dispatch = useDispatch();
+  const token = localStorage.getItem("token");
 
   useEffect(() => {
-    getPlaylistsTracks(localStorage.getItem("token"), id, songs => {
+    getPlaylistsTracks(token, id, songs => {
       setPlaylistItems(songs.items);
-      dispatch(allActions.playlistActions.fetchPlaylistSongsSuccess(songs.items));
     });
-    getPlaylist(localStorage.getItem("token"), id, playlist => {
+    getPlaylist(token, id, playlist => {
       setPlaylist(playlist);
-      dispatch(allActions.playlistActions.fetchSelectedPlaylist(playlist));
     });
     return () => {};
   }, []);

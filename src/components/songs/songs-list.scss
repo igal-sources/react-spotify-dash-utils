@@ -1,0 +1,10 @@
+.SongList-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.SongList-playlistItems {
+  flex: 1;
+  overflow-y: scroll;
+}

@@ -24,8 +24,3 @@ export const useArtistIds = () => {
   const { artistIds } = useSelector(state => state.artistsReducer);
   return artistIds;
 };
-
-export const useSelectedPlaylist = () => {
-  const { playlist } = useSelector(state => state.playlistReducer);
-  return playlist;
-};

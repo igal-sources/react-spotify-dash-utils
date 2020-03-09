@@ -1,21 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import allActions from '../../actions'
+import allActions from "../../actions";
 import { CurrentUsersPlaylists } from "apis";
 import PlaylistItem from "./PlaylistItem";
 import "./playlists.scss";
 
 const Playlists = () => {
+  const isCancelled = useRef(false);
   const [playlists, setPlaylists] = useState([]);
   console.log("playlists: ", playlists);
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const fetchPlaylist = () => {
     CurrentUsersPlaylists(localStorage.getItem("token"), playlists => {
-      dispatch(allActions.playlistActions.fetchPlaylistMenuSuccess(playlists.items));
-      setPlaylists(playlists.items);
+      //dispatch(allActions.playlistActions.fetchPlaylistMenuSuccess(playlists.items));
+      !isCancelled.current && setPlaylists(playlists.items);
     });
-    return () => {};
+  };
+
+  useEffect(() => {
+    fetchPlaylist();
+
+    return () => {
+      isCancelled.current = true;
+    };
   }, []);
 
   return (
