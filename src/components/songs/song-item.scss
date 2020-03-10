@@ -1,0 +1,22 @@
+.SongItem-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.SongItem-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+}
+
+.SongItem-album {
+  color: rgb(245, 212, 212);
+  padding: 0 8px;
+}
+.SongItem-title {
+  color: #fff;
+  padding: 0 8px;
+}

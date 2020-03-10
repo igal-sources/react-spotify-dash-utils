@@ -12,10 +12,10 @@ const SongsContainer = props => {
   return (
     <div className="SongsContainer-main">
       <Grid>
-        <Grid.Column className="songs-card" width={5}>
+        <Grid.Column className="SongsContainer-card" width={5}>
           <SongsCard />
         </Grid.Column>
-        <Grid.Column className="song-list" width={11}>
+        <Grid.Column className="SongsContainer-list" width={11}>
           <SongList songs={songs} />
         </Grid.Column>
       </Grid>
