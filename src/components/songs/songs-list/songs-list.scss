@@ -1,0 +1,13 @@
+@import "shared/css/main.scss";
+
+.SongList-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 230px);
+  margin-bottom: 50px;
+  overflow-y: scroll;
+}
+
+.SongList-playlistItems {
+  flex: 1;
+}

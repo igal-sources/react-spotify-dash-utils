@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getPlaylist, getPlaylistsTracks } from "../../apis";
 import "./play-list-item.scss";
 
 const PlaylistItem = ({ name, images, id }) => {
+  const isCancelled = useRef(false);
   const [playlist, setPlaylist] = useState();
   const [playlistItems, setPlaylistItems] = useState();
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    getPlaylistsTracks(token, id, songs => {
-      setPlaylistItems(songs.items);
-    });
-    getPlaylist(token, id, playlist => {
-      setPlaylist(playlist);
-    });
-    return () => {};
+    !isCancelled.current &&
+      getPlaylistsTracks(token, id, songs => {
+        setPlaylistItems(songs.items);
+      });
+    !isCancelled.current &&
+      getPlaylist(token, id, playlist => {
+        setPlaylist(playlist);
+      });
+    return () => {
+      isCancelled.current = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

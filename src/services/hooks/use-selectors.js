@@ -24,3 +24,8 @@ export const useArtistIds = () => {
   const { artistIds } = useSelector(state => state.artistsReducer);
   return artistIds;
 };
+
+export const useHeaderTitle = () => {
+  const { title } = useSelector(state => state.uiReducer);
+  return title;
+};

@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
-import classNames from "classnames";
 import { Menu, Icon } from "semantic-ui-react";
 import Logout from "../logout/Logout";
-import * as types from "shared/types";
 import allActions from "actions";
+import { useHeaderTitle } from "../../../services/hooks/use-selectors";
 import config from "config";
 import { fetchUser } from "apis/spotifyService";
 import "./header.scss";
@@ -14,8 +13,8 @@ const Header = () => {
   const authorizeUrl = `${config.AUTHORIZE_URL}?client_id=${config.CLIENT_ID}&redirect_uri=${config.REDIRECT_URI}&scope=${config.SCOPE}&response_type=token`;
   const { pathname } = useLocation();
   const history = useHistory();
-  const path = pathname.split("/").pop();
   const dispatch = useDispatch();
+  const headerTitle = useHeaderTitle();
 
   const getUser = token => {
     fetchUser(token, user => {
@@ -42,43 +41,15 @@ const Header = () => {
     }
 
     return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const dashboardClassName = classNames({
-    "Header-link": true,
-    active: path === ""
-  });
-  const albumsClassName = classNames({
-    "Header-link": true,
-    active: path === types.ALBUMS
-  });
-  const artistsClassName = classNames({
-    "Header-link": true,
-    active: path === types.ARTISTS
-  });
-  const playlistsClassName = classNames({
-    "Header-link": true,
-    active: path === types.PLAYLISTS
-  });
 
   return (
     <>
       <Menu id="Header-mainMenu" className="Header-mainMenu">
-        <div className="Header-links">
-          <Link to="/" className={dashboardClassName}>
-            Dashboard
-          </Link>
-          <Link to="/albums" className={albumsClassName}>
-            Albums
-          </Link>
-          <Link to="/artists" className={artistsClassName}>
-            Artists
-          </Link>
-          <Link to="/playlists" className={playlistsClassName}>
-            Playlists
-          </Link>
+        <div className="Header-type-title">
+          <h2>{headerTitle}</h2>
         </div>
-
         <Menu.Item
           position="right"
           className="Header-menuItem-settings"

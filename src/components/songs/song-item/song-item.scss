@@ -1,6 +1,9 @@
 .SongItem-container {
   display: flex;
   flex-direction: row;
+  &:hover {
+    background: #a9cadf;
+  }
 }
 
 .SongItem-header {
@@ -10,6 +13,14 @@
   text-transform: capitalize;
   font-size: 16px;
   letter-spacing: 0.015em;
+}
+
+.SongItem-image-link {
+  width: 32;
+  height: 32;
+  max-width: 64;
+  max-height: 64;
+  overflow: hidden;
 }
 
 .SongItem-album {

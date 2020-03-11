@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Dashboard from "../dashboard/Dashboard";
 import Search from "../search/Search";
-import SongsContainer from "../songs/SongsContainer";
+import SongsContainer from "../songs/songs-container/SongsContainer";
 import Albums from "../albums/Albums";
 import Artists from "../artists/Artists";
 import Playlists from "../playlists/Playlists";

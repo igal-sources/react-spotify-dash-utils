@@ -1,5 +1,5 @@
 import React from "react";
-import SongItem from "./SongItem";
+import SongItem from "../song-item/SongItem";
 import "./songs-list.scss";
 
 const SongList = ({ songs: { playlistItems } }) => {

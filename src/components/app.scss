@@ -1,3 +1,5 @@
+@import "shared/css/main.scss";
+
 #root {
   display: flex;
   flex: 1;
@@ -20,14 +22,12 @@
 }
 
 .App-sidebar {
-  --main-column-height: calc(100vh - 170px);
   height: calc(100vh - var(--main-header-height));
   background: #9ab8ca;
   margin-top: 10px;
 }
 
 .App-content {
-  --main-column-height: calc(100vh - 270px);
   height: calc(100vh - var(--main-header-height));
   background: #9ab8ca;
   padding: 0 !important;

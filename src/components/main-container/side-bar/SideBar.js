@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import allActions from "actions";
 import classNames from "classnames";
 import * as types from "shared/types";
-
 import "./side-bar.scss";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
   const path = pathname.split("/").pop();
+  const dispatch = useDispatch();
+  const [pathTitle, setPathTitle] = useState("Home");
+
+  useEffect(() => {
+    dispatch(allActions.uiActions.updateHeaderTitle(pathTitle));
+    return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   const dashboardClassName = classNames({
     "Sidebar-link": true,
     active: path === ""
-  });
-  const songsClassName = classNames({
-    "Sidebar-link": true,
-    active: path === types.SONGS
   });
   const searchClassName = classNames({
     "Sidebar-link": true,
@@ -35,27 +40,28 @@ const Sidebar = () => {
   });
 
   return (
-    <div className="sidebar">
-          <Link to="/" className={dashboardClassName}>
-            Home
-          </Link>
-          <Link to="/search" className={searchClassName}>
-            Search
-          </Link>
-          <hr/>
-          <Link to="/songs" className={songsClassName}>
-            Songs
-          </Link>
-          <Link to="/albums" className={albumsClassName}>
-            Albums
-          </Link>
-          <Link to="/artists" className={artistsClassName}>
-            Artists
-          </Link>
-          <Link to="/playlists" className={playlistsClassName}>
-            Playlists
-          </Link>
-        </div>
+    <div className="Sidebar-container">
+      <Link to="/" onClick={() => setPathTitle("Home")} className={dashboardClassName}>
+        Home
+      </Link>
+      <Link to="/search" onClick={() => setPathTitle("Search")} className={searchClassName}>
+        Search
+      </Link>
+      <hr />
+      <Link to="/albums" onClick={() => setPathTitle("Albums")} className={albumsClassName}>
+        Albums
+      </Link>
+      <Link to="/artists" onClick={() => setPathTitle("Artists")} className={artistsClassName}>
+        Artists
+      </Link>
+      <Link
+        to="/playlists"
+        onClick={() => setPathTitle("Playlists")}
+        className={playlistsClassName}
+      >
+        Playlists
+      </Link>
+    </div>
   );
 };
 
