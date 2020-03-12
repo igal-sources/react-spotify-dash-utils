@@ -8,7 +8,8 @@ hr {
 }
 
 .Sidebar-container {
-  max-width: 140px;
+  min-width: 140px;
+  width: 140px;
   margin-left: 15px;
   border-right: 2px solid rgba(20, 20, 20, 0.945);
 }

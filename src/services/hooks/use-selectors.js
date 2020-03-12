@@ -1,18 +1,18 @@
 import { useSelector } from "react-redux";
 
 export const useUserMail = () => {
-  const { user = {} } = useSelector(state => state.currentUser);
-  return user.email;
+  const { user: { email } = {} } = useSelector(state => state.currentUser);
+  return email;
 };
 
 export const useUserName = () => {
-  const { user = {} } = useSelector(state => state.currentUser);
-  return user.display_name;
+  const { user: { display_name } = {} } = useSelector(state => state.currentUser);
+  return display_name;
 };
 
 export const useUserId = () => {
-  const { user = {} } = useSelector(state => state.currentUser);
-  return user.id;
+  const { user: { id } = {} } = useSelector(state => state.currentUser);
+  return id;
 };
 
 export const useToken = () => {
@@ -28,4 +28,9 @@ export const useArtistIds = () => {
 export const useHeaderTitle = () => {
   const { title } = useSelector(state => state.uiReducer);
   return title;
+};
+
+export const useSongData = () => {
+  const { songDetails: { songId } = {} } = useSelector(state => state.songsReducer);
+  return songId;
 };

@@ -18,13 +18,13 @@
   top: 0;
   position: sticky;
   z-index: 1;
-  //display: block;
 }
 
 .App-sidebar {
   height: calc(100vh - var(--main-header-height));
   background: #9ab8ca;
   margin-top: 10px;
+  min-width: 140px;
 }
 
 .App-content {

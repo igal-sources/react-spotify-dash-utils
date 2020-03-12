@@ -3,7 +3,7 @@ import "./songs-card.scss";
 
 const SongsCard = ({ playlist }) => {
   const isCancelled = useRef(false);
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState(undefined);
 
   const getImage = () => {
     const imageItem = playlist.images.filter(item => item.url);

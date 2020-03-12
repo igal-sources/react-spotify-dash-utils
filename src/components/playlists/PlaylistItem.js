@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getPlaylist, getPlaylistsTracks } from "../../apis";
+import spotifyImage from "./spotify.png";
 import "./play-list-item.scss";
 
 const PlaylistItem = ({ name, images, id }) => {
@@ -30,7 +31,7 @@ const PlaylistItem = ({ name, images, id }) => {
         to={{ pathname: "/songs", state: { playlist: { playlist }, songs: { playlistItems } } }}
         className="playlist-item-image"
       >
-        {images[0] && <img src={images[0] ? images[0].url : ""} alt={name} />}
+        {<img src={images[0] ? images[0].url : { spotifyImage }} alt={name} />}
       </Link>
       <div className="playlist-item-name">{name}</div>
     </div>

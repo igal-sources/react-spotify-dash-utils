@@ -4,6 +4,7 @@ import libraryActions from "./libraryActions";
 import artistActions from "./artistActions";
 import playlistActions from "./playlistActions";
 import uiActions from "./uiActions";
+import songActions from "./songActions";
 
 const allActions = {
   userActions,
@@ -11,7 +12,8 @@ const allActions = {
   libraryActions,
   artistActions,
   playlistActions,
-  uiActions
+  uiActions,
+  songActions
 };
 
 export default allActions;

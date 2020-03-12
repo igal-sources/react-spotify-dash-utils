@@ -15,7 +15,7 @@
   letter-spacing: 0.015em;
 }
 
-.SongItem-image-link {
+.SongItem-image {
   width: 32;
   height: 32;
   max-width: 64;
@@ -30,4 +30,5 @@
 .SongItem-title {
   color: #fff;
   padding: 0 8px;
+  cursor: pointer;
 }
