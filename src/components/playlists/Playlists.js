@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CurrentUsersPlaylists } from "apis";
-import PlaylistItem from "./PlaylistItem";
+import PlaylistItem from "./playlist-item/PlaylistItem";
 import "./playlists.scss";
 
 const Playlists = () => {

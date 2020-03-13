@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "./songs-card.scss";
 
 const SongsCard = ({ name, images }) => {
-  console.log("SongsCard: ", name, images);
   const isCancelled = useRef(false);
   const [imageUrl, setImageUrl] = useState(undefined);
 

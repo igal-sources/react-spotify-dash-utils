@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { getPlaylist, getPlaylistsTracks } from "../../apis";
+import { Route } from "react-router-dom";
+import { getPlaylist, getPlaylistsTracks } from "../../../apis";
+
 import spotifyImage from "./spotify.png";
-import "./play-list-item.scss";
+import "./playlist-item.scss";
 
 const PlaylistItem = ({ name, images, id }) => {
   const isCancelled = useRef(false);
@@ -28,7 +30,7 @@ const PlaylistItem = ({ name, images, id }) => {
   return (
     <div className="playlist-item-container">
       <Link
-        to={{ pathname: "/songs", state: { container: { playlist }, songs: { playlistItems } } }}
+        to={{ pathname: "/playlist-songs", state: { playlist, playlistItems } }}
         className="playlist-item-image"
       >
         {<img src={images[0] ? images[0].url : { spotifyImage }} alt={name} />}

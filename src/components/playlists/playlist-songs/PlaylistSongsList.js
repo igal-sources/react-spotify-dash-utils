@@ -1,16 +1,13 @@
-/* import React from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
-import { useViewType } from "../../../services/hooks/use-selectors";
 import { Grid } from "semantic-ui-react";
-import SongsCard from "../songs-card/SongsCard";
-import { VIEW_TYPE } from "shared/types";
-import "./songs-container.scss";
+import SongsCard from "../../songs/songs-card/SongsCard";
+import "./playlist-songs-list.scss";
 
-const SongsContainer = props => {
+const PlaylistSongsList = props => {
   let { playlist, playlistItems } = props.location.state;
   console.log("props.location.state: ", props.location.state);
-  const viewType = useViewType();
   const dispatch = useDispatch();
 
   const handleClickPlayTrack = trackUrl =>
@@ -62,5 +59,4 @@ const SongsContainer = props => {
   );
 };
 
-export default SongsContainer;
- */
+export default PlaylistSongsList;
