@@ -1,15 +1,14 @@
 const defaultState = {
-  title: "Songs"
+  title: "Home"
 };
 
 export const uiReducer = (state = defaultState, action) => {
   switch (action.type) {
-    case "UPDATE_HEADER_TITLE":
+    case "UPDATE_VIEW_TYPE":
       return {
         ...state,
         title: action.title
       };
-
     default:
       return state;
   }

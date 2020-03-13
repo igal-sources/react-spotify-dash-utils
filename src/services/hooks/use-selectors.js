@@ -25,7 +25,7 @@ export const useArtistIds = () => {
   return artistIds;
 };
 
-export const useHeaderTitle = () => {
+export const useViewType = () => {
   const { title } = useSelector(state => state.uiReducer);
   return title;
 };

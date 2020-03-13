@@ -1,0 +1,14 @@
+@import "shared/css/main.scss";
+
+.Albums-container {
+  height: calc(100vh - 190px);
+  margin-top: 25px;
+  margin-bottom: 50px;
+  overflow-y: scroll;
+}
+.Albums-items {
+  display: grid;
+  grid-template-columns: repeat(6, 180px);
+  grid-template-rows: repeat(6, 180px);
+  grid-gap: 70px;
+}

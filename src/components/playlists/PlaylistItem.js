@@ -28,7 +28,7 @@ const PlaylistItem = ({ name, images, id }) => {
   return (
     <div className="playlist-item-container">
       <Link
-        to={{ pathname: "/songs", state: { playlist: { playlist }, songs: { playlistItems } } }}
+        to={{ pathname: "/songs", state: { container: { playlist }, songs: { playlistItems } } }}
         className="playlist-item-image"
       >
         {<img src={images[0] ? images[0].url : { spotifyImage }} alt={name} />}

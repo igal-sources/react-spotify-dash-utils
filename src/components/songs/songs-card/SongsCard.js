@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./songs-card.scss";
 
-const SongsCard = ({ playlist }) => {
+const SongsCard = ({ name, images }) => {
+  console.log("SongsCard: ", name, images);
   const isCancelled = useRef(false);
   const [imageUrl, setImageUrl] = useState(undefined);
 
   const getImage = () => {
-    const imageItem = playlist.images.filter(item => item.url);
+    const imageItem = images.filter(item => item.url);
     setImageUrl(imageItem && imageItem[0].url);
   };
 
@@ -29,7 +30,7 @@ const SongsCard = ({ playlist }) => {
     <div className="SongsCard-container">
       <div className="SongsCard-image" style={style}></div>
       <div className="SongsCard-title">
-        <p>{playlist.name}</p>
+        <p>{name}</p>
       </div>
     </div>
   );

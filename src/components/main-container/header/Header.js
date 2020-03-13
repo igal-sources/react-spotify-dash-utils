@@ -4,7 +4,7 @@ import { Link, useLocation, useHistory } from "react-router-dom";
 import { Menu, Icon } from "semantic-ui-react";
 import Logout from "../logout/Logout";
 import allActions from "actions";
-import { useHeaderTitle } from "../../../services/hooks/use-selectors";
+import { useViewType } from "../../../services/hooks/use-selectors";
 import config from "config";
 import { fetchUser } from "apis/spotifyService";
 import "./header.scss";
@@ -14,7 +14,7 @@ const Header = () => {
   const { pathname } = useLocation();
   const history = useHistory();
   const dispatch = useDispatch();
-  const headerTitle = useHeaderTitle();
+  const headerTitle = useViewType();
 
   const getUser = token => {
     fetchUser(token, user => {

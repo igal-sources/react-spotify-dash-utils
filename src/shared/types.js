@@ -18,3 +18,13 @@ export const HTTP = {
     UNAUTHORIZED: 401
   }
 };
+
+export const VIEW_TYPE = {
+  DASHBOARD: "Home",
+  PLAYLIST: "Playlist",
+  ALBUMS: "Albums",
+  ARTISTS: "Artists",
+  PODCASTS: "Podcasts",
+  TRACKS: "Tracks",
+  SEARCH: "Search"
+};

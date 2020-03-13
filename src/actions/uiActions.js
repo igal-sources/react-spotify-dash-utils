@@ -1,8 +1,8 @@
-export const updateHeaderTitle = title => {
+export const updateViewType = title => {
   return {
-    type: "UPDATE_HEADER_TITLE",
+    type: "UPDATE_VIEW_TYPE",
     title
   };
 };
 
-export default { updateHeaderTitle };
+export default { updateViewType };

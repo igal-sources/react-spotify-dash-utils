@@ -4,19 +4,20 @@ import { useDispatch } from "react-redux";
 import allActions from "actions";
 import classNames from "classnames";
 import * as types from "shared/types";
+import { VIEW_TYPE } from "shared/types";
 import "./side-bar.scss";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
   const path = pathname.split("/").pop();
   const dispatch = useDispatch();
-  const [pathTitle, setPathTitle] = useState("Home");
+  const [pathTitle, setPathTitle] = useState(VIEW_TYPE.DASHBOARD);
 
   useEffect(() => {
-    dispatch(allActions.uiActions.updateHeaderTitle(pathTitle));
+    dispatch(allActions.uiActions.updateViewType(pathTitle));
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
+  }, [pathTitle]);
 
   const dashboardClassName = classNames({
     "Sidebar-link": true,
@@ -41,22 +42,26 @@ const Sidebar = () => {
 
   return (
     <div className="Sidebar-container">
-      <Link to="/" onClick={() => setPathTitle("Home")} className={dashboardClassName}>
+      <Link to="/" onClick={() => setPathTitle(VIEW_TYPE.DASHBOARD)} className={dashboardClassName}>
         Home
       </Link>
-      <Link to="/search" onClick={() => setPathTitle("Search")} className={searchClassName}>
+      <Link to="/search" onClick={() => setPathTitle(VIEW_TYPE.SEARCH)} className={searchClassName}>
         Search
       </Link>
       <hr />
-      <Link to="/albums" onClick={() => setPathTitle("Albums")} className={albumsClassName}>
+      <Link to="/albums" onClick={() => setPathTitle(VIEW_TYPE.ALBUMS)} className={albumsClassName}>
         Albums
       </Link>
-      <Link to="/artists" onClick={() => setPathTitle("Artists")} className={artistsClassName}>
+      <Link
+        to="/artists"
+        onClick={() => setPathTitle(VIEW_TYPE.ARTISTS)}
+        className={artistsClassName}
+      >
         Artists
       </Link>
       <Link
         to="/playlists"
-        onClick={() => setPathTitle("Playlists")}
+        onClick={() => setPathTitle(VIEW_TYPE.PLAYLIST)}
         className={playlistsClassName}
       >
         Playlists

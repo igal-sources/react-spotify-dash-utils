@@ -17,11 +17,4 @@ export const fetchSongsError = () => {
   };
 };
 
-export const updateViewType = view => {
-  return {
-    type: "UPDATE_VIEW_TYPE",
-    view
-  };
-};
-
-export default { fetchSongsPending, fetchSongsSuccess, updateViewType };
+export default { fetchSongsPending, fetchSongsSuccess };
