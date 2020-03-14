@@ -20,8 +20,9 @@ export const fetchIfCurrentUserFollowsArtistsOrUsers = (token, type, ids, callba
   );
 };
 
-export const fetchFollowedArtists = (token, artist, callback) => {
-  fetchData(buildUrl(`/me/following?type=${artist}`), token, response => callback(response));
+export const fetchFollowedArtists = (token, type = "artist", callback) => {
+  //const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+  fetchData(buildUrl(`/me/following?type=${type}&limit=50`), token, response => callback(response));
 };
 
 export const fetchIfUsersFollowPlaylist = (token, playlistId, ids, callback) => {

@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { fetchFollowedArtists } from "apis";
+import ArtistsItem from "./ArtistsItem";
+import "./artists.scss";
 
 const Artists = () => {
+  const isCancelled = useRef(false);
+  const [followedArtists = [], setFollowedArtists] = useState();
+  console.log("followedArtists: ", followedArtists);
+
+  const fetchArtists = () => {
+    fetchFollowedArtists(localStorage.getItem("token"), "artist", ({ artists }) => {
+      setFollowedArtists(artists.items);
+    });
+  };
+
+  useEffect(() => {
+    !isCancelled.current && fetchArtists();
+
+    return () => {
+      isCancelled.current = true;
+    };
+  }, []);
+
   return (
-    <div>
-      <h1>Artists</h1>
-      <p>Artists page body content</p>
+    <div className="Artists-container">
+      <div className="Artists-items">
+        {followedArtists.map(artist => (
+          <ArtistsItem key={artist.id} {...artist} />
+        ))}
+      </div>
     </div>
   );
 };

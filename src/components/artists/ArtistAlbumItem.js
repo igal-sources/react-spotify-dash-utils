@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { fetchAlbum, fetchAlbumsTracks } from "../../apis";
-import "./album-item.scss";
+import { fetchAlbum } from "../../apis";
+import "./artist-album-item.scss";
 
-const AlbumItem = ({ name, images, id }) => {
+const ArtistAlbumItem = ({ name, images, id }) => {
   const isCancelled = useRef(false);
   const [album, setAlbum] = useState();
   const token = localStorage.getItem("token");
@@ -20,19 +20,19 @@ const AlbumItem = ({ name, images, id }) => {
   }, []);
 
   return (
-    <div className="AlbumItem-container">
+    <div className="ArtistAlbumItem-container">
       <Link
         to={{
           pathname: "/album-songs",
           state: { album }
         }}
-        className="AlbumItem-image"
+        className="ArtistAlbumItem-image"
       >
         {<img src={images[0] && images[0].url} alt={name} />}
       </Link>
-      <div className="AlbumItem-name">{name}</div>
+      <div className="ArtistAlbumItem-name">{name}</div>
     </div>
   );
 };
 
-export default AlbumItem;
+export default ArtistAlbumItem;

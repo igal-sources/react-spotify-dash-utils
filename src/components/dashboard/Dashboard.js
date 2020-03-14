@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { fetchArtist } from "apis";
 
-const Dashboard = () => {  
+const Dashboard = () => {
   const [artist, setArtist] = useState("");
 
   fetchArtist(localStorage.getItem("token"), "3PhoLpVuITZKcymswpck5b", artist => {
