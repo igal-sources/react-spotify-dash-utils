@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { fetchAlbum, fetchAlbumsTracks } from "../../apis";
+import { fetchAlbum } from "../../apis";
 import "./album-item.scss";
 
 const AlbumItem = ({ name, images, id }) => {

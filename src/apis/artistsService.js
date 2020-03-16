@@ -5,7 +5,7 @@ export const fetchArtist = async (token, id, callback) => {
 };
 
 export const fetchArtistsAlbums = (token, id, callback) => {
-  fetchData(buildUrl(`/artists/${id}/albums`), token, response => callback(response));
+  fetchData(buildUrl(`/artists/${id}/albums?limit=50`), token, response => callback(response));
 };
 
 export const fetchArtistsRelatedArtists = (token, id, callback) => {

@@ -8,7 +8,7 @@ import "./album-songs-list.scss";
 
 const AlbumSongsList = props => {
   const { album } = props.location.state;
-  console.log("props.location.state: ", props.location.state);
+  console.log("AlbumSongsList - props: ", props.location.state);
   const dispatch = useDispatch();
 
   const handleClickPlayTrack = trackUrl =>

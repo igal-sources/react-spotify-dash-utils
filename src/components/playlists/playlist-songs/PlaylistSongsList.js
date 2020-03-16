@@ -7,7 +7,7 @@ import "./playlist-songs-list.scss";
 
 const PlaylistSongsList = props => {
   let { playlist } = props.location.state;
-  console.log("props.location.state: ", props.location.state);
+  console.log("PlaylistSongsList - props: ", props.location.state);
   const dispatch = useDispatch();
 
   const handleClickPlayTrack = trackUrl =>
