@@ -1,23 +1,36 @@
-import React from "react";
-import SpotifyPlayer from "react-spotify-player";
+import React, { useState, useEffect } from "react";
 import { useSongData } from "../../../services/hooks/use-selectors";
 import "./footer.scss";
 
 function Footer() {
-  const initializeSongUri = "spotify:artist:7jefIIksOi1EazgRTfW2Pk";
+  const [initializeSongUri, setInitializeSongUri] = useState("artist/7jefIIksOi1EazgRTfW2Pk");
+  console.log("initializeSongUri: ", initializeSongUri);
   const songUri = useSongData();
-  const size = { width: "100%", height: 300 };
-  const view = "list";
-  const theme = "black"; // or 'white'
+
+  const handlePlayerUri = uriString => {
+    const mediaId = uriString.split(":")[2];
+    const mediaType = uriString.split(":")[1];
+    console.log("`${mediaType}/${mediaId}`: ", `${mediaType}/${mediaId}`);
+    return `${mediaType}/${mediaId}`;
+  };
+  //https://open.spotify.com/embed/track/3tBKRwJPL5IP8l8WIlnD6i
+
+  useEffect(() => {
+    songUri && setInitializeSongUri(handlePlayerUri(songUri));
+    return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [songUri]);
 
   return (
-    <div className="footer-container">
-      <SpotifyPlayer
-        uri={songUri ? songUri : initializeSongUri}
-        size={size}
-        view={view}
-        theme={theme}
-      />
+    <div className="Footer-container">
+      <iframe
+        title="Spotify Player"
+        className="Footer-player"
+        src={`https://open.spotify.com/embed/${initializeSongUri}`}
+        frameBorder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
     </div>
   );
 }

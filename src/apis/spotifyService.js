@@ -7,7 +7,9 @@ export const fetchUser = async (token, callback) => {
 };
 
 export const search = (token, query, type, callback) => {
-  fetchData(buildUrl(`/search?q=${query}&type=${type}`), token, response => callback(response));
+  fetchData(buildUrl(`/search?q=${query}&type=${type}&limit=50`), token, response =>
+    callback(response)
+  );
 };
 
 export const GetUsersProfile = (token, userId, callback) => {

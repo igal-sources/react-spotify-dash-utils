@@ -37,6 +37,7 @@ const Header = () => {
     } else {
       dispatch(allActions.tokenActions.setToken(hashParams.access_token));
       getUser(hashParams.access_token);
+      console.log("hashParams: ", hashParams);
       history.push("./");
     }
 

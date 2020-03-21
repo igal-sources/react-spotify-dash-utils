@@ -1,0 +1,39 @@
+.Search-container {
+  max-width: 1080px;
+  height: 125px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.Search-content {
+  max-width: 1080px;
+  width: 70%;
+
+  height: 55px;
+  float: left;
+  border-bottom: 2px solid #757575;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+
+  position: relative;
+  color: #757575;
+}
+
+.Search__input {
+  font-family: Oswald, sans-serif;
+  font-size: 38px;
+  position: absolute;
+  left: 20px;
+  top: 7px;
+  border: 0;
+  background: transparent;
+  height: 40px;
+  color: rgb(245, 212, 212);
+  &:focus {
+    outline: none;
+  }
+}

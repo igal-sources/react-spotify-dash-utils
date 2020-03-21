@@ -6,7 +6,6 @@ import "./artists.scss";
 const Artists = () => {
   const isCancelled = useRef(false);
   const [followedArtists = [], setFollowedArtists] = useState();
-  console.log("followedArtists: ", followedArtists);
 
   const fetchArtists = () => {
     fetchFollowedArtists(localStorage.getItem("token"), "artist", ({ artists }) => {

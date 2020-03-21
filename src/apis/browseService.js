@@ -25,7 +25,7 @@ export const fetchListOfFeaturedPlaylists = (token, callback) => {
 };
 
 export const fetchListOfNewReleases = (token, callback) => {
-  fetchData(buildUrl(`/browse/new-releases`), token, response => callback(response));
+  fetchData(buildUrl(`/browse/new-releases&limit=50`), token, response => callback(response));
 };
 
 export const fetchRecommendationsBasedOnSeeds = (token, callback) => {

@@ -4,6 +4,10 @@ import { fetchArtist } from "apis";
 const Dashboard = () => {
   const [artist, setArtist] = useState("");
 
+  //GetUsersTopArtistsAndTracks - The type of entity to return. Valid values: artists or tracks.
+  //fetchListOfNewReleases
+  //GetCurrentUsersRecentlyPlayedTracks
+  //fetchRecommendationsBasedOnSeeds
   fetchArtist(localStorage.getItem("token"), "3PhoLpVuITZKcymswpck5b", artist => {
     setArtist(artist.name);
   });

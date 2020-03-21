@@ -7,11 +7,9 @@ const ArtistAlbums = props => {
   const {
     artist: { id, name, images }
   } = props.location.state;
-  console.log("ArtistAlbums - props: ", props.location.state);
 
   const isCancelled = useRef(false);
   const [artistAlbums, setArtistAlbums] = useState([]);
-  console.log("artistAlbums: ", artistAlbums);
 
   const fetchAlbumsByArtist = () => {
     fetchArtistsAlbums(localStorage.getItem("token"), id, albums => {
@@ -20,15 +18,10 @@ const ArtistAlbums = props => {
   };
 
   const albums = artistAlbums.filter(album => album.album_group === "album");
-  console.log("albums: ", albums.length);
   const singles = artistAlbums.filter(album => album.album_group === "single");
-  console.log("singles: ", singles.length);
   const compilations = artistAlbums.filter(album => album.album_group === "compilation");
-  console.log("compilations: ", compilations.length);
   const appearsOn = artistAlbums.filter(album => album.album_group === "appears_on");
-  console.log("appearsOn: ", appearsOn.length);
 
-  console.log("images[0].url", images[0].url);
   useEffect(() => {
     !isCancelled.current && fetchAlbumsByArtist();
 
