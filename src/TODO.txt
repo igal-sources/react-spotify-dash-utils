@@ -10,3 +10,4 @@
 2. Search page: convert sections to collapsible sections.
 3. Insert Spotify.png to all missing images locations.
 4. Add TrackItem as all media types.
+5. Add spinner for long process.

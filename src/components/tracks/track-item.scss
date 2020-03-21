@@ -1,0 +1,40 @@
+.TrackItem-container {
+  display: flex;
+  flex-direction: row;
+  &:hover {
+    background: #a9cadf;
+  }
+}
+
+.TrackItem-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 0.015em;
+}
+
+.TrackItem-image {
+  width: 32;
+  height: 32;
+  max-width: 64;
+  max-height: 64;
+  overflow: hidden;
+}
+
+.TrackItem-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.TrackItem-album {
+  color: rgb(245, 212, 212);
+  padding: 0 8px;
+}
+.TrackItem-title {
+  color: #fff;
+  padding: 0 8px;
+  cursor: pointer;
+}

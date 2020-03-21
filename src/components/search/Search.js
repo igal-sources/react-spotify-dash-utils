@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import allActions from "actions";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
 import AlbumItem from "../albums/AlbumItem";
+import TrackItem from "../tracks/TrackItem";
 import ArtistItem from "../artists/artists-item/ArtistsItem";
 import { search } from "apis";
 import "./search.scss";
@@ -10,7 +9,7 @@ import "./search.scss";
 const Search = () => {
   const [searchResults, setSearchResults] = useState({});
   const [searchValue, setSearchValue] = useState([]);
-  const dispatch = useDispatch();
+
   console.log("searchResults: ", searchResults);
 
   const {
@@ -24,9 +23,6 @@ const Search = () => {
     const value = event.target.value;
     setSearchValue(value);
   };
-
-  const handleClickPlayTrack = trackUrl =>
-    dispatch(allActions.songActions.playSong({ songId: trackUrl }));
 
   const doSearch = event => {
     // keyCode:13 = Enter
@@ -52,9 +48,9 @@ const Search = () => {
       </div>
       <div className="Search-sections">
         {albumItems && albumItems.length > 0 && (
-          <section className="Search-albums-section">
+          <section className="Search-section">
             <h1>Albums</h1>
-            <div className="Search-album-items">
+            <div className="Search-items">
               {albumItems.map(item => (
                 <AlbumItem key={item.id} {...item} />
               ))}
@@ -62,9 +58,9 @@ const Search = () => {
           </section>
         )}
         {artistsItems && artistsItems.length > 0 && (
-          <section className="Search-albums-section">
+          <section className="Search-section">
             <h1>Artists</h1>
-            <div className="Search-album-items">
+            <div className="Search-items">
               {artistsItems.map(item => (
                 <ArtistItem key={item.id} {...item} />
               ))}
@@ -72,26 +68,19 @@ const Search = () => {
           </section>
         )}
         {tracksItems && tracksItems.length > 0 && (
-          <section className="Search-albums-section">
+          <section className="Search-tracks-section">
             <h1>Tracks</h1>
-            <div className="Search-album-items">
-              {tracksItems.map(({ album: { images }, name, id, uri }) => (
-                <div
-                  key={id}
-                  className="Search-tracks-items-image"
-                  onClick={() => handleClickPlayTrack(uri)}
-                >
-                  <img src={images[0] && images[0].url} alt={name} />
-                  <div className="Search-tracks-items-name">{name}</div>
-                </div>
+            <div className="Search-track-items">
+              {tracksItems.map(item => (
+                <TrackItem key={item.id} {...item} />
               ))}
             </div>
           </section>
         )}
         {playlistsItems && playlistsItems.length > 0 && (
-          <section className="Search-albums-section">
+          <section className="Search-section">
             <h1>Playlists</h1>
-            <div className="Search-album-items">
+            <div className="Search-items">
               {playlistsItems.map(item => (
                 <PlaylistItem key={item.id} {...item} />
               ))}

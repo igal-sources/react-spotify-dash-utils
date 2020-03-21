@@ -4,7 +4,6 @@ import { fetchAlbum } from "../../../apis";
 import "./artist-album-item.scss";
 
 const ArtistAlbumItem = ({ name, images, id }) => {
-  console.log("name, images, id: ", name, images, id);
   const isCancelled = useRef(false);
   const [album, setAlbum] = useState();
   const token = localStorage.getItem("token");

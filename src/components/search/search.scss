@@ -33,27 +33,25 @@
   }
 }
 
-.Search-albums-section {
+.Search-section {
   margin-top: 100px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
 
-.Search-album-items {
+.Search-tracks-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.Search-items {
   display: grid;
   grid-template-columns: repeat(6, 180px);
   grid-gap: 30px;
 }
 
-.Search-tracks-items-image img {
-  width: 180px;
-  height: 180px;
-  border-radius: 5%;
-}
-
-.Search-tracks-items-name {
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
+.Search-track-items {
+  margin-top: 50px;
+  flex: 1;
 }
