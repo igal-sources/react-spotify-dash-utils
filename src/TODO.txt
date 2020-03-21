@@ -1,0 +1,12 @@
+1. BEM (Block-Element-Modifier) in all CSS files
+  /* Block component */
+  .card {}
+  /* Elements are dependent on their parent block */
+  .card__img {}
+  /* Modifiers are for incremental style changes */
+  .card--dark {}
+  .card__img--large {}
+
+2. Search page: convert sections to collapsible sections.
+3. Insert Spotify.png to all missing images locations.
+4. Add TrackItem as all media types.

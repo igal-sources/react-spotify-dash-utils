@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { fetchArtist } from "../../apis";
+import { fetchArtist } from "../../../apis";
 import "./artists-item.scss";
 
 const ArtistItem = ({ name, images, id }) => {

@@ -8,8 +8,8 @@ import Playlists from "../playlists/Playlists";
 import Settings from "../main-container/Settings";
 import PlaylistSongsList from "../playlists/playlist-songs/PlaylistSongsList";
 import AlbumSongsList from "../albums/AlbumSongsList";
-import ArtistSongsList from "../artists/ArtistSongsList";
-import ArtistAlbums from "../artists/ArtistAlbums";
+import ArtistSongsList from "../artists/artist-songs-list/ArtistSongsList";
+import ArtistAlbums from "../artists/artist-albums/ArtistAlbums";
 import NotFoundPage from "./not-found-page/NotFoundPage";
 
 export default () => (

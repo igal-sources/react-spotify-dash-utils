@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import { Grid } from "semantic-ui-react";
-import { ReactComponent as SpotifyImage } from "./spotify.svg";
-import SongsCard from "../songs/songs-card/SongsCard";
+import { ReactComponent as SpotifyImage } from "../spotify.svg";
+import SongsCard from "../../songs/songs-card/SongsCard";
 import "./artist-songs-list.scss";
 
 const ArtistSongsList = props => {

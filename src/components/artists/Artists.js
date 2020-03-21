@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { fetchFollowedArtists } from "apis";
-import ArtistsItem from "./ArtistsItem";
+import ArtistsItem from "../artists/artists-item/ArtistsItem";
 import "./artists.scss";
 
 const Artists = () => {

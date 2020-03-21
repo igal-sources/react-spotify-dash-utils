@@ -1,24 +1,19 @@
 .Search-container {
-  max-width: 1080px;
-  height: 125px;
+  height: calc(100vh - 190px);
   margin: 0 auto;
   position: relative;
   padding: 20px 0;
   box-sizing: border-box;
   color: #fff;
+  overflow-y: scroll;
 }
 
 .Search-content {
-  max-width: 1080px;
-  width: 70%;
-
-  height: 55px;
   float: left;
   border-bottom: 2px solid #757575;
   border-top: 0;
   border-right: 0;
   border-left: 0;
-
   position: relative;
   color: #757575;
 }
@@ -36,4 +31,29 @@
   &:focus {
     outline: none;
   }
+}
+
+.Search-albums-section {
+  margin-top: 100px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.Search-album-items {
+  display: grid;
+  grid-template-columns: repeat(6, 180px);
+  grid-gap: 30px;
+}
+
+.Search-tracks-items-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5%;
+}
+
+.Search-tracks-items-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
 }

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { fetchArtistsAlbums } from "apis";
-import ArtistAlbumItem from "../artists/ArtistAlbumItem";
+import ArtistAlbumItem from "../artist-album-item/ArtistAlbumItem";
 import "./artist-albums.scss";
 
 const ArtistAlbums = props => {
   const {
-    artist: { id, name, images }
+    artist: { id, name }
   } = props.location.state;
 
   const isCancelled = useRef(false);
