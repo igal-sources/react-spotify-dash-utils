@@ -4,13 +4,11 @@ import "./footer.scss";
 
 function Footer() {
   const [initializeSongUri, setInitializeSongUri] = useState("artist/7jefIIksOi1EazgRTfW2Pk");
-  console.log("initializeSongUri: ", initializeSongUri);
   const songUri = useSongData();
 
   const handlePlayerUri = uriString => {
     const mediaId = uriString.split(":")[2];
     const mediaType = uriString.split(":")[1];
-    console.log("`${mediaType}/${mediaId}`: ", `${mediaType}/${mediaId}`);
     return `${mediaType}/${mediaId}`;
   };
   //https://open.spotify.com/embed/track/3tBKRwJPL5IP8l8WIlnD6i
