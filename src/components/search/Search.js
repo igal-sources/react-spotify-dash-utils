@@ -54,7 +54,7 @@ const Search = () => {
       </div>
       <div className="Search-sections">
         {albumItems && albumItems.length > 0 && (
-          <section className="Search-section">
+          <section className="Search-section album">
             <h1>Albums</h1>
             <div className="Search-items">
               {albumItems.map(item => (
