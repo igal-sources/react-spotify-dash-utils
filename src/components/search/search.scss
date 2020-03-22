@@ -36,13 +36,15 @@
 .Search-section {
   margin-top: 100px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 25px;
   padding-bottom: 25px;
 }
 
 .Search-tracks-section {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
 }
 
 .Search-items {

@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { GetCurrentUsersSavedAlbums } from "apis";
-import AlbumItem from "./AlbumItem";
+import AlbumItem from "../albums/album-item/AlbumItem";
 import "./albums.scss";
 
 const Albums = () => {
   const isCancelled = useRef(false);
   const [albums, setAlbums] = useState([]);
-  console.log("albums: ", albums);
 
   const fetchAlbums = () => {
     GetCurrentUsersSavedAlbums(localStorage.getItem("token"), albums => {

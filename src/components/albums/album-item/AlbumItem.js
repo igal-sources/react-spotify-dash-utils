@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { fetchAlbum } from "../../apis";
+import { fetchAlbum } from "../../../apis";
+import spotifyImage from "../../../images/spotify.png";
 import "./album-item.scss";
 
 const AlbumItem = ({ name, images, id }) => {
@@ -28,7 +29,7 @@ const AlbumItem = ({ name, images, id }) => {
         }}
         className="AlbumItem-image"
       >
-        {<img src={images[0] && images[0].url} alt={name} />}
+        {<img src={images[0] ? images[0].url : spotifyImage} alt={name} />}
       </Link>
       <div className="AlbumItem-name">{name}</div>
     </div>

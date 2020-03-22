@@ -9,14 +9,14 @@ const PlaylistSongsList = props => {
   console.log("PlaylistSongsList - props: ", props.location.state);
 
   return (
-    <div className="SongsContainer-main">
+    <div className="PlaylistSongsList-main">
       <Grid>
-        <Grid.Column className="SongsContainer-card" width={5}>
+        <Grid.Column className="PlaylistSongsList-card" width={5}>
           <SongsCard {...playlist} />
         </Grid.Column>
         <Grid.Column className="SongsContainer-list" width={11}>
-          <div className="SongList-container">
-            <div className="SongList-playlistItems">
+          <div className="PlaylistSongsList-container">
+            <div className="PlaylistSongsList-playlistItems">
               {playlist.tracks.items.map(({ track }) => (
                 <TrackItem key={track.id} {...track} />
               ))}

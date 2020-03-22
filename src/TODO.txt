@@ -9,5 +9,6 @@
 
 2. Search page: convert sections to collapsible sections.
 3. Insert Spotify.png to all missing images locations.
-4. Add TrackItem as all media types.
+4.   Search page:	Too Many playlists Requests.
+4.1. Limit all search results to 10.
 5. Add spinner for long process.

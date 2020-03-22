@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import { Grid } from "semantic-ui-react";
-import { ReactComponent as SpotifyImage } from "./spotify.svg";
-import SongsCard from "../songs/songs-card/SongsCard";
+import spotifyImage from "../../../images/Spotify_64.png";
+import SongsCard from "../../songs/songs-card/SongsCard";
 import "./album-songs-list.scss";
 
 const AlbumSongsList = props => {
@@ -15,24 +15,27 @@ const AlbumSongsList = props => {
     dispatch(allActions.songActions.playSong({ songId: trackUrl }));
 
   return (
-    <div className="SongsContainer-main">
+    <div className="AlbumSongsList-main">
       <Grid>
-        <Grid.Column className="SongsContainer-card" width={5}>
+        <Grid.Column className="AlbumSongsList-card" width={5}>
           <SongsCard {...album} />
         </Grid.Column>
         <Grid.Column className="SongsContainer-list" width={11}>
-          <div className="SongList-container">
-            <div className="SongList-playlistItems">
+          <div className="AlbumSongsList-container">
+            <div className="AlbumSongsList-playlistItems">
               {album.tracks.items.map(track => (
-                <div key={track.id} className="SongItem-container">
-                  <div className="SongItem-image">
-                    <SpotifyImage />
+                <div key={track.id} className="AlbumSongsList-songItem-container">
+                  <div className="AlbumSongsList-songItem-image">
+                    <img src={spotifyImage} alt={track.name}></img>
                   </div>
-                  <div className="SongItem-header">
-                    <div className="SongItem-title" onClick={() => handleClickPlayTrack(track.uri)}>
+                  <div className="AlbumSongsList-songItem-header">
+                    <div
+                      className="AlbumSongsList-songItem-title"
+                      onClick={() => handleClickPlayTrack(track.uri)}
+                    >
                       <p>{track.name}</p>
                     </div>
-                    <div className="SongItem-album">
+                    <div className="AlbumSongsList-songItem-album">
                       <p>{album.name}</p>
                     </div>
                   </div>

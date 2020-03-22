@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { fetchArtist } from "../../../apis";
+import spotifyImage from "../../../images/spotify.png";
 import "./artists-item.scss";
 
 const ArtistItem = ({ name, images, id }) => {
@@ -22,7 +23,7 @@ const ArtistItem = ({ name, images, id }) => {
   return (
     <div className="ArtistItem-container">
       <Link to={{ pathname: "/artist-albums", state: { artist } }} className="ArtistItem-image">
-        {<img src={images[0] && images[0].url} alt={name} />}
+        {<img src={images[0] ? images[0].url : spotifyImage} alt={name} />}
       </Link>
       <div className="ArtistItem-name">{name}</div>
     </div>

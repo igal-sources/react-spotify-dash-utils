@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
-import AlbumItem from "../albums/AlbumItem";
+import AlbumItem from "../albums/album-item/AlbumItem";
 import TrackItem from "../tracks/TrackItem";
 import ArtistItem from "../artists/artists-item/ArtistsItem";
 import { search } from "apis";
@@ -27,9 +27,15 @@ const Search = () => {
   const doSearch = event => {
     // keyCode:13 = Enter
     if (event.keyCode === 13) {
-      search(localStorage.getItem("token"), searchValue, "album,artist,playlist,track", result => {
-        setSearchResults(result);
-      });
+      search(
+        localStorage.getItem("token"),
+        searchValue,
+        "album,artist,playlist,track",
+        20,
+        result => {
+          setSearchResults(result);
+        }
+      );
     }
   };
 

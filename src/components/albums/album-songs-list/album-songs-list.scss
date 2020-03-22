@@ -1,10 +1,10 @@
 @import "shared/css/main.scss";
 
-.SongsContainer-main {
+.AlbumSongsList-main {
   margin-top: 45px;
 }
 
-.SongList-container {
+.AlbumSongsList-container {
   display: flex;
   flex-direction: row;
   height: calc(100vh - 230px);
@@ -12,11 +12,11 @@
   overflow-y: scroll;
 }
 
-.SongList-playlistItems {
+.AlbumSongsList-playlistItems {
   flex: 1;
 }
 
-.SongItem-container {
+.AlbumSongsList-songItem-container {
   display: flex;
   flex-direction: row;
   &:hover {
@@ -24,7 +24,7 @@
   }
 }
 
-.SongItem-header {
+.AlbumSongsList-songItem-header {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -33,17 +33,19 @@
   letter-spacing: 0.015em;
 }
 
-.SongItem-image {
-  z-index: 2;
+.AlbumSongsList-songItem-image {
   width: 32;
   height: 32;
+  max-width: 64;
+  max-height: 64;
+  overflow: hidden;
 }
 
-.SongItem-album {
+.AlbumSongsList-songItem-album {
   color: rgb(245, 212, 212);
   padding: 0 8px;
 }
-.SongItem-title {
+.AlbumSongsList-songItem-title {
   color: #fff;
   padding: 0 8px;
   cursor: pointer;

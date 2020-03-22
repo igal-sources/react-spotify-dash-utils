@@ -6,8 +6,8 @@ export const fetchUser = async (token, callback) => {
   await fetchData(buildUrl("/me"), token, response => callback(response));
 };
 
-export const search = (token, query, type, callback) => {
-  fetchData(buildUrl(`/search?q=${query}&type=${type}&limit=50`), token, response =>
+export const search = (token, query, type, limit, callback) => {
+  fetchData(buildUrl(`/search?q=${query}&type=${type}&limit=${limit}`), token, response =>
     callback(response)
   );
 };
