@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import { Grid } from "semantic-ui-react";
+import TrackItem from "../../tracks/TrackItem";
 import SongsCard from "../../songs/songs-card/SongsCard";
 import "./playlist-songs-list.scss";
 
@@ -37,19 +38,7 @@ const PlaylistSongsList = props => {
           <div className="SongList-container">
             <div className="SongList-playlistItems">
               {playlist.tracks.items.map(({ track }) => (
-                <div key={track.id} className="SongItem-container">
-                  <div className="SongItem-image">
-                    <img src={getImage(track)} alt={track.name} />
-                  </div>
-                  <div className="SongItem-header">
-                    <div className="SongItem-title" onClick={() => handleClickPlayTrack(track.uri)}>
-                      <p>{track.name}</p>
-                    </div>
-                    <div className="SongItem-album">
-                      <p>{track.album.name}</p>
-                    </div>
-                  </div>
-                </div>
+                <TrackItem key={track.id} {...track} />
               ))}
             </div>
           </div>
