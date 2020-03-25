@@ -7,8 +7,6 @@
   .card--dark {}
   .card__img--large {}
 
-2. Search page: convert sections to collapsible sections.
-3. Insert Spotify.png to all missing images locations.
-4.   Search page:	Too Many playlists Requests.
-4.1. Limit all search results to 10.
-5. Add spinner for long process.
+1. Search page: convert sections to collapsible sections.
+2. Add spinner for long process.
+3. Add PropsType to each component.

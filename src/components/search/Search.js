@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Spinner from "../main-container/spinner/Spinner";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
 import AlbumItem from "../albums/album-item/AlbumItem";
 import TrackItem from "../tracks/TrackItem";
@@ -9,6 +10,7 @@ import "./search.scss";
 const Search = () => {
   const [searchResults, setSearchResults] = useState({});
   const [searchValue, setSearchValue] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   console.log("searchResults: ", searchResults);
 
@@ -27,6 +29,7 @@ const Search = () => {
   const doSearch = event => {
     // keyCode:13 = Enter
     if (event.keyCode === 13) {
+      setLoading(true);
       search(
         localStorage.getItem("token"),
         searchValue,
@@ -34,6 +37,7 @@ const Search = () => {
         20,
         result => {
           setSearchResults(result);
+          setLoading(false);
         }
       );
     }
@@ -53,6 +57,7 @@ const Search = () => {
         />
       </div>
       <div className="Search-sections">
+        <Spinner isLoading={loading} />
         {albumItems && albumItems.length > 0 && (
           <section className="Search-section album">
             <h1>Albums</h1>
