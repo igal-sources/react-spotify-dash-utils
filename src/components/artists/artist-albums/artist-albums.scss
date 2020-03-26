@@ -6,12 +6,14 @@
 }
 
 .ArtistAlbums-Header {
-  font-size: 72px;
+  font-size: 52px;
   line-height: 82px;
   letter-spacing: -0.005em;
+  margin-bottom: 15px;
   font-weight: bolder;
   color: #fff;
   text-transform: none;
+  border-bottom: 1px solid #ccc;
 }
 .ArtistAlbums-items {
   display: grid;
@@ -19,23 +21,9 @@
   grid-gap: 70px;
 }
 
-.ArtistAlbums-albums-section {
+.ArtistAlbums-section {
   border-bottom: 1px solid #ccc;
   margin-bottom: 25px;
   padding-bottom: 25px;
-}
-
-.ArtistAlbums-singles-section {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
-
-.ArtistAlbums-compilations-section {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
-
-.ArtistAlbums-appearsOn-section {
+  color: #fff;
 }

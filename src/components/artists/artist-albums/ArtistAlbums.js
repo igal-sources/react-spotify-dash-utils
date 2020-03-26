@@ -38,7 +38,7 @@ const ArtistAlbums = props => {
       </div>
       <div className="ArtistAlbums-sections">
         {albums.length > 0 && (
-          <section className="ArtistAlbums-albums-section">
+          <section className="ArtistAlbums-section">
             <h1>Albums</h1>
             <div className="ArtistAlbums-items">
               {albums.map(item => (
@@ -48,7 +48,7 @@ const ArtistAlbums = props => {
           </section>
         )}
         {singles.length > 0 && (
-          <section className="ArtistAlbums-singles-section">
+          <section className="ArtistAlbums-section">
             <h1>Singles</h1>
             <div className="ArtistAlbums-items">
               {singles.map(item => (
@@ -58,7 +58,7 @@ const ArtistAlbums = props => {
           </section>
         )}
         {compilations.length > 0 && (
-          <section className="ArtistAlbums-compilations-section">
+          <section className="ArtistAlbums-section">
             <h1>Compilations</h1>
             <div className="ArtistAlbums-items">
               {compilations.map(item => (
@@ -68,7 +68,7 @@ const ArtistAlbums = props => {
           </section>
         )}
         {appearsOn.length > 0 && (
-          <section className="ArtistAlbums-appearsOn-section">
+          <section className="ArtistAlbums-section">
             <h1>Appears On</h1>
             <div className="ArtistAlbums-items">
               {appearsOn.map(item => (

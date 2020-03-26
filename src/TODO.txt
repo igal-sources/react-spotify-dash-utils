@@ -13,6 +13,7 @@
 4. Make distinct for all api's
 5. Add translation i18.next.
 6. Add unit tests.
+7. Pass token from appRoutes.
 
 Artists: 
 Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e
