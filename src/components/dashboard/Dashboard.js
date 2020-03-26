@@ -35,7 +35,8 @@ const Dashboard = () => {
     setLoading(true);
     axios
       .all([
-        GetCurrentUsersRecentlyPlayedTracks(token, 20, tracks => {
+        GetCurrentUsersRecentlyPlayedTracks(token, 50, tracks => {
+          console.log("tracks: ", tracks);
           setPlayedTracks(tracks.items);
         }),
         fetchListOfFeaturedPlaylists(token, ({ playlists }) => {

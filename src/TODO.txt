@@ -11,6 +11,8 @@
 2. Add spinner for long process.
 3. Add PropsType to each component.
 4. Make distinct for all api's
+5. Add translation i18.next.
+6. Add unit tests.
 
 Artists: 
 Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e
