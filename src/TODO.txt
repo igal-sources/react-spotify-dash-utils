@@ -10,3 +10,10 @@
 1. Search page: convert sections to collapsible sections.
 2. Add spinner for long process.
 3. Add PropsType to each component.
+4. Make distinct for all api's
+
+Artists: 
+Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e
+Svika Pick: 7hMpCrQFkZm9Sy1S9ZwBFe
+Yehuda Poliker: 4rQnQQusV2VVuGmDTLlybe
+Elton John: 3PhoLpVuITZKcymswpck5b

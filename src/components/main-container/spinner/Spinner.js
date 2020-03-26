@@ -4,7 +4,6 @@ import classNames from "classnames";
 import "./spinner.scss";
 
 const Spinner = ({ isLoading }) => {
-  console.log("isLoading: ", isLoading);
   const loadingActiveClassName = classNames({
     active: isLoading
   });

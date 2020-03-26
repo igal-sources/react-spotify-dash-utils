@@ -8,3 +8,4 @@ export * from "./playerService";
 export * from "./playlistsService";
 export * from "./tracksService";
 export * from "./spotifyService";
+export * from "./screensService";

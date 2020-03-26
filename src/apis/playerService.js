@@ -13,8 +13,10 @@ export const GetInfoAboutUsersCurrentPlayback = (token, callback) => {
   fetchData(buildUrl(`/me/player`), token, response => callback(response));
 };
 
-export const GetCurrentUsersRecentlyPlayedTracks = (token, callback) => {
-  fetchData(buildUrl(`/me/player/recently-played?limit=50`), token, response => callback(response));
+export const GetCurrentUsersRecentlyPlayedTracks = (token, limit, callback) => {
+  fetchData(buildUrl(`/me/player/recently-played?limit=${limit}`), token, response =>
+    callback(response)
+  );
 };
 
 export const GetUsersCurrentlyPlayingTrack = (token, callback) => {

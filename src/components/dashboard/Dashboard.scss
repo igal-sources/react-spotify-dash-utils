@@ -1,0 +1,42 @@
+.Dashboard-container {
+  height: calc(100vh - 190px);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+.Dashboard-section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+
+.Dashboard-tracks-section {
+  //display: flex;
+  //flex-direction: row;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Dashboard-title {
+  flex: 0;
+}
+.Dashboard-track-items {
+  margin-top: 50px;
+  display: grid;
+  grid-auto-rows: 75px;
+}
+
+.Dashboard-items {
+  display: grid;
+  grid-template-columns: repeat(10, 100px);
+  grid-gap: 20px;
+}
+
+.Dashboard-items img {
+  width: 100px;
+  height: 100px;
+}
