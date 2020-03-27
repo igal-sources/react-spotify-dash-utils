@@ -25,7 +25,7 @@ const App = () => {
             <Sidebar />
           </Grid.Column>
           <Grid.Column className="App-content" width={14}>
-            <Routes />
+            <Routes token={localStorage.getItem("token")} />
           </Grid.Column>
         </Grid>
         <div className="App-footer">

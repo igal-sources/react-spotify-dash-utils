@@ -4,14 +4,14 @@ import Spinner from "../main-container/spinner/Spinner";
 import PlaylistItem from "./playlist-item/PlaylistItem";
 import "./playlists.scss";
 
-const Playlists = () => {
+const Playlists = ({ token }) => {
   const isCancelled = useRef(false);
   const [playlists, setPlaylists] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchPlaylist = () => {
     setLoading(true);
-    CurrentUsersPlaylists(localStorage.getItem("token"), playlists => {
+    CurrentUsersPlaylists(token, playlists => {
       setPlaylists(playlists.items);
       setLoading(false);
     });
@@ -23,6 +23,7 @@ const Playlists = () => {
     return () => {
       isCancelled.current = true;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

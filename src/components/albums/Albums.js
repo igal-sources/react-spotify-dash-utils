@@ -4,14 +4,14 @@ import { GetCurrentUsersSavedAlbums } from "apis";
 import AlbumItem from "../albums/album-item/AlbumItem";
 import "./albums.scss";
 
-const Albums = () => {
+const Albums = ({ token }) => {
   const isCancelled = useRef(false);
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchAlbums = () => {
     setLoading(true);
-    GetCurrentUsersSavedAlbums(localStorage.getItem("token"), albums => {
+    GetCurrentUsersSavedAlbums(token, albums => {
       setAlbums(albums.items);
       setLoading(false);
     });
@@ -23,6 +23,7 @@ const Albums = () => {
     return () => {
       isCancelled.current = true;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

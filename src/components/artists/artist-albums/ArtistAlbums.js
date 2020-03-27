@@ -5,14 +5,16 @@ import "./artist-albums.scss";
 
 const ArtistAlbums = props => {
   const {
-    artist: { id, name }
+    artist: { id, name },
+    token
   } = props.location.state;
+  console.log("props.location.state: ", props.location.state);
 
   const isCancelled = useRef(false);
   const [artistAlbums, setArtistAlbums] = useState([]);
 
   const fetchAlbumsByArtist = () => {
-    fetchArtistsAlbums(localStorage.getItem("token"), id, albums => {
+    fetchArtistsAlbums(token, id, albums => {
       setArtistAlbums(albums.items);
     });
   };
@@ -42,7 +44,7 @@ const ArtistAlbums = props => {
             <h1>Albums</h1>
             <div className="ArtistAlbums-items">
               {albums.map(item => (
-                <ArtistAlbumItem key={item.id} {...item} />
+                <ArtistAlbumItem key={item.id} token={token} {...item} />
               ))}
             </div>
           </section>

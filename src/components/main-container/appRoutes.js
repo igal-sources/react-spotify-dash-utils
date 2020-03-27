@@ -12,13 +12,13 @@ import ArtistSongsList from "../artists/artist-songs-list/ArtistSongsList";
 import ArtistAlbums from "../artists/artist-albums/ArtistAlbums";
 import NotFoundPage from "./not-found-page/NotFoundPage";
 
-export default () => (
+export default ({ token }) => (
   <Switch>
-    <Route exact path="/" component={Dashboard} />
-    <Route path="/search" component={Search} />
-    <Route path="/albums" component={Albums} />
-    <Route path="/artists" component={Artists} />
-    <Route path="/playlists" component={Playlists} />
+    <Route exact path="/" component={() => <Dashboard token={token} />} />
+    <Route path="/search" component={() => <Search token={token} />} />
+    <Route path="/albums" component={() => <Albums token={token} />} />
+    <Route path="/artists" component={() => <Artists token={token} />} />
+    <Route path="/playlists" component={() => <Playlists token={token} />} />
     <Route path={"/settings"} component={Settings} />
     <Route path="/playlist-songs" component={PlaylistSongsList} />
     <Route path="/artist-albums" component={ArtistAlbums} />

@@ -4,14 +4,14 @@ import ArtistsItem from "../artists/artists-item/ArtistsItem";
 import Spinner from "../main-container/spinner/Spinner";
 import "./artists.scss";
 
-const Artists = () => {
+const Artists = ({ token }) => {
   const isCancelled = useRef(false);
   const [followedArtists = [], setFollowedArtists] = useState();
   const [loading, setLoading] = useState(false);
 
   const fetchArtists = () => {
     setLoading(true);
-    fetchFollowedArtists(localStorage.getItem("token"), "artist", ({ artists }) => {
+    fetchFollowedArtists(token, "artist", ({ artists }) => {
       setFollowedArtists(artists.items);
       setLoading(false);
     });
@@ -23,6 +23,7 @@ const Artists = () => {
     return () => {
       isCancelled.current = true;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

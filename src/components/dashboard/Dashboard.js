@@ -14,7 +14,7 @@ import TrackItem from "../tracks/TrackItem";
 import Spinner from "../main-container/spinner/Spinner";
 import "./Dashboard.scss";
 
-const Dashboard = () => {
+const Dashboard = ({ token }) => {
   const isCancelled = useRef(false);
   const [playedTracks, setPlayedTracks] = useState("");
   const [playlists, setPlaylists] = useState("");
@@ -23,7 +23,6 @@ const Dashboard = () => {
   const [newReleases, setNewReleases] = useState("");
   const [recommendations, setRecommendations] = useState("");
   const [loading, setLoading] = useState(false);
-  const token = localStorage.getItem("token");
 
   const artistIds = [
     "6zFYqv1mOsgBRQbae3JJ9e",
@@ -36,7 +35,6 @@ const Dashboard = () => {
     axios
       .all([
         GetCurrentUsersRecentlyPlayedTracks(token, 50, tracks => {
-          console.log("tracks: ", tracks);
           setPlayedTracks(tracks.items);
         }),
         fetchListOfFeaturedPlaylists(token, ({ playlists }) => {

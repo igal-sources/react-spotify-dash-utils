@@ -7,7 +7,7 @@ import ArtistItem from "../artists/artists-item/ArtistsItem";
 import { search } from "apis";
 import "./search.scss";
 
-const Search = () => {
+const Search = ({ token }) => {
   const [searchResults, setSearchResults] = useState({});
   const [searchValue, setSearchValue] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -30,16 +30,10 @@ const Search = () => {
     // keyCode:13 = Enter
     if (event.keyCode === 13) {
       setLoading(true);
-      search(
-        localStorage.getItem("token"),
-        searchValue,
-        "album,artist,playlist,track",
-        20,
-        result => {
-          setSearchResults(result);
-          setLoading(false);
-        }
-      );
+      search(token, searchValue, "album,artist,playlist,track", 20, result => {
+        setSearchResults(result);
+        setLoading(false);
+      });
     }
   };
 
