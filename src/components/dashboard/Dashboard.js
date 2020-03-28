@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 import {
   GetCurrentUsersRecentlyPlayedTracks,
   fetchListOfFeaturedPlaylists,
@@ -15,6 +16,7 @@ import Spinner from "../main-container/spinner/Spinner";
 import "./Dashboard.scss";
 
 const Dashboard = ({ token }) => {
+  const { t } = useTranslation();
   const isCancelled = useRef(false);
   const [playedTracks, setPlayedTracks] = useState("");
   const [playlists, setPlaylists] = useState("");
@@ -72,7 +74,7 @@ const Dashboard = ({ token }) => {
         <Spinner isLoading={loading} />
         {playedTracks && playedTracks.length > 0 && (
           <section className="Dashboard-section">
-            <h1>Recently played</h1>
+            <h1>{t("recently-played")}</h1>
             <div className="Dashboard-items">
               {playedTracks.map(({ track, track: { album } }, index) => (
                 <AlbumItem key={index} name={track.name} images={album.images} id={album.id} />
@@ -82,7 +84,7 @@ const Dashboard = ({ token }) => {
         )}
         {playlists && playlists.length > 0 && (
           <section className="Dashboard-section">
-            <h1>Popular playlists</h1>
+            <h1>{t("popular-playlists")}</h1>
             <div className="Dashboard-items">
               {playlists.map(({ name, images, id }, index) => (
                 <PlaylistItem key={index} name={name} images={images} id={id} />
@@ -92,7 +94,7 @@ const Dashboard = ({ token }) => {
         )}
         {topArtists && topArtists.length > 0 && (
           <section className="Dashboard-section">
-            <h1>Top Artists</h1>
+            <h1>{t("top-artists")}</h1>
             <div className="Dashboard-items">
               {topArtists.map(({ name, images, id }, index) => (
                 <ArtistsItem key={index} name={name} images={images} id={id} />
@@ -102,7 +104,7 @@ const Dashboard = ({ token }) => {
         )}
         {topTracks && topTracks.length > 0 && (
           <section className="Dashboard-tracks-section">
-            <h1>Top Tracks</h1>
+            <h1>{t("top-tracks")}</h1>
             <div className="Dashboard-track-items">
               {topTracks.map((track, index) => (
                 <TrackItem key={index} {...track} />
@@ -112,7 +114,7 @@ const Dashboard = ({ token }) => {
         )}
         {newReleases && newReleases.length > 0 && (
           <section className="Dashboard-section">
-            <h1>New Releases</h1>
+            <h1>{t("new-releases")}</h1>
             <div className="Dashboard-items">
               {newReleases.map(({ name, images, id }, index) => (
                 <AlbumItem key={index} name={name} images={images} id={id} />
@@ -122,7 +124,7 @@ const Dashboard = ({ token }) => {
         )}
         {recommendations && recommendations.length > 0 && (
           <section className="Dashboard-section">
-            <h1>Recommendations</h1>
+            <h1>{t("recommendations")}</h1>
             <div className="Dashboard-items">
               {recommendations.map(({ name, album: { images, id } }, index) => (
                 <AlbumItem key={index} name={name} images={images} id={id} />

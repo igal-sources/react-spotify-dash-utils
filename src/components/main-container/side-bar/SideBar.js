@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 import allActions from "actions";
 import classNames from "classnames";
 import * as types from "shared/types";
@@ -8,6 +9,7 @@ import { VIEW_TYPE } from "shared/types";
 import "./side-bar.scss";
 
 const Sidebar = () => {
+  const { t } = useTranslation();
   const { pathname } = useLocation();
   const path = pathname.split("/").pop();
   const dispatch = useDispatch();
@@ -43,28 +45,28 @@ const Sidebar = () => {
   return (
     <div className="Sidebar-container">
       <Link to="/" onClick={() => setPathTitle(VIEW_TYPE.DASHBOARD)} className={dashboardClassName}>
-        Home
+        {t("home")}
       </Link>
       <Link to="/search" onClick={() => setPathTitle(VIEW_TYPE.SEARCH)} className={searchClassName}>
-        Search
+        {t("search")}
       </Link>
       <hr />
       <Link to="/albums" onClick={() => setPathTitle(VIEW_TYPE.ALBUMS)} className={albumsClassName}>
-        Albums
+        {t("albums")}
       </Link>
       <Link
         to="/artists"
         onClick={() => setPathTitle(VIEW_TYPE.ARTISTS)}
         className={artistsClassName}
       >
-        Artists
+        {t("artists")}
       </Link>
       <Link
         to="/playlists"
         onClick={() => setPathTitle(VIEW_TYPE.PLAYLIST)}
         className={playlistsClassName}
       >
-        Playlists
+        {t("playlists")}
       </Link>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Spinner from "../main-container/spinner/Spinner";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
 import AlbumItem from "../albums/album-item/AlbumItem";
@@ -8,6 +9,7 @@ import { search } from "apis";
 import "./search.scss";
 
 const Search = ({ token }) => {
+  const { t } = useTranslation();
   const [searchResults, setSearchResults] = useState({});
   const [searchValue, setSearchValue] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -43,7 +45,7 @@ const Search = ({ token }) => {
         <input
           type="text"
           className="Search__input"
-          placeholder="Search for music..."
+          placeholder={t("search-for-music")}
           onKeyDown={doSearch}
           onChange={handleChange}
           value={searchValue}
@@ -54,7 +56,7 @@ const Search = ({ token }) => {
         <Spinner isLoading={loading} />
         {albumItems && albumItems.length > 0 && (
           <section className="Search-section album">
-            <h1>Albums</h1>
+            <h1>{t("albums")}</h1>
             <div className="Search-items">
               {albumItems.map(item => (
                 <AlbumItem key={item.id} {...item} />
@@ -64,7 +66,7 @@ const Search = ({ token }) => {
         )}
         {artistsItems && artistsItems.length > 0 && (
           <section className="Search-section">
-            <h1>Artists</h1>
+            <h1>{t("artists")}</h1>
             <div className="Search-items">
               {artistsItems.map(item => (
                 <ArtistItem key={item.id} {...item} />
@@ -74,7 +76,7 @@ const Search = ({ token }) => {
         )}
         {tracksItems && tracksItems.length > 0 && (
           <section className="Search-tracks-section">
-            <h1>Tracks</h1>
+            <h1>{t("tracks")}</h1>
             <div className="Search-track-items">
               {tracksItems.map(item => (
                 <TrackItem key={item.id} {...item} />
@@ -84,7 +86,7 @@ const Search = ({ token }) => {
         )}
         {playlistsItems && playlistsItems.length > 0 && (
           <section className="Search-section">
-            <h1>Playlists</h1>
+            <h1>{t("playlists")}</h1>
             <div className="Search-items">
               {playlistsItems.map(item => (
                 <PlaylistItem key={item.id} {...item} />
