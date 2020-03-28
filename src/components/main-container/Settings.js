@@ -7,7 +7,7 @@ const Settings = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <h1>Settings</h1>
+      <h1>{t("settings")}</h1>
       <Button
         id="Modal-Translation-Button-he"
         floated="left"

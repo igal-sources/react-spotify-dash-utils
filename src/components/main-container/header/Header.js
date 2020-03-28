@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Menu, Icon } from "semantic-ui-react";
 import Logout from "../logout/Logout";
 import allActions from "actions";
@@ -10,6 +11,7 @@ import { fetchUser } from "apis/spotifyService";
 import "./header.scss";
 
 const Header = () => {
+  const { t } = useTranslation();
   const authorizeUrl = `${config.AUTHORIZE_URL}?client_id=${config.CLIENT_ID}&redirect_uri=${config.REDIRECT_URI}&scope=${config.SCOPE}&response_type=token`;
   const { pathname } = useLocation();
   const history = useHistory();
@@ -49,7 +51,7 @@ const Header = () => {
     <>
       <Menu id="Header-mainMenu" className="Header-mainMenu">
         <div className="Header-type-title">
-          <h2>{headerTitle}</h2>
+          <h2>{t(headerTitle.toLowerCase())}</h2>
         </div>
         <Menu.Item
           position="right"
@@ -60,7 +62,7 @@ const Header = () => {
         >
           <Icon id="Header-settings-tooltip" size="big" name="setting" />
         </Menu.Item>
-        <Menu.Item as={Logout}></Menu.Item>
+        <Menu.Item as={Logout} />
       </Menu>
     </>
   );

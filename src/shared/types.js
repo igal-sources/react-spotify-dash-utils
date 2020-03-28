@@ -21,7 +21,7 @@ export const HTTP = {
 
 export const VIEW_TYPE = {
   DASHBOARD: "Home",
-  PLAYLIST: "Playlist",
+  PLAYLIST: "Playlists",
   ALBUMS: "Albums",
   ARTISTS: "Artists",
   PODCASTS: "Podcasts",
