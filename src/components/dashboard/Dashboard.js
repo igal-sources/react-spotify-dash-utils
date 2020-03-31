@@ -59,7 +59,6 @@ const Dashboard = ({ token }) => {
     setLoading(false);
   };
 
-  //getArtistIds();
   useEffect(() => {
     !isCancelled.current && fetchData(token, data => {});
     return () => {

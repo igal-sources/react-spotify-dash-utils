@@ -58,7 +58,7 @@ const Header = () => {
           className="Header-menuItem-settings"
           active={pathname.startsWith("settings", 1)}
           as={Link}
-          to={"/settings"}
+          to={"/settings/account"}
         >
           <Icon id="Header-settings-tooltip" size="big" name="setting" />
         </Menu.Item>

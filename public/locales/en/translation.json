@@ -24,5 +24,12 @@
   "top-tracks": "Top Tracks",
   "new-releases": "New Releases",
   "recommendations": "Recommendations",
-  "settings": "Settings"
+  "settings": "Settings",
+  "account": "Account",
+  "languages": "Languages",
+  "user-id": "User ID: ",
+  "user-name": "Name: ",
+  "user-email": "Email: ",
+  "user-type": "type: ",
+  "user-country": "Country: "
 }

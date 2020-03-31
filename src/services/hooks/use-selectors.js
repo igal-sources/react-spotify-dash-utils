@@ -1,5 +1,10 @@
 import { useSelector } from "react-redux";
 
+export const useUser = () => {
+  const { user = {} } = useSelector(state => state.currentUser);
+  return user;
+};
+
 export const useUserMail = () => {
   const { user: { email } = {} } = useSelector(state => state.currentUser);
   return email;

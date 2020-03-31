@@ -1,0 +1,35 @@
+.Account-profile-container {
+  box-shadow: 0 0 10px 2px;
+  background-color: #96b8b8;
+  width: 80%;
+  height: 100%;
+}
+.Account-user-image {
+  text-align: center;
+}
+.Account-user-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.Account-details {
+  display: grid;
+  grid-template-columns: 100px 250px;
+  grid-template-rows: repeat(4, 40px);
+  //grid-gap: 10px;
+  padding-left: 15px;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+}
+
+.Account-country {
+  display: inline-block;
+}
+
+#country-name {
+  display: inline-block;
+  margin-right: 50px;
+}
+#country-flag {
+  display: inline-block;
+}

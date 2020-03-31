@@ -5,7 +5,7 @@ import Search from "../search/Search";
 import Albums from "../albums/Albums";
 import Artists from "../artists/Artists";
 import Playlists from "../playlists/Playlists";
-import Settings from "../main-container/Settings";
+import Settings from "./settings-page/Settings";
 import PlaylistSongsList from "../playlists/playlist-songs/PlaylistSongsList";
 import AlbumSongsList from "../albums/album-songs-list/AlbumSongsList";
 import ArtistSongsList from "../artists/artist-songs-list/ArtistSongsList";
@@ -19,7 +19,7 @@ export default ({ token }) => (
     <Route path="/albums" component={() => <Albums token={token} />} />
     <Route path="/artists" component={() => <Artists token={token} />} />
     <Route path="/playlists" component={() => <Playlists token={token} />} />
-    <Route path={"/settings"} component={Settings} />
+    <Route path="/settings/account" component={Settings} />
     <Route path="/playlist-songs" component={PlaylistSongsList} />
     <Route path="/artist-albums" component={ArtistAlbums} />
     <Route path="/artist-songs" component={ArtistSongsList} />
