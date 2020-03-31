@@ -26,7 +26,7 @@ const SettingsSideBar = () => {
             {t("user-profile")}
           </Link>
           <Link to="/settings/languages" className={languagesClassName}>
-            {t("languages")}
+            {t("translation")}
           </Link>
         </div>
       </Route>

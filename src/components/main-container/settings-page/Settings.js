@@ -3,6 +3,7 @@ import { Grid } from "semantic-ui-react";
 import { BrowserRouter } from "react-router-dom";
 import SettingsSideBar from "./settings-side-bar/SettingsSideBar";
 import Routes from "./SettingsRoutes";
+import "./settings.scss";
 
 const Settings = () => {
   return (
@@ -12,7 +13,7 @@ const Settings = () => {
           <Grid.Column className="Settings-sidebar" width={2}>
             <SettingsSideBar />
           </Grid.Column>
-          <Grid.Column className="Settings-content" width={14}>
+          <Grid.Column className="Settings-content" width={10}>
             <Routes />
           </Grid.Column>
         </Grid>

@@ -1,6 +1,7 @@
 {
   "HE": "HE (Hebrew)",
   "EN": "EN (English)",
+  "RO": "RO (Romanian)",
   "YES": "Yes",
   "NO": "No",
   "oops": "Oops!",
@@ -26,7 +27,7 @@
   "recommendations": "Recommendations",
   "settings": "Settings",
   "user-profile": "User Profile",
-  "languages": "Languages",
+  "translation": "Translation",
   "user-id": "User ID: ",
   "user-name": "Name: ",
   "user-email": "Email: ",
