@@ -4,13 +4,13 @@ This is a example to demonstrate how to use **React**, **Redux**, **Hooks** in R
 Hooks API is a new addition in React 16.8.<br />They allow us to use state and other
 features in React Function Component.
 
-Libraries:
+Libraries:<br />
 **Redux** - is a predictable state container for JavaScript apps.<br />
 **Semantic UI React** - provides UI React components.<br />
 **axios** - a library that helps us make http requests to external resources.<br />
 **classnames** - A simple JavaScript utility for conditionally joining classNames together.<br />
 **i18next** - is an internationalization-framework written in and for JavaScript.<br />
-It provides you with a complete solution to localize your product from web to mobile and desktop.
+It provides you with a complete solution to localize your product from<br />web to mobile and desktop.
 
 ## Features:
 
@@ -22,7 +22,7 @@ It provides you with a complete solution to localize your product from web to mo
         <Link> is the primary way to allow users to navigate around your application.
         <Link> will render a fully accessible anchor tag with the proper href.
 
-**AppRoutes** - contains routes to all screens.
+**AppRoutes** - contains routes to all screens.<br />
 **Footer** - contains Spotify web Player.
 
 #### Application screens:
