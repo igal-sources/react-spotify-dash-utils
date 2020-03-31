@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React Redux Hooks Spotify sample project.
 
-## Available Scripts
+This is a example to demonstrate how to use **React**, **Redux**, **Hooks** in React Project.<br />
+Hooks API is a new addition in React 16.8. They allow us to use state and other
+features in React Function Component.
 
-In the project directory, you can run:
+Libraries:
+**Redux** - is a predictable state container for JavaScript apps.
+**Semantic UI React** - provides UI React components.
+**axios** - a library that helps us make http requests to external resources.
+**classnames** - A simple JavaScript utility for conditionally joining classNames together.
+**i18next** - is an internationalization-framework written in and for JavaScript.
+It provides you with a complete solution to localize your product from web to mobile and desktop.
 
-### `yarn start`
+## Features:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Main Screen contains:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Header** - handle screen name, navigate to settings, user display name and logout when clicking on user circle.
+**Sidebar** - contains list of **<Link>** items works with react-router-dom.
 
-### `yarn test`
+        <Link> is the primary way to allow users to navigate around your application.
+        <Link> will render a fully accessible anchor tag with the proper href.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**AppRoutes** - contains routes to all screens.
+**Footer** - contains Spotify web Player.
 
-### `yarn build`
+#### Application screens:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        Home - contains: Recently Played, popular Playlists, Top Artists,
+               Top Tracks, New Releases and Recommendations.
+        Search - Search for artists, albums and playlists (hit enter when done).
+        Albums - All current users saved albums.
+        Artists - All user followed artists.
+        Playlists - All current users playlists.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Settings** - contains **user profile** details and **change language** components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- All component written as functional components.
+- React Hooks to manage the component lifecycle.
+- The project connect to **_Spotify API_** with **_axios_** library
 
-### `yarn eject`
+### Installation:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Github link - [react-spotify-dash-utils](https://github.com/igal-sources/react-spotify-dash-utils)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- run `git clone https://github.com/igal-sources/react-spotify-dash-utils.git`
+- run `npm install` - to create all node_modules.
+- run `npm start` (make sure that the app is running under http://localhost:3000).
