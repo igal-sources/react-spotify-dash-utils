@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -58,7 +58,8 @@ const Header = () => {
           className="Header-menuItem-settings"
           active={pathname.startsWith("settings", 1)}
           as={Link}
-          to={"/settings/account"}
+          to={"/settings/user-profile"}
+          onClick={() => dispatch(allActions.uiActions.updateViewType("settings"))}
         >
           <Icon id="Header-settings-tooltip" size="big" name="setting" />
         </Menu.Item>

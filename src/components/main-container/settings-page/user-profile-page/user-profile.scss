@@ -1,0 +1,66 @@
+.UserProfile-container {
+  display: flex;
+  box-shadow: 0 0 10px 2px;
+  background-color: #96b8b8;
+  margin-top: 50px;
+  width: 55vw;
+  height: 55vh;
+}
+
+.UserProfile-body-item {
+  flex: 1 1 2;
+  padding: 50px;
+}
+
+.UserProfile-body-item.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.UserProfile-body-item.right {
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.UserProfile-title {
+  display: inline-block;
+  position: relative;
+  font-size: 26px;
+}
+
+.UserProfile-user-name {
+  padding-left: 80px;
+}
+
+.UserProfile-user-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+.UserProfile-user-image img {
+  border-radius: 35px;
+  width: 180px;
+  height: 180px;
+}
+
+.UserProfile-details {
+  display: grid;
+  grid-template-columns: 100px 250px;
+  grid-template-rows: repeat(4, 40px);
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+}
+
+.UserProfile-country {
+  display: inline-block;
+}
+
+#country-name {
+  display: inline-block;
+  margin-right: 50px;
+}
+#country-flag {
+  display: inline-block;
+}

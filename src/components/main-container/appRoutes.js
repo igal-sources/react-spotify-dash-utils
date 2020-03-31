@@ -19,7 +19,7 @@ export default ({ token }) => (
     <Route path="/albums" component={() => <Albums token={token} />} />
     <Route path="/artists" component={() => <Artists token={token} />} />
     <Route path="/playlists" component={() => <Playlists token={token} />} />
-    <Route path="/settings/account" component={Settings} />
+    <Route path="/settings/user-profile" component={Settings} />
     <Route path="/playlist-songs" component={PlaylistSongsList} />
     <Route path="/artist-albums" component={ArtistAlbums} />
     <Route path="/artist-songs" component={ArtistSongsList} />

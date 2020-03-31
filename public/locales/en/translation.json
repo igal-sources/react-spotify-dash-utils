@@ -25,11 +25,11 @@
   "new-releases": "New Releases",
   "recommendations": "Recommendations",
   "settings": "Settings",
-  "account": "Account",
+  "user-profile": "User Profile",
   "languages": "Languages",
   "user-id": "User ID: ",
   "user-name": "Name: ",
   "user-email": "Email: ",
-  "user-type": "type: ",
+  "user-type": "Type: ",
   "user-country": "Country: "
 }

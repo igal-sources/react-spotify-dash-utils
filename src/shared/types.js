@@ -26,5 +26,7 @@ export const VIEW_TYPE = {
   ARTISTS: "Artists",
   PODCASTS: "Podcasts",
   TRACKS: "Tracks",
-  SEARCH: "Search"
+  SEARCH: "Search",
+  PROFILE: "Profile",
+  LANGUAGES: "Languages"
 };
