@@ -1,22 +1,22 @@
 ## React Redux Hooks Spotify sample project.
 
 This is a example to demonstrate how to use **React**, **Redux**, **Hooks** in React Project.<br />
-Hooks API is a new addition in React 16.8. They allow us to use state and other
+Hooks API is a new addition in React 16.8.<br />They allow us to use state and other
 features in React Function Component.
 
 Libraries:
-**Redux** - is a predictable state container for JavaScript apps.
-**Semantic UI React** - provides UI React components.
-**axios** - a library that helps us make http requests to external resources.
-**classnames** - A simple JavaScript utility for conditionally joining classNames together.
-**i18next** - is an internationalization-framework written in and for JavaScript.
+**Redux** - is a predictable state container for JavaScript apps.<br />
+**Semantic UI React** - provides UI React components.<br />
+**axios** - a library that helps us make http requests to external resources.<br />
+**classnames** - A simple JavaScript utility for conditionally joining classNames together.<br />
+**i18next** - is an internationalization-framework written in and for JavaScript.<br />
 It provides you with a complete solution to localize your product from web to mobile and desktop.
 
 ## Features:
 
 #### Main Screen contains:
 
-**Header** - handle screen name, navigate to settings, user display name and logout when clicking on user circle.
+**Header** - handle screen name, navigate to settings, user display name and logout when clicking on user circle.<br />
 **Sidebar** - contains list of **<Link>** items works with react-router-dom.
 
         <Link> is the primary way to allow users to navigate around your application.
@@ -27,7 +27,7 @@ It provides you with a complete solution to localize your product from web to mo
 
 #### Application screens:
 
-        Home - contains: Recently Played, popular Playlists, Top Artists,
+        Home - contains: Recently Played, Popular Playlists, Top Artists,
                Top Tracks, New Releases and Recommendations.
         Search - Search for artists, albums and playlists (hit enter when done).
         Albums - All current users saved albums.
