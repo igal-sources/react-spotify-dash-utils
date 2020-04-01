@@ -3,13 +3,39 @@ import { shallow } from "enzyme";
 import AlbumItem from "./AlbumItem";
 
 describe("Test AlbumItem functionality", () => {
-  const wrapper = shallow(<AlbumItem />);
+  const album = {
+    album_type: "album",
+    id: "63RFu6O3lPLu74zJ4s5d7L",
+    images: [
+      {
+        height: 640,
+        url: "https://i.scdn.co/image/ab67616d0000b273c8379b92a211d2c00d266c8d",
+        width: 640
+      },
+      {
+        height: 300,
+        url: "https://i.scdn.co/image/ab67616d00001e02c8379b92a211d2c00d266c8d",
+        width: 300
+      },
+      {
+        height: 64,
+        url: "https://i.scdn.co/image/ab67616d00004851c8379b92a211d2c00d266c8d",
+        width: 64
+      }
+    ],
+    label: "earMUSIC",
+    name: "Live in Concert",
+    popularity: 25,
+    release_date: "2019-02-15",
+    release_date_precision: "day",
+    total_tracks: 12,
+    type: "album",
+    uri: "spotify:album:63RFu6O3lPLu74zJ4s5d7L"
+  };
 
-  // it("should check that modal is rendering the text", () => {
-  //   expect(findByIdAttr(wrapper, "ConfirmLogout-text")).toHaveLength(1);
-  // });
+  const wrapper = shallow(<AlbumItem {...album} />);
 
-  // it("should check that the component renders 2 buttons", () => {
-  //   expect(wrapper.find(Button)).toHaveLength(2);
-  // });
+  it("should check artist name is rendering", () => {
+    expect(wrapper.find(".AlbumItem-name").text()).toEqual("Live in Concert");
+  });
 });
