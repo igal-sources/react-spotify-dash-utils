@@ -1,0 +1,1244 @@
+[
+  {
+    "collaborative": false,
+    "description": "The great masterpieces of the genre.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6xOPeSOGone" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6xOPeSOGone",
+    "id": "37i9dQZF1DX6xOPeSOGone",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f000000028f7cea2939220d6a326924fa",
+        "width": null
+      }
+    ],
+    "name": "Soft Rock",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6xOPeSOGone/tracks",
+      "total": 100
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX6xOPeSOGone"
+  },
+  {
+    "collaborative": false,
+    "description": "The songs you can’t get enough of right now.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1EpqYuJ0AvCuYv" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EpqYuJ0AvCuYv",
+    "id": "37i9dQZF1EpqYuJ0AvCuYv",
+    "images": [
+      {
+        "height": null,
+        "url": "https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_DEFAULT-en.jpg",
+        "width": null
+      }
+    ],
+    "name": "On Repeat",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTUzNzE5NywwMDAwMDAwMDdhYWU5Y2Y5NWEwYmI4YmU0NWNhZWZmNDRmODgyNDRm",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EpqYuJ0AvCuYv/tracks",
+      "total": 30
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1EpqYuJ0AvCuYv"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/5DcueYRZ75oECtBHvLSe8J" },
+    "href": "https://api.spotify.com/v1/playlists/5DcueYRZ75oECtBHvLSe8J",
+    "id": "5DcueYRZ75oECtBHvLSe8J",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/9059e528062f96215b8c74e78fc6dcda36827ca1",
+        "width": 640
+      }
+    ],
+    "name": "Pod",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "Miw5MzAzMTIxYTU0NjgyMDM1NTc5OWMzYjM3YzM5ZDFlMTc3ZTJiMzI5",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/5DcueYRZ75oECtBHvLSe8J/tracks",
+      "total": 1
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:5DcueYRZ75oECtBHvLSe8J"
+  },
+  {
+    "collaborative": false,
+    "description": "Chill to the familiar <a href=\"http://open.spotify.com/genre/classical\">classical</a> pieces featured in award-winning films.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6K3W8KBiALe" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6K3W8KBiALe",
+    "id": "37i9dQZF1DX6K3W8KBiALe",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f0000000279916a9b160032075488fe9e",
+        "width": null
+      }
+    ],
+    "name": "Classical Moments in Movies",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU3MTM4ODA3MCwwMDAwMDAwZTAwMDAwMTZkZGUwNzFhZDEwMDAwMDE2ZDE1MmVmZTVl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6K3W8KBiALe/tracks",
+      "total": 72
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX6K3W8KBiALe"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/2HKLFjE3pqNtikwCOk0CnJ" },
+    "href": "https://api.spotify.com/v1/playlists/2HKLFjE3pqNtikwCOk0CnJ",
+    "id": "2HKLFjE3pqNtikwCOk0CnJ",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b27305c5be85b64eaff732f7cb0bab67616d0000b27334ef8f7d06cf2fc2146f420aab67616d0000b273c8a11e48c91a982d086afc69ab67616d0000b273fbcaf7402f38faac27610efc",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b27305c5be85b64eaff732f7cb0bab67616d0000b27334ef8f7d06cf2fc2146f420aab67616d0000b273c8a11e48c91a982d086afc69ab67616d0000b273fbcaf7402f38faac27610efc",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b27305c5be85b64eaff732f7cb0bab67616d0000b27334ef8f7d06cf2fc2146f420aab67616d0000b273c8a11e48c91a982d086afc69ab67616d0000b273fbcaf7402f38faac27610efc",
+        "width": 60
+      }
+    ],
+    "name": "Igal Top 500 Rock And Roll Songs",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "Nyw5MTZmYzFkODkyMzE1NDE2ZWY3MzMxMzQ0OTk2ZmM4OWFmYmI2MWNk",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/2HKLFjE3pqNtikwCOk0CnJ/tracks",
+      "total": 485
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:2HKLFjE3pqNtikwCOk0CnJ"
+  },
+  {
+    "collaborative": false,
+    "description": "Playlist created with Playlist Converter http:&#x2F;&#x2F;www.playlist-converter.net",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/2nJv9Fh73rrApVOkxEAYBG" },
+    "href": "https://api.spotify.com/v1/playlists/2nJv9Fh73rrApVOkxEAYBG",
+    "id": "2nJv9Fh73rrApVOkxEAYBG",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b273288d32d88a616b9a278ddc07ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b273e8dd4db47e7177c63b0b7d53",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b273288d32d88a616b9a278ddc07ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b273e8dd4db47e7177c63b0b7d53",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2731bb21d27effb96a1d0fe8d6dab67616d0000b273288d32d88a616b9a278ddc07ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b273e8dd4db47e7177c63b0b7d53",
+        "width": 60
+      }
+    ],
+    "name": "Igal The 80's",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "NCwxMmQ0YjEzM2E4ZDkyNDFhNDc3MGU0MTQxY2RhMGNhNDVjMDY2YjU3",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/2nJv9Fh73rrApVOkxEAYBG/tracks",
+      "total": 95
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:2nJv9Fh73rrApVOkxEAYBG"
+  },
+  {
+    "collaborative": false,
+    "description": "Playlist created with Playlist Converter http:&#x2F;&#x2F;www.playlist-converter.net",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/2LYuFn8eviKlbBSGVMlSgl" },
+    "href": "https://api.spotify.com/v1/playlists/2LYuFn8eviKlbBSGVMlSgl",
+    "id": "2LYuFn8eviKlbBSGVMlSgl",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2731f7077ae1018b5fbab08dfa8ab67616d0000b2736c86683d20c72e3874c11c6dab67616d0000b27384243a01af3c77b56fe01ab1ab67616d0000b273b11078ee23dcd99e085ac33e",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2731f7077ae1018b5fbab08dfa8ab67616d0000b2736c86683d20c72e3874c11c6dab67616d0000b27384243a01af3c77b56fe01ab1ab67616d0000b273b11078ee23dcd99e085ac33e",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2731f7077ae1018b5fbab08dfa8ab67616d0000b2736c86683d20c72e3874c11c6dab67616d0000b27384243a01af3c77b56fe01ab1ab67616d0000b273b11078ee23dcd99e085ac33e",
+        "width": 60
+      }
+    ],
+    "name": "Igal The 70's",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "NCw2MTBhMjJkZTc4OGI0YmFjY2E1NzdmOTQyZGI5ZmJmZWZkN2JmOGU2",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/2LYuFn8eviKlbBSGVMlSgl/tracks",
+      "total": 97
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:2LYuFn8eviKlbBSGVMlSgl"
+  },
+  {
+    "collaborative": false,
+    "description": "This is Mashina. The essential tracks, all in one playlist.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4jT0dB" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO4jT0dB",
+    "id": "37i9dQZF1DZ06evO4jT0dB",
+    "images": [
+      {
+        "height": null,
+        "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4jT0dB-default.jpg",
+        "width": null
+      }
+    ],
+    "name": "This Is Mashina",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjY0Mjc4MTEsMDAwMDAwMDA1NTNkN2JlYjM3YzU2YzExODliNmFhNjM5ZjU4Mjc2NQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO4jT0dB/tracks",
+      "total": 49
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DZ06evO4jT0dB"
+  },
+  {
+    "collaborative": false,
+    "description": "מהביטלז ועד החלונות הגבוהים, המוזיקה שעשתה לנו את שנות הששים",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaJmcuknJxuI" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaJmcuknJxuI",
+    "id": "37i9dQZF1DXaJmcuknJxuI",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f0000000246a1a4c5473cd5ee9937c7bd",
+        "width": null
+      }
+    ],
+    "name": "הכי סיקסטיז",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4MzMxNTM5MywwMDAwMDAwMjAwMDAwMTYzNWFiYzY2NDYwMDAwMDE3MGE0ZjM5ZDEy",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaJmcuknJxuI/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DXaJmcuknJxuI"
+  },
+  {
+    "collaborative": false,
+    "description": "מתיסלם ועד זהר ארגוב, המוזיקה הישראלית שעשתה לנו את שנות השמונים",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3pBzoYYAqhy" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3pBzoYYAqhy",
+    "id": "37i9dQZF1DX3pBzoYYAqhy",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002cfe7ffe651fd80c8d604ba3c",
+        "width": null
+      }
+    ],
+    "name": "הכי אייטיז ישראלי",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3pBzoYYAqhy/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX3pBzoYYAqhy"
+  },
+  {
+    "collaborative": false,
+    "description": "מכוורת ועד עוזי פוקס, המוזיקה הישראלית שעשתה לנו את שנות השבעים",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6RBSNNUwAXu" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6RBSNNUwAXu",
+    "id": "37i9dQZF1DX6RBSNNUwAXu",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002a5a4835d10469d218b6da3c2",
+        "width": null
+      }
+    ],
+    "name": "הכי סבנטיז ישראלי",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6RBSNNUwAXu/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX6RBSNNUwAXu"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/319JXAIDUBD5GyOxgOCgFh" },
+    "href": "https://api.spotify.com/v1/playlists/319JXAIDUBD5GyOxgOCgFh",
+    "id": "319JXAIDUBD5GyOxgOCgFh",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2736334b723f809a8b1de2b475cab67616d0000b273abe432be51d3e8d6be65abf9ab67616d0000b273c4295214705f09d88f9d88f0ab67616d0000b273c5528d7f27103d7d8554b7ea",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2736334b723f809a8b1de2b475cab67616d0000b273abe432be51d3e8d6be65abf9ab67616d0000b273c4295214705f09d88f9d88f0ab67616d0000b273c5528d7f27103d7d8554b7ea",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2736334b723f809a8b1de2b475cab67616d0000b273abe432be51d3e8d6be65abf9ab67616d0000b273c4295214705f09d88f9d88f0ab67616d0000b273c5528d7f27103d7d8554b7ea",
+        "width": 60
+      }
+    ],
+    "name": "The Live Collection - Igal",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "OTcsNjg5ODk2NGFhYzZlMTE2Mzc2YjZkOTdlYjYzMWUwNTVlMmFkN2MwZA==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/319JXAIDUBD5GyOxgOCgFh/tracks",
+      "total": 96
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:319JXAIDUBD5GyOxgOCgFh"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/6Fo85cepXGintgOz48dWXA" },
+    "href": "https://api.spotify.com/v1/playlists/6Fo85cepXGintgOz48dWXA",
+    "id": "6Fo85cepXGintgOz48dWXA",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2736334b723f809a8b1de2b475c",
+        "width": 640
+      }
+    ],
+    "name": "Queen - Live at LIVE AID 1985/07/13",
+    "owner": {
+      "display_name": "Bradley Burgess",
+      "external_urls": { "spotify": "https://open.spotify.com/user/12164006481" },
+      "href": "https://api.spotify.com/v1/users/12164006481",
+      "id": "12164006481",
+      "type": "user",
+      "uri": "spotify:user:12164006481"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTgsYTViZDdmYTJjMjI0ZjdlOGVjNjQxMTAxM2FmZmQxMmQ1ZDEwMjljOQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/6Fo85cepXGintgOz48dWXA/tracks",
+      "total": 10
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:6Fo85cepXGintgOz48dWXA"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/3S3OybxVydXOMKHM4Dl5Rt" },
+    "href": "https://api.spotify.com/v1/playlists/3S3OybxVydXOMKHM4Dl5Rt",
+    "id": "3S3OybxVydXOMKHM4Dl5Rt",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2736b952fb378c401d404e38254",
+        "width": 640
+      }
+    ],
+    "name": "Jeff Lynne's ELO Live at Wembley",
+    "owner": {
+      "display_name": "Simon.foster",
+      "external_urls": { "spotify": "https://open.spotify.com/user/sm0msy7ynb6ypg4thtvkrn436" },
+      "href": "https://api.spotify.com/v1/users/sm0msy7ynb6ypg4thtvkrn436",
+      "id": "sm0msy7ynb6ypg4thtvkrn436",
+      "type": "user",
+      "uri": "spotify:user:sm0msy7ynb6ypg4thtvkrn436"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjgsNTZiNTEwNDg4NGY2OTllNWNkMTRkZWE3NmNjYTJjY2RmMzc5NjQ4Ng==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/3S3OybxVydXOMKHM4Dl5Rt/tracks",
+      "total": 24
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:3S3OybxVydXOMKHM4Dl5Rt"
+  },
+  {
+    "collaborative": false,
+    "description": "Set-list of Phil Collins&#x27; concert at Paris during the Not Dead Yet 2017 Tour.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/7yBmPCA6EAQ1jzppZHRAuV" },
+    "href": "https://api.spotify.com/v1/playlists/7yBmPCA6EAQ1jzppZHRAuV",
+    "id": "7yBmPCA6EAQ1jzppZHRAuV",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273afb2336a131ddabdc6dd2bc1ab67616d0000b273d4b690876e5c7ba50447e6fcab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273afb2336a131ddabdc6dd2bc1ab67616d0000b273d4b690876e5c7ba50447e6fcab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273afb2336a131ddabdc6dd2bc1ab67616d0000b273d4b690876e5c7ba50447e6fcab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 60
+      }
+    ],
+    "name": "Phil Collins Live In Paris - 19/06/2017",
+    "owner": {
+      "display_name": "Martí Mvñoz Alejandro",
+      "external_urls": { "spotify": "https://open.spotify.com/user/martif1" },
+      "href": "https://api.spotify.com/v1/users/martif1",
+      "id": "martif1",
+      "type": "user",
+      "uri": "spotify:user:martif1"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjIsODAwMmFlNzBjYmM1ZjQyNTk3YjU1MWRjOGU0ODU3MTFiZDZjMGFmZg==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/7yBmPCA6EAQ1jzppZHRAuV/tracks",
+      "total": 19
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:7yBmPCA6EAQ1jzppZHRAuV"
+  },
+  {
+    "collaborative": false,
+    "description": "Hit the road to the soundtrack of these seventies classics.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWiDhnQ2IIru" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWiDhnQ2IIru",
+    "id": "37i9dQZF1DWWiDhnQ2IIru",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f000000021b84822d2ae33438903454df",
+        "width": null
+      }
+    ],
+    "name": "70s Road Trip",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWiDhnQ2IIru/tracks",
+      "total": 100
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DWWiDhnQ2IIru"
+  },
+  {
+    "collaborative": false,
+    "description": "Feel great with these timelessly fun songs!",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7KNKjOK0o75" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7KNKjOK0o75",
+    "id": "37i9dQZF1DX7KNKjOK0o75",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002e649da22aa371c86c801603f",
+        "width": null
+      }
+    ],
+    "name": "Have a Great Day!",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7KNKjOK0o75/tracks",
+      "total": 102
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX7KNKjOK0o75"
+  },
+  {
+    "collaborative": false,
+    "description": "The ultimate playlist to fuel your good mood while on the road.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9wC1KY45plY" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wC1KY45plY",
+    "id": "37i9dQZF1DX9wC1KY45plY",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002fd076b5e9bdffcd1929c7290",
+        "width": null
+      }
+    ],
+    "name": "Classic Road Trip Songs",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wC1KY45plY/tracks",
+      "total": 100
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX9wC1KY45plY"
+  },
+  {
+    "collaborative": false,
+    "description": "Embrace your secret favorites.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4pUKG1kS0Ac" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4pUKG1kS0Ac",
+    "id": "37i9dQZF1DX4pUKG1kS0Ac",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f000000024a2afca194d4819c57201bc3",
+        "width": null
+      }
+    ],
+    "name": "Guilty Pleasures",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4pUKG1kS0Ac/tracks",
+      "total": 151
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX4pUKG1kS0Ac"
+  },
+  {
+    "collaborative": false,
+    "description": "נעים בלב עם קלאסיקות הרוק והפולק הישראלי של שנות השישים והשבעים",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7iFijMqb6EI" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7iFijMqb6EI",
+    "id": "37i9dQZF1DX7iFijMqb6EI",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f000000026ca3278fb626898a29f8f1e2",
+        "width": null
+      }
+    ],
+    "name": "רוק ופולק ישראלי של פעם",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4Mzg0Nzk2OSwwMDAwMDAwYzAwMDAwMTZmNjU3MTEzNjQwMDAwMDE3MGM0YjIxMjUw",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7iFijMqb6EI/tracks",
+      "total": 55
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX7iFijMqb6EI"
+  },
+  {
+    "collaborative": false,
+    "description": "ROCKETMAN &amp; Ordinary man-Ozzy Osbourne and Elton Jhon Movie&#x2F; Filme Dexter Fletcher, Lee Hall, Taron Egerton, Jamie Bell, Richard Madden, Bryce Dallas Howard",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/2TqSURQH8TULpigap1UlRy" },
+    "href": "https://api.spotify.com/v1/playlists/2TqSURQH8TULpigap1UlRy",
+    "id": "2TqSURQH8TULpigap1UlRy",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706c0000da84921ac251e558c6e13f39d83a",
+        "width": null
+      }
+    ],
+    "name": "ROCKETMAN - Elton Jhon  Taron Egerton (Movie/ Filme) Soundtrack Oficial",
+    "owner": {
+      "display_name": "Joe Alves",
+      "external_urls": { "spotify": "https://open.spotify.com/user/12153250437" },
+      "href": "https://api.spotify.com/v1/users/12153250437",
+      "id": "12153250437",
+      "type": "user",
+      "uri": "spotify:user:12153250437"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTYyLDcwMjliYzRmYzUxNjlmYTQzN2RiYmQ4NzZiZDQ2ZWQ1ZDYwYWFjNzk=",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/2TqSURQH8TULpigap1UlRy/tracks",
+      "total": 74
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:2TqSURQH8TULpigap1UlRy"
+  },
+  {
+    "collaborative": false,
+    "description": "The revolutionaries, the allies, and the just plain fabulous: these flawless tracks are beyond perfect for Pride. Cover: Elton John",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX59HcpGmPXYR" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX59HcpGmPXYR",
+    "id": "37i9dQZF1DX59HcpGmPXYR",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002996f89c0efbae72d7bcfc50e",
+        "width": null
+      }
+    ],
+    "name": "Pride Classics",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU2NzY3NjQyMywwMDAwMDAyNTAwMDAwMTZiNmE4OWExOGUwMDAwMDE2ZDAwY2JkZDc2",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX59HcpGmPXYR/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX59HcpGmPXYR"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/4vr1MqheqMzs9g3m22TeOT" },
+    "href": "https://api.spotify.com/v1/playlists/4vr1MqheqMzs9g3m22TeOT",
+    "id": "4vr1MqheqMzs9g3m22TeOT",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273d05d00a34eee4d09ec104298ab67616d0000b273f6954c1f074f66907a8c5483ab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273d05d00a34eee4d09ec104298ab67616d0000b273f6954c1f074f66907a8c5483ab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2737422ea855ab95313c190855dab67616d0000b273d05d00a34eee4d09ec104298ab67616d0000b273f6954c1f074f66907a8c5483ab67616d0000b273fb2daafa0993f39d87a84385",
+        "width": 60
+      }
+    ],
+    "name": "Phill collins greatest hits",
+    "owner": {
+      "display_name": "leonmfisk",
+      "external_urls": { "spotify": "https://open.spotify.com/user/leonmfisk" },
+      "href": "https://api.spotify.com/v1/users/leonmfisk",
+      "id": "leonmfisk",
+      "type": "user",
+      "uri": "spotify:user:leonmfisk"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTcsMzA1NTgzMTY0ZGRhNGVhNDUxYzYxMjgyNTJlNWIwMTBlODBhNjViMQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/4vr1MqheqMzs9g3m22TeOT/tracks",
+      "total": 15
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:4vr1MqheqMzs9g3m22TeOT"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1E4sO9XOZfRgdV" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4sO9XOZfRgdV",
+    "id": "37i9dQZF1E4sO9XOZfRgdV",
+    "images": [
+      {
+        "height": null,
+        "url": "https://seeded-session-images.scdn.co/v1/img/artist/3PhoLpVuITZKcymswpck5b/en",
+        "width": null
+      }
+    ],
+    "name": "Elton John Radio",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjY0MjkwOTgsMDAwMDAwMDA2OGQ4ZTMwNmQxMzljM2ZmYjhhNDRmNTE5NWUyY2YzMw==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4sO9XOZfRgdV/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1E4sO9XOZfRgdV"
+  },
+  {
+    "collaborative": false,
+    "description": "Who doesn't love a bit of cheese?",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7pykHKVxv6o" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7pykHKVxv6o",
+    "id": "37i9dQZF1DX7pykHKVxv6o",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002f378980ad71fa25aa6d768f5",
+        "width": null
+      }
+    ],
+    "name": "Cheesy Hits!",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7pykHKVxv6o/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DX7pykHKVxv6o"
+  },
+  {
+    "collaborative": false,
+    "description": "Great songs by indisputable music legends.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWGFQLoP9qlv" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWGFQLoP9qlv",
+    "id": "37i9dQZF1DWWGFQLoP9qlv",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002a3aa0684281d8c86c6d143a5",
+        "width": null
+      }
+    ],
+    "name": "Legendary",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWGFQLoP9qlv/tracks",
+      "total": 70
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DWWGFQLoP9qlv"
+  },
+  {
+    "collaborative": false,
+    "description": "Classic rock, pop and soul from some of the world's greatest artists. Cover: Elton John. Save the playlist !",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/2Q1HmtOsOG0927UBTFJYvc" },
+    "href": "https://api.spotify.com/v1/playlists/2Q1HmtOsOG0927UBTFJYvc",
+    "id": "2Q1HmtOsOG0927UBTFJYvc",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706c0000da848fadb6ac5175118efc2a507c",
+        "width": null
+      }
+    ],
+    "name": "Classic Legends",
+    "owner": {
+      "display_name": "Digster AU",
+      "external_urls": { "spotify": "https://open.spotify.com/user/digster.au" },
+      "href": "https://api.spotify.com/v1/users/digster.au",
+      "id": "digster.au",
+      "type": "user",
+      "uri": "spotify:user:digster.au"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "NTc3LGZhMDAwNjEwOTczYTk2NDBmMjljNjY5ZWQ3MzIxZmNkYWQwZWMzM2Y=",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/2Q1HmtOsOG0927UBTFJYvc/tracks",
+      "total": 70
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:2Q1HmtOsOG0927UBTFJYvc"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/15SPUsZjt99m6uMzbZ9tKo" },
+    "href": "https://api.spotify.com/v1/playlists/15SPUsZjt99m6uMzbZ9tKo",
+    "id": "15SPUsZjt99m6uMzbZ9tKo",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2734f2e4580e0f9a35d9974971d",
+        "width": 640
+      }
+    ],
+    "name": "Joe Cocker – The Ultimate Collection 1968-2003",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "MiwzOTY3MWYxMzg4ZDcyNDc0YTc3MTgwY2NkNjQyOGEzNGJmNGRkNjk0",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/15SPUsZjt99m6uMzbZ9tKo/tracks",
+      "total": 30
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:15SPUsZjt99m6uMzbZ9tKo"
+  },
+  {
+    "collaborative": false,
+    "description": "From disco to soft rock, and funk to punk, the ‘70s had a little something for everyone.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTJ7xPn4vNaz" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTJ7xPn4vNaz",
+    "id": "37i9dQZF1DWTJ7xPn4vNaz",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f00000002421945ccf729a1698cb7e988",
+        "width": null
+      }
+    ],
+    "name": "All Out 70s",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4NTc0NTkwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTJ7xPn4vNaz/tracks",
+      "total": 100
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DWTJ7xPn4vNaz"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/7DHaGAWlQcyNDgNAhIZUJG" },
+    "href": "https://api.spotify.com/v1/playlists/7DHaGAWlQcyNDgNAhIZUJG",
+    "id": "7DHaGAWlQcyNDgNAhIZUJG",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b2734b89690216baf8e04fdd3056ab67616d0000b2735749e690d30d4967fd4db81aab67616d0000b273624b81f00c78f71feffbb21cab67616d0000b27379bbe6b870eb993cf935d210",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b2734b89690216baf8e04fdd3056ab67616d0000b2735749e690d30d4967fd4db81aab67616d0000b273624b81f00c78f71feffbb21cab67616d0000b27379bbe6b870eb993cf935d210",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b2734b89690216baf8e04fdd3056ab67616d0000b2735749e690d30d4967fd4db81aab67616d0000b273624b81f00c78f71feffbb21cab67616d0000b27379bbe6b870eb993cf935d210",
+        "width": 60
+      }
+    ],
+    "name": "MyMusic",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "OSxiZWY4YjI0ZjQwMGI0MTg2NmExYWZhMDE4ZWIyNGUyY2I2NjAwNmQ4",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/7DHaGAWlQcyNDgNAhIZUJG/tracks",
+      "total": 49
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:7DHaGAWlQcyNDgNAhIZUJG"
+  },
+  {
+    "collaborative": true,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/39IpEc4cupX60g1naA7uwZ" },
+    "href": "https://api.spotify.com/v1/playlists/39IpEc4cupX60g1naA7uwZ",
+    "id": "39IpEc4cupX60g1naA7uwZ",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b273192e900684752d09c96f066cab67616d0000b27351f73fe627e3c9748fcab185ab67616d0000b273bb90a0d3f755e3f72aedbea3ab67616d0000b273bc2bb8b6ef812aefa5e333d8",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b273192e900684752d09c96f066cab67616d0000b27351f73fe627e3c9748fcab185ab67616d0000b273bb90a0d3f755e3f72aedbea3ab67616d0000b273bc2bb8b6ef812aefa5e333d8",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b273192e900684752d09c96f066cab67616d0000b27351f73fe627e3c9748fcab185ab67616d0000b273bb90a0d3f755e3f72aedbea3ab67616d0000b273bc2bb8b6ef812aefa5e333d8",
+        "width": 60
+      }
+    ],
+    "name": "בראשית - רוק ישראלי",
+    "owner": {
+      "display_name": "Avi_ahuvia",
+      "external_urls": { "spotify": "https://open.spotify.com/user/59x337pm4mj0zb7lcekuahbxf" },
+      "href": "https://api.spotify.com/v1/users/59x337pm4mj0zb7lcekuahbxf",
+      "id": "59x337pm4mj0zb7lcekuahbxf",
+      "type": "user",
+      "uri": "spotify:user:59x337pm4mj0zb7lcekuahbxf"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjEwLGU3NTJmYWQ4MWExMWIxZDdjNTllOTlkMDE1MWU3M2EwNjk3YzgyYWQ=",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/39IpEc4cupX60g1naA7uwZ/tracks",
+      "total": 173
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:39IpEc4cupX60g1naA7uwZ"
+  },
+  {
+    "collaborative": false,
+    "description": "This is Ariel Zilber. The essential tracks, all in one playlist.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0Obv5C" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0Obv5C",
+    "id": "37i9dQZF1DZ06evO0Obv5C",
+    "images": [
+      {
+        "height": null,
+        "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0Obv5C-default.jpg",
+        "width": null
+      }
+    ],
+    "name": "This Is Ariel Zilber",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjY0Mjc4MTEsMDAwMDAwMDA5NTFlNjg0NGM2NWMyMmQ1MWIwMDg2ZDVmZGYzMDkyYw==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0Obv5C/tracks",
+      "total": 48
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DZ06evO0Obv5C"
+  },
+  {
+    "collaborative": false,
+    "description": "This is Shlomi Shabat. The essential tracks, all in one playlist.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1kOhiR" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1kOhiR",
+    "id": "37i9dQZF1DZ06evO1kOhiR",
+    "images": [
+      {
+        "height": null,
+        "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1kOhiR-default.jpg",
+        "width": null
+      }
+    ],
+    "name": "This Is Shlomi Shabat",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjY0Mjc4MTEsMDAwMDAwMDAzYTc1YzBjZTYwOWU2NTkzODFmZjAwZTk3ZWE2YjAwNQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO1kOhiR/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DZ06evO1kOhiR"
+  },
+  {
+    "collaborative": false,
+    "description": "The essential Billy Joel all in one place.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWY7QTKRRDgA5" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY7QTKRRDgA5",
+    "id": "37i9dQZF1DWY7QTKRRDgA5",
+    "images": [
+      {
+        "height": null,
+        "url": "https://i.scdn.co/image/ab67706f000000027c864dbe2580347696a2c764",
+        "width": null
+      }
+    ],
+    "name": "This Is Billy Joel",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MTU4MzQ4NzQ4MywwMDAwMDAwMjAwMDAwMTY0YTk5OTE0OGMwMDAwMDE3MGFmMzU3ZGE3",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY7QTKRRDgA5/tracks",
+      "total": 49
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DWY7QTKRRDgA5"
+  },
+  {
+    "collaborative": false,
+    "description": "This is Gidi Gov. The essential tracks, all in one playlist.",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0rTIqG" },
+    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0rTIqG",
+    "id": "37i9dQZF1DZ06evO0rTIqG",
+    "images": [
+      {
+        "height": null,
+        "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0rTIqG-default.jpg",
+        "width": null
+      }
+    ],
+    "name": "This Is Gidi Gov",
+    "owner": {
+      "display_name": "Spotify",
+      "external_urls": { "spotify": "https://open.spotify.com/user/spotify" },
+      "href": "https://api.spotify.com/v1/users/spotify",
+      "id": "spotify",
+      "type": "user",
+      "uri": "spotify:user:spotify"
+    },
+    "primary_color": null,
+    "public": false,
+    "snapshot_id": "MjY0Mjc4MTEsMDAwMDAwMDA3ZjdjZGRkYWM0MDJiNTJkNDkwNTIwMTg5ZTQxZmRiOQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO0rTIqG/tracks",
+      "total": 50
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:37i9dQZF1DZ06evO0rTIqG"
+  },
+  {
+    "collaborative": false,
+    "description": "",
+    "external_urls": { "spotify": "https://open.spotify.com/playlist/19PFjNbgb4YRUvxMEDVbQd" },
+    "href": "https://api.spotify.com/v1/playlists/19PFjNbgb4YRUvxMEDVbQd",
+    "id": "19PFjNbgb4YRUvxMEDVbQd",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b27307dd573f43f7ad933852b481ab67616d0000b273420f2baebf102cec0526ec5aab67616d0000b273757f98accbb977ba49507368ab67616d0000b273c4295214705f09d88f9d88f0",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b27307dd573f43f7ad933852b481ab67616d0000b273420f2baebf102cec0526ec5aab67616d0000b273757f98accbb977ba49507368ab67616d0000b273c4295214705f09d88f9d88f0",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b27307dd573f43f7ad933852b481ab67616d0000b273420f2baebf102cec0526ec5aab67616d0000b273757f98accbb977ba49507368ab67616d0000b273c4295214705f09d88f9d88f0",
+        "width": 60
+      }
+    ],
+    "name": "Hebrew - Igal",
+    "owner": {
+      "display_name": "igal",
+      "external_urls": { "spotify": "https://open.spotify.com/user/z7wfmfeq61fi9z75gydvspo0d" },
+      "href": "https://api.spotify.com/v1/users/z7wfmfeq61fi9z75gydvspo0d",
+      "id": "z7wfmfeq61fi9z75gydvspo0d",
+      "type": "user",
+      "uri": "spotify:user:z7wfmfeq61fi9z75gydvspo0d"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "NjMsOWE1YmE2MGY2MmZmOTA1OTVjYmI1ZWI4M2JjZWQ1NThlMjI3MmI4NQ==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/19PFjNbgb4YRUvxMEDVbQd/tracks",
+      "total": 79
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:19PFjNbgb4YRUvxMEDVbQd"
+  }
+]

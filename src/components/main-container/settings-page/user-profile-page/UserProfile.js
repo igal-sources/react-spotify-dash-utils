@@ -14,7 +14,6 @@ const UserProfile = () => {
 
   const getCountryData = code => {
     const result = countries.filter(country => country.code === code);
-    console.log("result: ", result);
     setCountryName(result[0].name);
     setCountryFlag(result[0].flag);
   };

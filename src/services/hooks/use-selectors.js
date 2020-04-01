@@ -1,17 +1,17 @@
 import { useSelector } from "react-redux";
 
 export const useUser = () => {
-  const { user = {} } = useSelector(state => state.currentUser);
+  const { user = {} } = useSelector(state => state.userReducer);
   return user;
 };
 
 export const useUserMail = () => {
-  const { user: { email } = {} } = useSelector(state => state.currentUser);
+  const { user: { email } = {} } = useSelector(state => state.userReducer);
   return email;
 };
 
 export const useUserName = () => {
-  const { user: { display_name } = {} } = useSelector(state => state.currentUser);
+  const { user: { display_name } = {} } = useSelector(state => state.userReducer);
   return display_name;
 };
 

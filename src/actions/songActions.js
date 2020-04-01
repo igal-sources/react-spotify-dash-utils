@@ -1,25 +1,27 @@
+import * as types from "../shared/types";
+
 export const playSong = song => {
   return {
-    type: "PLAY_SONG",
+    type: types.PLAY_SONG,
     song
   };
 };
 
 export const stopSong = () => {
   return {
-    type: "STOP_SONG"
+    type: types.STOP_SONG
   };
 };
 
 export const pauseSong = () => {
   return {
-    type: "PAUSE_SONG"
+    type: types.PAUSE_SONG
   };
 };
 
 export const resumeSong = () => {
   return {
-    type: "RESUME_SONG"
+    type: types.RESUME_SONG
   };
 };
 

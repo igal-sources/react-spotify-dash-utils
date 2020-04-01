@@ -1,0 +1,1174 @@
+[
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0DtZlRJO3t2PniCvBvu6Ny" },
+    "followers": { "href": null, "total": 25568 },
+    "genres": ["classic israeli pop"],
+    "href": "https://api.spotify.com/v1/artists/0DtZlRJO3t2PniCvBvu6Ny",
+    "id": "0DtZlRJO3t2PniCvBvu6Ny",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2735fe7c652c2a13cab0e151f73",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e025fe7c652c2a13cab0e151f73",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048515fe7c652c2a13cab0e151f73",
+        "width": 64
+      }
+    ],
+    "name": "Arik Sinai",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:0DtZlRJO3t2PniCvBvu6Ny"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL" },
+    "followers": { "href": null, "total": 4658824 },
+    "genres": [
+      "album rock",
+      "classic rock",
+      "country rock",
+      "folk rock",
+      "heartland rock",
+      "mellow gold",
+      "rock",
+      "soft rock",
+      "yacht rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+    "id": "0ECwFtbIWEVNwjlrfc6xoL",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/6b215464b769958ef1d7d9f163e3f49ebacf8842",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/2cfb3ecbce024ccb5e42b6f1b23683a3868fa804",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/f6e8c5d35816033e9e64f59adf96bb139b5a8206",
+        "width": 160
+      }
+    ],
+    "name": "Eagles",
+    "popularity": 77,
+    "type": "artist",
+    "uri": "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0GmwRPHVAU8zOdTOujIDUa" },
+    "followers": { "href": null, "total": 73535 },
+    "genres": ["israeli pop"],
+    "href": "https://api.spotify.com/v1/artists/0GmwRPHVAU8zOdTOujIDUa",
+    "id": "0GmwRPHVAU8zOdTOujIDUa",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/62ea5f1031be04ccf7a4e89a18d92ce84cb02873",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/a3c5f250e3ae4fa9062d72e8279362204bb4a14a",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/a4cc2e5263b052ee98be34373bb188955a19f351",
+        "width": 160
+      }
+    ],
+    "name": "Miri Mesika",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:0GmwRPHVAU8zOdTOujIDUa"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV" },
+    "followers": { "href": null, "total": 3911862 },
+    "genres": ["europop", "swedish pop"],
+    "href": "https://api.spotify.com/v1/artists/0LcJLqbBmaGUft1e9Mm8HV",
+    "id": "0LcJLqbBmaGUft1e9Mm8HV",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/733e98edfdc11feea07914532603c080fa432159",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/0666d9d1b65b626e98c5273a4f44ff34951f8e1f",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/91b0c71fb753135bc083a11043797ce05168d00a",
+        "width": 160
+      }
+    ],
+    "name": "ABBA",
+    "popularity": 79,
+    "type": "artist",
+    "uri": "spotify:artist:0LcJLqbBmaGUft1e9Mm8HV"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0RNFCu4ChoQ1FDBKcGhnoi" },
+    "followers": { "href": null, "total": 74077 },
+    "genres": ["classic israeli pop", "israeli pop", "israeli rock"],
+    "href": "https://api.spotify.com/v1/artists/0RNFCu4ChoQ1FDBKcGhnoi",
+    "id": "0RNFCu4ChoQ1FDBKcGhnoi",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b27343e18039f5038630af278676",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e0243e18039f5038630af278676",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d0000485143e18039f5038630af278676",
+        "width": 64
+      }
+    ],
+    "name": "Gidi Gov",
+    "popularity": 46,
+    "type": "artist",
+    "uri": "spotify:artist:0RNFCu4ChoQ1FDBKcGhnoi"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T" },
+    "followers": { "href": null, "total": 3356536 },
+    "genres": ["album rock", "blues rock", "classic rock", "mellow gold", "rock", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
+    "id": "0WwSkZ7LtFUFjGjMZBMt6T",
+    "images": [
+      {
+        "height": 1021,
+        "url": "https://i.scdn.co/image/54a86ecf1de16b17e2ed000a9ca8a1590c9a3b80",
+        "width": 1000
+      },
+      {
+        "height": 653,
+        "url": "https://i.scdn.co/image/caf04a8a030c70dd697ee0b37562033bbe3cdb4f",
+        "width": 640
+      },
+      {
+        "height": 204,
+        "url": "https://i.scdn.co/image/7756c61bed0dc7650b188a4c7be984dc4e1d7651",
+        "width": 200
+      },
+      {
+        "height": 65,
+        "url": "https://i.scdn.co/image/0ba7e13266153e59b9b611cbd43e21aec7f6737c",
+        "width": 64
+      }
+    ],
+    "name": "Dire Straits",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9" },
+    "followers": { "href": null, "total": 11823167 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "progressive rock",
+      "psychedelic rock",
+      "rock",
+      "symphonic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+    "id": "0k17h0D3J5VfsdmQ1iZtE9",
+    "images": [
+      {
+        "height": 977,
+        "url": "https://i.scdn.co/image/e69f71e2be4b67b82af90fb8e9d805715e0684fa",
+        "width": 1000
+      },
+      {
+        "height": 625,
+        "url": "https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07",
+        "width": 640
+      },
+      {
+        "height": 195,
+        "url": "https://i.scdn.co/image/f0a39a8a196a87a7236bdcf8a8708f6d5d3547cc",
+        "width": 200
+      },
+      {
+        "height": 63,
+        "url": "https://i.scdn.co/image/ec1fb7127168dbaa962404031409c5a293b95ec6",
+        "width": 64
+      }
+    ],
+    "name": "Pink Floyd",
+    "popularity": 82,
+    "type": "artist",
+    "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0oSGxfWSnnOXhD2fKuz2Gy" },
+    "followers": { "href": null, "total": 5263623 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "dance rock",
+      "glam rock",
+      "permanent wave",
+      "protopunk",
+      "rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/0oSGxfWSnnOXhD2fKuz2Gy",
+    "id": "0oSGxfWSnnOXhD2fKuz2Gy",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/0dfa45563119fd98226ec0d5cd35a80473502469",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/764f946cb02e0a5e701f72ef80b1a9dfe8784efe",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/bb58aed3822efbd1f844aa9742ab635a970206cd",
+        "width": 160
+      }
+    ],
+    "name": "David Bowie",
+    "popularity": 80,
+    "type": "artist",
+    "uri": "spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/0xliTEbFfy5HQHvsTknTkX" },
+    "followers": { "href": null, "total": 372536 },
+    "genres": ["dance rock", "europop", "new romantic", "new wave", "new wave pop", "synthpop"],
+    "href": "https://api.spotify.com/v1/artists/0xliTEbFfy5HQHvsTknTkX",
+    "id": "0xliTEbFfy5HQHvsTknTkX",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/f63712c2642d0f4d48d5b7936a706e717e33d60c",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/c875a1a52ebae0611012b072659e252d48802bbb",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/a00b745aafd23e50448599dbad181c286ab0cb56",
+        "width": 160
+      }
+    ],
+    "name": "Alphaville",
+    "popularity": 65,
+    "type": "artist",
+    "uri": "spotify:artist:0xliTEbFfy5HQHvsTknTkX"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/1L8QE7iUTf9330wcKxnieK" },
+    "followers": { "href": null, "total": 81001 },
+    "genres": ["classic israeli pop", "israeli pop", "israeli rock", "israeli singer-songwriter"],
+    "href": "https://api.spotify.com/v1/artists/1L8QE7iUTf9330wcKxnieK",
+    "id": "1L8QE7iUTf9330wcKxnieK",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/f206e87f4d110f5a0f038be422f6a0888c32849d",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/3ab164d9e69f780cb9b0eef994bd8f9e920bf6ee",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/0e4fd99ad5a40e101cedca290c073741bdc409dd",
+        "width": 160
+      }
+    ],
+    "name": "Ivri Lider",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:1L8QE7iUTf9330wcKxnieK"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/1LZEQNv7sE11VDY3SdxQeN" },
+    "followers": { "href": null, "total": 3086856 },
+    "genres": ["adult standards", "disco", "mellow gold", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/1LZEQNv7sE11VDY3SdxQeN",
+    "id": "1LZEQNv7sE11VDY3SdxQeN",
+    "images": [
+      {
+        "height": 733,
+        "url": "https://i.scdn.co/image/1d5a05673975ba0c378cd280344e000b0b865620",
+        "width": 1000
+      },
+      {
+        "height": 469,
+        "url": "https://i.scdn.co/image/1ea4795e17ffa658d7ad23095d58997a278179a9",
+        "width": 640
+      },
+      {
+        "height": 147,
+        "url": "https://i.scdn.co/image/1f363042bdd59e0f80cb7b9cac1b312f9389b019",
+        "width": 200
+      },
+      {
+        "height": 47,
+        "url": "https://i.scdn.co/image/c707552215757c7f2dc6071e32d487a3c7b28d3f",
+        "width": 64
+      }
+    ],
+    "name": "Bee Gees",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:1LZEQNv7sE11VDY3SdxQeN"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/1T0wRBO0CK0vK8ouUMqEl5" },
+    "followers": { "href": null, "total": 420796 },
+    "genres": ["adult standards", "british invasion", "mellow gold"],
+    "href": "https://api.spotify.com/v1/artists/1T0wRBO0CK0vK8ouUMqEl5",
+    "id": "1T0wRBO0CK0vK8ouUMqEl5",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/d22d63d7fedd437621fd60a5ccc51f46f4875c11",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/faf14e8dcd36cfda24a281e497a0655014dcd6e5",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/8a1385410e03d6b221d9c64285d4b0d4534a49ad",
+        "width": 160
+      }
+    ],
+    "name": "Tom Jones",
+    "popularity": 64,
+    "type": "artist",
+    "uri": "spotify:artist:1T0wRBO0CK0vK8ouUMqEl5"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" },
+    "followers": { "href": null, "total": 24737148 },
+    "genres": ["glam rock", "rock"],
+    "href": "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+    "id": "1dfeR4HaWDbWqFHLkxsg1d",
+    "images": [
+      {
+        "height": 806,
+        "url": "https://i.scdn.co/image/b040846ceba13c3e9c125d68389491094e7f2982",
+        "width": 999
+      },
+      {
+        "height": 516,
+        "url": "https://i.scdn.co/image/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42",
+        "width": 640
+      },
+      {
+        "height": 161,
+        "url": "https://i.scdn.co/image/c06971e9ff81696699b829484e3be165f4e64368",
+        "width": 200
+      },
+      {
+        "height": 52,
+        "url": "https://i.scdn.co/image/6dd0ffd270903d1884edf9058c49f58b03db893d",
+        "width": 64
+      }
+    ],
+    "name": "Queen",
+    "popularity": 88,
+    "type": "artist",
+    "uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/29kkCKKGXheHuoO829FxWK" },
+    "followers": { "href": null, "total": 1361310 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "country rock",
+      "hard rock",
+      "mellow gold",
+      "rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/29kkCKKGXheHuoO829FxWK",
+    "id": "29kkCKKGXheHuoO829FxWK",
+    "images": [
+      {
+        "height": 1000,
+        "url": "https://i.scdn.co/image/051ffa17a5832586c6e0f8ee8a705ad15114e9c0",
+        "width": 1000
+      },
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/91457d2e1cd0e38d1b0af68699aeb85416dd4ab8",
+        "width": 640
+      },
+      {
+        "height": 200,
+        "url": "https://i.scdn.co/image/5aab225333edb457dddbe2de4064ddac4c67bbd7",
+        "width": 200
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/139ceddacee8f07f3f1be630ce73a1e9f75fbe5b",
+        "width": 64
+      }
+    ],
+    "name": "Boston",
+    "popularity": 69,
+    "type": "artist",
+    "uri": "spotify:artist:29kkCKKGXheHuoO829FxWK"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/2m62cc253Xvd9qYQ8d2X3d" },
+    "followers": { "href": null, "total": 722007 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "mellow gold",
+      "progressive rock",
+      "soft rock",
+      "symphonic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/2m62cc253Xvd9qYQ8d2X3d",
+    "id": "2m62cc253Xvd9qYQ8d2X3d",
+    "images": [
+      {
+        "height": 1028,
+        "url": "https://i.scdn.co/image/3e90d18b7375a0e78340d23f72822646c4cc3b70",
+        "width": 1000
+      },
+      {
+        "height": 658,
+        "url": "https://i.scdn.co/image/112b078d34b51f977720805963334611383ee1c1",
+        "width": 640
+      },
+      {
+        "height": 206,
+        "url": "https://i.scdn.co/image/63e9f6ec84b77cd5d8631c7d6e9c2f3273693254",
+        "width": 200
+      },
+      {
+        "height": 66,
+        "url": "https://i.scdn.co/image/50beb6c019cacb758e07f102168add254b0acd18",
+        "width": 64
+      }
+    ],
+    "name": "The Alan Parsons Project",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:2m62cc253Xvd9qYQ8d2X3d"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/2y8Jo9CKhJvtfeKOsYzRdT" },
+    "followers": { "href": null, "total": 1952808 },
+    "genres": ["adult standards", "mellow gold", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/2y8Jo9CKhJvtfeKOsYzRdT",
+    "id": "2y8Jo9CKhJvtfeKOsYzRdT",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/3ca37b557da4d1d62000919ee1cac217894ca7f1",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/2814af7088a713c66993c3f47708a799972a92cd",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/0e239db56d7959bfcab6993a9863f1bae85abeda",
+        "width": 160
+      }
+    ],
+    "name": "Rod Stewart",
+    "popularity": 75,
+    "type": "artist",
+    "uri": "spotify:artist:2y8Jo9CKhJvtfeKOsYzRdT"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/36QJpDe2go2KgaRleHCDTp" },
+    "followers": { "href": null, "total": 8781817 },
+    "genres": ["album rock", "classic rock", "hard rock", "rock"],
+    "href": "https://api.spotify.com/v1/artists/36QJpDe2go2KgaRleHCDTp",
+    "id": "36QJpDe2go2KgaRleHCDTp",
+    "images": [
+      {
+        "height": 600,
+        "url": "https://i.scdn.co/image/207803ce008388d3427a685254f9de6a8f61dc2e",
+        "width": 600
+      },
+      {
+        "height": 200,
+        "url": "https://i.scdn.co/image/b0248a44865493e6a03832aa89854ada16ff07a8",
+        "width": 200
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/16eb3cdae0d824b520ac17710e943a99d3ef6602",
+        "width": 64
+      }
+    ],
+    "name": "Led Zeppelin",
+    "popularity": 80,
+    "type": "artist",
+    "uri": "spotify:artist:36QJpDe2go2KgaRleHCDTp"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/3JsMj0DEzyWc0VDlHuy9Bx" },
+    "followers": { "href": null, "total": 1643734 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "folk rock",
+      "glam rock",
+      "mellow gold",
+      "piano rock",
+      "progressive rock",
+      "rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3JsMj0DEzyWc0VDlHuy9Bx",
+    "id": "3JsMj0DEzyWc0VDlHuy9Bx",
+    "images": [
+      {
+        "height": 977,
+        "url": "https://i.scdn.co/image/eebed895cad509b17c7c6faf47f21f1fc35e8829",
+        "width": 1000
+      },
+      {
+        "height": 625,
+        "url": "https://i.scdn.co/image/b0183fa5aa1cc1f8972bf49e2fc0ecce6bdb184d",
+        "width": 640
+      },
+      {
+        "height": 195,
+        "url": "https://i.scdn.co/image/52dfb5d8e545c42dfe97cbb2f9ebe825799c60b1",
+        "width": 200
+      },
+      {
+        "height": 63,
+        "url": "https://i.scdn.co/image/c835c0c90dde46223c23ed9a01b9671e174de708",
+        "width": 64
+      }
+    ],
+    "name": "Supertramp",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:3JsMj0DEzyWc0VDlHuy9Bx"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b" },
+    "followers": { "href": null, "total": 4818443 },
+    "genres": ["glam rock", "mellow gold", "piano rock", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/3PhoLpVuITZKcymswpck5b",
+    "id": "3PhoLpVuITZKcymswpck5b",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/f50ae3e5cf3637c5f486b6205468c245644be36e",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/6381c0467a37ad144dff97f716b1d0a3a1e79e56",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/566f206dcb14de731784c8a68aec8a46629cc621",
+        "width": 160
+      }
+    ],
+    "name": "Elton John",
+    "popularity": 83,
+    "type": "artist",
+    "uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/3Z02hBLubJxuFJfhacLSDc" },
+    "followers": { "href": null, "total": 1541782 },
+    "genres": [
+      "album rock",
+      "canadian pop",
+      "canadian singer-songwriter",
+      "classic canadian rock",
+      "heartland rock",
+      "mellow gold",
+      "pop rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3Z02hBLubJxuFJfhacLSDc",
+    "id": "3Z02hBLubJxuFJfhacLSDc",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/3bad94091d5b5de72358736e1193b719a2886f0b",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/1ad5f1b94115088b4163754097a4b104b42f119e",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/62f57374a46f9c266c83c1f66b2418aaa47c6bfd",
+        "width": 160
+      }
+    ],
+    "name": "Bryan Adams",
+    "popularity": 76,
+    "type": "artist",
+    "uri": "spotify:artist:3Z02hBLubJxuFJfhacLSDc"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/3iUjRVvYCsMfz7tuAQtBDI" },
+    "followers": { "href": null, "total": 278315 },
+    "genres": [
+      "art rock",
+      "classic uk pop",
+      "dance rock",
+      "new romantic",
+      "new wave",
+      "new wave pop",
+      "synthpop",
+      "zolo"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3iUjRVvYCsMfz7tuAQtBDI",
+    "id": "3iUjRVvYCsMfz7tuAQtBDI",
+    "images": [
+      {
+        "height": 970,
+        "url": "https://i.scdn.co/image/0ff6575a23e3ed3e280317dd0c71e39f505726a4",
+        "width": 1000
+      },
+      {
+        "height": 621,
+        "url": "https://i.scdn.co/image/425c6df5038a9d28c5306889782518693d9919c5",
+        "width": 640
+      },
+      {
+        "height": 194,
+        "url": "https://i.scdn.co/image/0d3526abb917ec96c4cf5329450ea8e2982412d5",
+        "width": 200
+      },
+      {
+        "height": 62,
+        "url": "https://i.scdn.co/image/bbf05874858cd719aa28f56b66a2a26f9cd6a923",
+        "width": 64
+      }
+    ],
+    "name": "Ultravox",
+    "popularity": 55,
+    "type": "artist",
+    "uri": "spotify:artist:3iUjRVvYCsMfz7tuAQtBDI"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/3pFCERyEiP5xeN2EsPXhjI" },
+    "followers": { "href": null, "total": 1087129 },
+    "genres": [
+      "album rock",
+      "blues rock",
+      "classic rock",
+      "folk rock",
+      "mellow gold",
+      "rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/3pFCERyEiP5xeN2EsPXhjI",
+    "id": "3pFCERyEiP5xeN2EsPXhjI",
+    "images": [
+      {
+        "height": 667,
+        "url": "https://i.scdn.co/image/ee38cfbef7a14bad2ecb0631f73d5b703cf0d35d",
+        "width": 1000
+      },
+      {
+        "height": 427,
+        "url": "https://i.scdn.co/image/1e489a5d8089268a27c23fead0376e903dab0baa",
+        "width": 640
+      },
+      {
+        "height": 133,
+        "url": "https://i.scdn.co/image/f9283f3364e532155af834847f0be5a6cf4b0136",
+        "width": 200
+      },
+      {
+        "height": 43,
+        "url": "https://i.scdn.co/image/69910509cfe2d97e7abb98539f8fd72877c21e42",
+        "width": 64
+      }
+    ],
+    "name": "Joe Cocker",
+    "popularity": 68,
+    "type": "artist",
+    "uri": "spotify:artist:3pFCERyEiP5xeN2EsPXhjI"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/4lxfqrEsLX6N1N4OCSkILp" },
+    "followers": { "href": null, "total": 2700301 },
+    "genres": ["mellow gold", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/4lxfqrEsLX6N1N4OCSkILp",
+    "id": "4lxfqrEsLX6N1N4OCSkILp",
+    "images": [
+      {
+        "height": 1333,
+        "url": "https://i.scdn.co/image/31fbe64783eb5d493161640bd599dceafc615c6d",
+        "width": 1000
+      },
+      {
+        "height": 853,
+        "url": "https://i.scdn.co/image/f5b1b588936c53348efe5526caf65852a0bd1d36",
+        "width": 640
+      },
+      {
+        "height": 267,
+        "url": "https://i.scdn.co/image/ccd188b7082ce425d61640c11ea715d23dbce92a",
+        "width": 200
+      },
+      {
+        "height": 85,
+        "url": "https://i.scdn.co/image/7900732380c7303c222bc98f68e1b9fba3922439",
+        "width": 64
+      }
+    ],
+    "name": "Phil Collins",
+    "popularity": 78,
+    "type": "artist",
+    "uri": "spotify:artist:4lxfqrEsLX6N1N4OCSkILp"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/4rQnQQusV2VVuGmDTLlybe" },
+    "followers": { "href": null, "total": 83358 },
+    "genres": ["classic israeli pop", "israeli rock"],
+    "href": "https://api.spotify.com/v1/artists/4rQnQQusV2VVuGmDTLlybe",
+    "id": "4rQnQQusV2VVuGmDTLlybe",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2735749e690d30d4967fd4db81a",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e025749e690d30d4967fd4db81a",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048515749e690d30d4967fd4db81a",
+        "width": 64
+      }
+    ],
+    "name": "Yehuda Poliker",
+    "popularity": 38,
+    "type": "artist",
+    "uri": "spotify:artist:4rQnQQusV2VVuGmDTLlybe"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/4xXCRXOfQKQ2gjWxNhNzYW" },
+    "followers": { "href": null, "total": 1622330 },
+    "genres": ["adult standards", "mellow gold", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/4xXCRXOfQKQ2gjWxNhNzYW",
+    "id": "4xXCRXOfQKQ2gjWxNhNzYW",
+    "images": [
+      {
+        "height": 1099,
+        "url": "https://i.scdn.co/image/e4fcfe8cf316b6463ecbe571d60973ea7b103d5d",
+        "width": 1000
+      },
+      {
+        "height": 703,
+        "url": "https://i.scdn.co/image/44da9376f0fa4f9285d5efd8a7e7e5082043606c",
+        "width": 640
+      },
+      {
+        "height": 220,
+        "url": "https://i.scdn.co/image/092a6e90dc020470ddbd44e8472a9443f6523d40",
+        "width": 200
+      },
+      {
+        "height": 70,
+        "url": "https://i.scdn.co/image/d1df0b98e0764f8b030beda7f88959a3f608ca0a",
+        "width": 64
+      }
+    ],
+    "name": "Air Supply",
+    "popularity": 70,
+    "type": "artist",
+    "uri": "spotify:artist:4xXCRXOfQKQ2gjWxNhNzYW"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/5EBnQEKoaiAk37Q7cfGrE1" },
+    "followers": { "href": null, "total": 378746 },
+    "genres": [
+      "classic israeli pop",
+      "israeli mediterranean",
+      "israeli pop",
+      "israeli singer-songwriter"
+    ],
+    "href": "https://api.spotify.com/v1/artists/5EBnQEKoaiAk37Q7cfGrE1",
+    "id": "5EBnQEKoaiAk37Q7cfGrE1",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/fcd82c03845af640c698b8f6f59ace22997397b2",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/812a4e7c4215978a0ff5d2b979c3e31196cd1099",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/96633e257b7b8b9c4f023fb38e7351d21295e2da",
+        "width": 160
+      }
+    ],
+    "name": "Idan Raichel",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:5EBnQEKoaiAk37Q7cfGrE1"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/5a2EaR3hamoenG9rDuVn8j" },
+    "followers": { "href": null, "total": 4297488 },
+    "genres": ["funk", "funk rock", "minneapolis sound", "motown"],
+    "href": "https://api.spotify.com/v1/artists/5a2EaR3hamoenG9rDuVn8j",
+    "id": "5a2EaR3hamoenG9rDuVn8j",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/0040a9952a800042a6e85b2ea3c3b9cb6a077edf",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/f2456e75cf2da672e24ed7023338abef8ccb9c82",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/b3b7dae5e718beb4917b8674d8e6fe50b82803d4",
+        "width": 160
+      }
+    ],
+    "name": "Prince",
+    "popularity": 74,
+    "type": "artist",
+    "uri": "spotify:artist:5a2EaR3hamoenG9rDuVn8j"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/5rIqOJspxDq89aBBCUda1X" },
+    "followers": { "href": null, "total": 233713 },
+    "genres": ["classic uk pop", "europop", "mellow gold", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/5rIqOJspxDq89aBBCUda1X",
+    "id": "5rIqOJspxDq89aBBCUda1X",
+    "images": [
+      {
+        "height": 633,
+        "url": "https://i.scdn.co/image/503f803009cc4fcb5c658fe565333e77f1153418",
+        "width": 640
+      },
+      {
+        "height": 317,
+        "url": "https://i.scdn.co/image/0923e1be09710b22d38e21f8d91623f7db09bbeb",
+        "width": 320
+      },
+      {
+        "height": 158,
+        "url": "https://i.scdn.co/image/65661fcb695597e0f8941b279f16d6786f3bf2c1",
+        "width": 160
+      }
+    ],
+    "name": "Smokie",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:5rIqOJspxDq89aBBCUda1X"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/6IRouO5mvvfcyxtPDKMYFN" },
+    "followers": { "href": null, "total": 1526575 },
+    "genres": ["album rock", "classic rock", "hard rock", "mellow gold", "rock", "soft rock"],
+    "href": "https://api.spotify.com/v1/artists/6IRouO5mvvfcyxtPDKMYFN",
+    "id": "6IRouO5mvvfcyxtPDKMYFN",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/77908bfafb3e866c2c6e5bce58d51466af04d42b",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/daf1c78e7af597f567b6ba63489f6bf206ff3455",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/0497de95a0a5176b5116e6875bac0f0adb506e13",
+        "width": 160
+      }
+    ],
+    "name": "Foreigner",
+    "popularity": 71,
+    "type": "artist",
+    "uri": "spotify:artist:6IRouO5mvvfcyxtPDKMYFN"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/6PAt558ZEZl0DmdXlnjMgD" },
+    "followers": { "href": null, "total": 3352191 },
+    "genres": [
+      "album rock",
+      "blues rock",
+      "classic rock",
+      "electric blues",
+      "mellow gold",
+      "rock",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6PAt558ZEZl0DmdXlnjMgD",
+    "id": "6PAt558ZEZl0DmdXlnjMgD",
+    "images": [
+      {
+        "height": 1000,
+        "url": "https://i.scdn.co/image/4848283fa07f0846bd312fa9d49dae7ef6da3fff",
+        "width": 1000
+      },
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/5a60db69c987080bfcca247a310ec16a03d8b59b",
+        "width": 640
+      },
+      {
+        "height": 200,
+        "url": "https://i.scdn.co/image/7d3873807eb060ba5022e1bac3803563c638e87b",
+        "width": 200
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/2dd8c9596df330c6ac520cdef7a25e5c284146d9",
+        "width": 64
+      }
+    ],
+    "name": "Eric Clapton",
+    "popularity": 75,
+    "type": "artist",
+    "uri": "spotify:artist:6PAt558ZEZl0DmdXlnjMgD"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/6i6WlGzQtXtz7GcC5H5st5" },
+    "followers": { "href": null, "total": 358896 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "classic rock",
+      "classic uk pop",
+      "dance rock",
+      "folk rock",
+      "glam rock",
+      "mellow gold",
+      "rock",
+      "soft rock",
+      "symphonic rock",
+      "yacht rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6i6WlGzQtXtz7GcC5H5st5",
+    "id": "6i6WlGzQtXtz7GcC5H5st5",
+    "images": [
+      {
+        "height": 660,
+        "url": "https://i.scdn.co/image/bd85e05d8bb8ad24515a232174cbe20925048566",
+        "width": 999
+      },
+      {
+        "height": 423,
+        "url": "https://i.scdn.co/image/6da81eda19415fcab22dafc15822519cf74fc90e",
+        "width": 640
+      },
+      {
+        "height": 132,
+        "url": "https://i.scdn.co/image/1dbe9a022c919976c86e7240eac6d9ff21306d8e",
+        "width": 200
+      },
+      {
+        "height": 42,
+        "url": "https://i.scdn.co/image/03e81a91911a011eee2d9de73f615d6076f6242e",
+        "width": 64
+      }
+    ],
+    "name": "10cc",
+    "popularity": 63,
+    "type": "artist",
+    "uri": "spotify:artist:6i6WlGzQtXtz7GcC5H5st5"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e" },
+    "followers": { "href": null, "total": 2505048 },
+    "genres": [
+      "album rock",
+      "classic rock",
+      "folk rock",
+      "mellow gold",
+      "piano rock",
+      "rock",
+      "singer-songwriter",
+      "soft rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/6zFYqv1mOsgBRQbae3JJ9e",
+    "id": "6zFYqv1mOsgBRQbae3JJ9e",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/0488b8c02bc9249ddf858e359dee66f206b1eb4f",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/464553289ce589439605b80d545055a75b41b5f4",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/2aff697bef6a76075e05ab6dd155e91304820aeb",
+        "width": 160
+      }
+    ],
+    "name": "Billy Joel",
+    "popularity": 78,
+    "type": "artist",
+    "uri": "spotify:artist:6zFYqv1mOsgBRQbae3JJ9e"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/7hMpCrQFkZm9Sy1S9ZwBFe" },
+    "followers": { "href": null, "total": 11694 },
+    "genres": ["classic israeli pop"],
+    "href": "https://api.spotify.com/v1/artists/7hMpCrQFkZm9Sy1S9ZwBFe",
+    "id": "7hMpCrQFkZm9Sy1S9ZwBFe",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273847b9fe7193b8e6ad154551b",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02847b9fe7193b8e6ad154551b",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851847b9fe7193b8e6ad154551b",
+        "width": 64
+      }
+    ],
+    "name": "Svika Pick",
+    "popularity": 29,
+    "type": "artist",
+    "uri": "spotify:artist:7hMpCrQFkZm9Sy1S9ZwBFe"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/7iE2GZiF0xVFzlA2E93m3g" },
+    "followers": { "href": null, "total": 81951 },
+    "genres": ["classic israeli pop", "israeli pop", "israeli rock"],
+    "href": "https://api.spotify.com/v1/artists/7iE2GZiF0xVFzlA2E93m3g",
+    "id": "7iE2GZiF0xVFzlA2E93m3g",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/5063aa0e775212ee394cab3db4fd601130578498",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/e59b9449a2c151f7d9a6746a44dccc502a3105fb",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/187e7cfc2ebaa1ac0922272951a4ed8d61f1c74b",
+        "width": 160
+      }
+    ],
+    "name": "Mashina",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:7iE2GZiF0xVFzlA2E93m3g"
+  },
+  {
+    "external_urls": { "spotify": "https://open.spotify.com/artist/7jefIIksOi1EazgRTfW2Pk" },
+    "followers": { "href": null, "total": 2082883 },
+    "genres": [
+      "album rock",
+      "art rock",
+      "bow pop",
+      "classic rock",
+      "folk rock",
+      "glam rock",
+      "mellow gold",
+      "rock",
+      "soft rock",
+      "symphonic rock"
+    ],
+    "href": "https://api.spotify.com/v1/artists/7jefIIksOi1EazgRTfW2Pk",
+    "id": "7jefIIksOi1EazgRTfW2Pk",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/5a5b295b9cc24c4e45b881e7ca9bcd2a05546bc0",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/2817983a90af44cd0b1dc6549e46bde5505c1848",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/c210c8956722d3ef264b23c02859863a2659ebf1",
+        "width": 160
+      }
+    ],
+    "name": "Electric Light Orchestra",
+    "popularity": 73,
+    "type": "artist",
+    "uri": "spotify:artist:7jefIIksOi1EazgRTfW2Pk"
+  }
+]

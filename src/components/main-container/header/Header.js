@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";

@@ -1,0 +1,38 @@
+{
+  "external_urls": { "spotify": "https://open.spotify.com/artist/0ECwFtbIWEVNwjlrfc6xoL" },
+  "followers": { "href": null, "total": 4658824 },
+  "genres": [
+    "album rock",
+    "classic rock",
+    "country rock",
+    "folk rock",
+    "heartland rock",
+    "mellow gold",
+    "rock",
+    "soft rock",
+    "yacht rock"
+  ],
+  "href": "https://api.spotify.com/v1/artists/0ECwFtbIWEVNwjlrfc6xoL",
+  "id": "0ECwFtbIWEVNwjlrfc6xoL",
+  "images": [
+    {
+      "height": 640,
+      "url": "https://i.scdn.co/image/6b215464b769958ef1d7d9f163e3f49ebacf8842",
+      "width": 640
+    },
+    {
+      "height": 320,
+      "url": "https://i.scdn.co/image/2cfb3ecbce024ccb5e42b6f1b23683a3868fa804",
+      "width": 320
+    },
+    {
+      "height": 160,
+      "url": "https://i.scdn.co/image/f6e8c5d35816033e9e64f59adf96bb139b5a8206",
+      "width": 160
+    }
+  ],
+  "name": "Eagles",
+  "popularity": 77,
+  "type": "artist",
+  "uri": "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+}

@@ -1,6 +1,8 @@
+import * as types from "../shared/types";
+
 const setToken = token => {
   return {
-    type: "SET_TOKEN",
+    type: types.SET_TOKEN,
     payload: token
   };
 };

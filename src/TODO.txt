@@ -8,12 +8,11 @@
   .card__img--large {}
 
 1. Search page: convert sections to collapsible sections.
-2. Add spinner for long process.
-3. Add PropsType to each component.
-4. Make distinct for all api's
-5. Add translation i18.next.
-6. Add unit tests.
-7. Pass token from appRoutes.
+2. Add PropsType to each component.
+3. Make distinct for all api's
+4. Add unit tests.
+5. Handle login popup.
+6. Add logger.
 
 Artists: 
 Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e
