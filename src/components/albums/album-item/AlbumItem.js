@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { fetchAlbum } from "../../../apis";
 import spotifyImage from "../../../images/spotify.png";
 import "./album-item.scss";
 
-const AlbumItem = album => {
-  const { name, images } = album;
+const AlbumItem = ({ name, images, id }) => {
+  const isCancelled = useRef(false);
+  const [album, setAlbum] = useState();
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    !isCancelled.current &&
+      fetchAlbum(token, id, album => {
+        setAlbum(album);
+      });
+    return () => {
+      isCancelled.current = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="AlbumItem-container">
