@@ -7,13 +7,12 @@ import "./artist-albums.scss";
 const ArtistAlbums = props => {
   const { t } = useTranslation();
   const {
-    artist: { id, name },
-    token
+    artist: { id, name }
   } = props.location.state;
-  console.log("props.location.state: ", props.location.state);
 
   const isCancelled = useRef(false);
   const [artistAlbums, setArtistAlbums] = useState([]);
+  const token = localStorage.getItem("token");
 
   const fetchAlbumsByArtist = () => {
     fetchArtistsAlbums(token, id, albums => {
