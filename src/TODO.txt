@@ -7,12 +7,15 @@
   .card--dark {}
   .card__img--large {}
 
-1. Search page: convert sections to collapsible sections.
-2. Add PropsType to each component.
-3. Make distinct for all api's
-4. Add unit tests.
-5. Handle login popup.
-6. Add logger.
+#. Add unit tests.
+#. Handle login popup.
+#. Add PropsType to each component.
+#. Make distinct for all APIs responses.
+#. Add logger.
+#. Service Worker to work offline.
+#. Node.js server side for rest-api.
+#. GraphQL.
+#. Search page: convert sections to collapsible sections.
 
 Artists: 
 Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e

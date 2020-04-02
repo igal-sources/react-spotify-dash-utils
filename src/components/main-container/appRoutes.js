@@ -15,7 +15,7 @@ import NotFoundPage from "./not-found-page/NotFoundPage";
 export default ({ token }) => (
   <Switch>
     <Route exact path="/" component={() => <Dashboard token={token} />} />
-    <Route path="/search" component={() => <Search token={token} />} />
+    <Route path="/search" render={() => <Search token={token} />} />
     <Route path="/albums" component={() => <Albums token={token} />} />
     <Route path="/artists" component={() => <Artists token={token} />} />
     <Route path="/playlists" component={() => <Playlists token={token} />} />
