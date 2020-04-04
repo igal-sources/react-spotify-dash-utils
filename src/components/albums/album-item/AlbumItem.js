@@ -1,31 +1,31 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { fetchAlbum } from "../../../apis";
+//import { fetchAlbum } from "../../../apis";
 import spotifyImage from "../../../images/spotify.png";
 import "./album-item.scss";
 
 const AlbumItem = ({ name, images, id }) => {
-  const isCancelled = useRef(false);
-  const [album, setAlbum] = useState();
-  const token = localStorage.getItem("token");
+  //const isCancelled = useRef(false);
+  //const [album, setAlbum] = useState();
+  //const token = localStorage.getItem("token");
 
-  useEffect(() => {
-    !isCancelled.current &&
-      fetchAlbum(token, id, album => {
-        setAlbum(album);
-      });
-    return () => {
-      isCancelled.current = true;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   !isCancelled.current &&
+  //     fetchAlbum(token, id, album => {
+  //       setAlbum(album);
+  //     });
+  //   return () => {
+  //     isCancelled.current = true;
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   return (
     <div className="AlbumItem-container">
       <Link
         to={{
           pathname: "/album-songs",
-          state: { album }
+          state: { id }
         }}
         className="AlbumItem-image"
       >

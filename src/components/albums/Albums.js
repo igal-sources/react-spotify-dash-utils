@@ -7,7 +7,6 @@ import "./albums.scss";
 const Albums = ({ token }) => {
   const isCancelled = useRef(false);
   const [albums, setAlbums] = useState([]);
-  console.log("Albums: ", albums);
   const [loading, setLoading] = useState(false);
 
   const fetchAlbums = () => {

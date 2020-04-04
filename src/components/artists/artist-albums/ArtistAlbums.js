@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { fetchArtistsAlbums } from "apis";
 import { useTranslation } from "react-i18next";
-import ArtistAlbumItem from "../artist-album-item/ArtistAlbumItem";
+import AlbumItem from "../../albums/album-item/AlbumItem";
+// import ArtistAlbumItem from "../artist-album-item/ArtistAlbumItem";
 import "./artist-albums.scss";
 
 const ArtistAlbums = props => {
@@ -45,7 +46,7 @@ const ArtistAlbums = props => {
             <h1>{t("albums")}</h1>
             <div className="ArtistAlbums-items">
               {albums.map(item => (
-                <ArtistAlbumItem key={item.id} token={token} {...item} />
+                <AlbumItem key={item.id} token={token} {...item} />
               ))}
             </div>
           </section>
@@ -55,7 +56,7 @@ const ArtistAlbums = props => {
             <h1>{t("singles")}</h1>
             <div className="ArtistAlbums-items">
               {singles.map(item => (
-                <ArtistAlbumItem key={item.id} {...item} />
+                <AlbumItem key={item.id} {...item} />
               ))}
             </div>
           </section>
@@ -65,7 +66,7 @@ const ArtistAlbums = props => {
             <h1>{t("compilations")}</h1>
             <div className="ArtistAlbums-items">
               {compilations.map(item => (
-                <ArtistAlbumItem key={item.id} {...item} />
+                <AlbumItem key={item.id} {...item} />
               ))}
             </div>
           </section>
@@ -75,7 +76,7 @@ const ArtistAlbums = props => {
             <h1>{t("appears-on")}</h1>
             <div className="ArtistAlbums-items">
               {appearsOn.map(item => (
-                <ArtistAlbumItem key={item.id} {...item} />
+                <AlbumItem key={item.id} {...item} />
               ))}
             </div>
           </section>
