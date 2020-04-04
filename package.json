@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^10.0.1",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "husky": "^4.2.3",
     "i18next": "^19.3.4",
     "i18next-xhr-backend": "^3.2.2",
     "lodash": "^4.17.15",
@@ -32,7 +33,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,5 +61,10 @@
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test:coverage"
+    }
   }
 }

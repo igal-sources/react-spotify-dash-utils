@@ -41,6 +41,6 @@ describe("Test AlbumItem functionality", () => {
   });
 
   it("includes link to Mission scene", () => {
-    expect(wrapper.find(Link).props("pathname").to).toBe("/album-songs");
+    expect(wrapper.find(Link).props().to).toBe(`/album-songs/${album.id}`);
   });
 });
