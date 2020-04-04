@@ -1,5 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
+import { Link } from "react-router-dom";
 import AlbumItem from "./AlbumItem";
 
 describe("Test AlbumItem functionality", () => {
@@ -37,5 +38,9 @@ describe("Test AlbumItem functionality", () => {
 
   it("should check artist name is rendering", () => {
     expect(wrapper.find(".AlbumItem-name").text()).toEqual("Live in Concert");
+  });
+
+  it("includes link to Mission scene", () => {
+    expect(wrapper.find(Link).props("pathname").to).toBe("/album-songs");
   });
 });

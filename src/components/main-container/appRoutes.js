@@ -23,7 +23,7 @@ export default ({ token }) => (
     <Route path="/playlist-songs" component={PlaylistSongsList} />
     <Route path="/artist-albums" component={ArtistAlbums} />
     <Route path="/artist-songs" component={ArtistSongsList} />
-    <Route path="/album-songs" component={AlbumSongsList} />
+    <Route path="/album-songs/:albumId" component={AlbumSongsList} />
     <Route component={NotFoundPage} />
   </Switch>
 );

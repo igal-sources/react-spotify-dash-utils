@@ -8,7 +8,7 @@
   .card__img--large {}
 
 #. Add unit tests.
-#. Handle login popup.
+#. Handle login.
 #. Add PropsType to each component.
 #. Make distinct for all APIs responses.
 #. Add logger.

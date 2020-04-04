@@ -10,7 +10,7 @@ import "./album-songs-list.scss";
 const AlbumSongsList = props => {
   const isCancelled = useRef(false);
   const [album, setAlbum] = useState(undefined);
-  const { id } = props.location.state;
+  const { albumId } = props.match.params;
   const dispatch = useDispatch();
   const token = localStorage.getItem("token");
 
@@ -19,7 +19,7 @@ const AlbumSongsList = props => {
 
   useEffect(() => {
     !isCancelled.current &&
-      fetchAlbum(token, id, album => {
+      fetchAlbum(token, albumId, album => {
         setAlbum(album);
       });
     return () => {
