@@ -19,6 +19,7 @@ const Dashboard = ({ token }) => {
   const { t } = useTranslation();
   const isCancelled = useRef(false);
   const [playedTracks, setPlayedTracks] = useState("");
+  console.log("playedTracks: ", playedTracks);
   const [playlists, setPlaylists] = useState("");
   const [topArtists, setTopArtists] = useState("");
   const [topTracks, setTopTracks] = useState("");
