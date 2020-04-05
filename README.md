@@ -5,6 +5,7 @@
 ![Alt text](https://github.com/igal-sources/react-spotify-dash-utils/blob/master/public/images/artists.png "Artists")
 
 ![Alt text](https://github.com/igal-sources/react-spotify-dash-utils/blob/master/public/images/playlist.png "Playlist")
+
 This is a example to demonstrate how to use **React**, **Redux**, **Hooks** in React Project.<br />
 Hooks API is a new addition in React 16.8.<br />They allow us to use state and other
 features in React Function Component.

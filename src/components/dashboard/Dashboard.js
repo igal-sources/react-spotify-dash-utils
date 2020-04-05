@@ -6,7 +6,7 @@ import {
   fetchListOfFeaturedPlaylists,
   GetUsersTopArtistsAndTracks,
   fetchListOfNewReleases,
-  fetchRecommendationsBasedOnSeeds
+  fetchRecommendationsBasedOnSeeds,
 } from "apis";
 import AlbumItem from "../albums/album-item/AlbumItem";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
@@ -19,7 +19,6 @@ const Dashboard = ({ token }) => {
   const { t } = useTranslation();
   const isCancelled = useRef(false);
   const [playedTracks, setPlayedTracks] = useState("");
-  console.log("playedTracks: ", playedTracks);
   const [playlists, setPlaylists] = useState("");
   const [topArtists, setTopArtists] = useState("");
   const [topTracks, setTopTracks] = useState("");
@@ -31,22 +30,22 @@ const Dashboard = ({ token }) => {
     "6zFYqv1mOsgBRQbae3JJ9e",
     "7hMpCrQFkZm9Sy1S9ZwBFe",
     "4rQnQQusV2VVuGmDTLlybe",
-    "3PhoLpVuITZKcymswpck5b"
+    "3PhoLpVuITZKcymswpck5b",
   ];
   const fetchData = () => {
     setLoading(true);
     axios
       .all([
-        GetCurrentUsersRecentlyPlayedTracks(token, 50, tracks => {
-          setPlayedTracks(tracks.items);
+        GetCurrentUsersRecentlyPlayedTracks(token, 50, (tracks) => {
+          setPlayedTracks(tracks);
         }),
         fetchListOfFeaturedPlaylists(token, ({ playlists }) => {
           setPlaylists(playlists.items);
         }),
-        GetUsersTopArtistsAndTracks(token, "artists", artists => {
+        GetUsersTopArtistsAndTracks(token, "artists", (artists) => {
           setTopArtists(artists.items);
         }),
-        GetUsersTopArtistsAndTracks(token, "tracks", tracks => {
+        GetUsersTopArtistsAndTracks(token, "tracks", (tracks) => {
           setTopTracks(tracks.items);
         }),
         fetchListOfNewReleases(token, ({ albums }) => {
@@ -54,14 +53,14 @@ const Dashboard = ({ token }) => {
         }),
         fetchRecommendationsBasedOnSeeds(token, 50, artistIds, ({ tracks }) => {
           setRecommendations(tracks);
-        })
+        }),
       ])
-      .catch(errors => console.log(errors));
+      .catch((errors) => console.log(errors));
     setLoading(false);
   };
 
   useEffect(() => {
-    !isCancelled.current && fetchData(token, data => {});
+    !isCancelled.current && fetchData(token, (data) => {});
     return () => {
       isCancelled.current = true;
     };

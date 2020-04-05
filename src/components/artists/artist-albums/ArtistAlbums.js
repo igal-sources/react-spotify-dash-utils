@@ -5,10 +5,10 @@ import AlbumItem from "../../albums/album-item/AlbumItem";
 // import ArtistAlbumItem from "../artist-album-item/ArtistAlbumItem";
 import "./artist-albums.scss";
 
-const ArtistAlbums = props => {
+const ArtistAlbums = (props) => {
   const { t } = useTranslation();
   const {
-    artist: { id, name }
+    artist: { id, name },
   } = props.location.state;
 
   const isCancelled = useRef(false);
@@ -16,15 +16,15 @@ const ArtistAlbums = props => {
   const token = localStorage.getItem("token");
 
   const fetchAlbumsByArtist = () => {
-    fetchArtistsAlbums(token, id, albums => {
+    fetchArtistsAlbums(token, id, (albums) => {
       setArtistAlbums(albums.items);
     });
   };
 
-  const albums = artistAlbums.filter(album => album.album_group === "album");
-  const singles = artistAlbums.filter(album => album.album_group === "single");
-  const compilations = artistAlbums.filter(album => album.album_group === "compilation");
-  const appearsOn = artistAlbums.filter(album => album.album_group === "appears_on");
+  const albums = artistAlbums.filter((album) => album.album_group === "album");
+  const singles = artistAlbums.filter((album) => album.album_group === "single");
+  const compilations = artistAlbums.filter((album) => album.album_group === "compilation");
+  const appearsOn = artistAlbums.filter((album) => album.album_group === "appears_on");
 
   useEffect(() => {
     !isCancelled.current && fetchAlbumsByArtist();
@@ -45,7 +45,7 @@ const ArtistAlbums = props => {
           <section className="ArtistAlbums-section">
             <h1>{t("albums")}</h1>
             <div className="ArtistAlbums-items">
-              {albums.map(item => (
+              {albums.map((item) => (
                 <AlbumItem key={item.id} token={token} {...item} />
               ))}
             </div>
@@ -55,7 +55,7 @@ const ArtistAlbums = props => {
           <section className="ArtistAlbums-section">
             <h1>{t("singles")}</h1>
             <div className="ArtistAlbums-items">
-              {singles.map(item => (
+              {singles.map((item) => (
                 <AlbumItem key={item.id} {...item} />
               ))}
             </div>
@@ -65,7 +65,7 @@ const ArtistAlbums = props => {
           <section className="ArtistAlbums-section">
             <h1>{t("compilations")}</h1>
             <div className="ArtistAlbums-items">
-              {compilations.map(item => (
+              {compilations.map((item) => (
                 <AlbumItem key={item.id} {...item} />
               ))}
             </div>
@@ -75,7 +75,7 @@ const ArtistAlbums = props => {
           <section className="ArtistAlbums-section">
             <h1>{t("appears-on")}</h1>
             <div className="ArtistAlbums-items">
-              {appearsOn.map(item => (
+              {appearsOn.map((item) => (
                 <AlbumItem key={item.id} {...item} />
               ))}
             </div>
