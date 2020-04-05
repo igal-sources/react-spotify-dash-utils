@@ -6,7 +6,6 @@ import "./playlist-songs-list.scss";
 
 const PlaylistSongsList = props => {
   let { playlist } = props.location.state;
-  console.log("PlaylistSongsList - props: ", props.location.state);
 
   return (
     <div className="PlaylistSongsList-main">

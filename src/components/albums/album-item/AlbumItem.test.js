@@ -40,7 +40,7 @@ describe("Test AlbumItem functionality", () => {
     expect(wrapper.find(".AlbumItem-name").text()).toEqual("Live in Concert");
   });
 
-  it("includes link to Mission scene", () => {
+  it("should check link to album-songs", () => {
     expect(wrapper.find(Link).props().to).toBe(`/album-songs/${album.id}`);
   });
 });
