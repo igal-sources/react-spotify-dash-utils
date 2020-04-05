@@ -1,5 +1,6 @@
 ## React Redux Hooks Spotify sample project.
 
+![Alt text](/images/dashboard.jpg?raw=true "Optional Title")
 This is a example to demonstrate how to use **React**, **Redux**, **Hooks** in React Project.<br />
 Hooks API is a new addition in React 16.8.<br />They allow us to use state and other
 features in React Function Component.
