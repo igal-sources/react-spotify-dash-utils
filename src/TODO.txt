@@ -10,12 +10,10 @@
 
 #. Add unit tests.
 #. Handle login.
-#. Add PropsType to each component.
 #. Add logger.
 #. Service Worker to work offline.
 #. Node.js server side for rest-api.
 #. GraphQL.
-#. Search component: convert sections to collapsible sections.
 
 Artists: 
 Billy Joel: 6zFYqv1mOsgBRQbae3JJ9e

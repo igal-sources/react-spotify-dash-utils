@@ -17,8 +17,8 @@ const PlaylistSongsList = (props) => {
         <Grid.Column className="SongsContainer-list" width={11}>
           <div className="PlaylistSongsList-container">
             <div className="PlaylistSongsList-playlistItems">
-              {playlist.tracks.items.map(({ track }) => (
-                <TrackItem key={track.id} {...track} />
+              {playlist.tracks.items.map(({ track }, index) => (
+                <TrackItem key={index} {...track} />
               ))}
             </div>
           </div>
