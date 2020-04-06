@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import { fetchAlbum } from "../../../apis";
@@ -7,19 +8,19 @@ import spotifyImage from "../../../images/Spotify_64.png";
 import SongsCard from "../../songs/songs-card/SongsCard";
 import "./album-songs-list.scss";
 
-const AlbumSongsList = props => {
+const AlbumSongsList = (props) => {
   const isCancelled = useRef(false);
   const [album, setAlbum] = useState(undefined);
   const { albumId } = props.match.params;
   const dispatch = useDispatch();
   const token = localStorage.getItem("token");
 
-  const handleClickPlayTrack = trackUrl =>
+  const handleClickPlayTrack = (trackUrl) =>
     dispatch(allActions.songActions.playSong({ songId: trackUrl }));
 
   useEffect(() => {
     !isCancelled.current &&
-      fetchAlbum(token, albumId, album => {
+      fetchAlbum(token, albumId, (album) => {
         setAlbum(album);
       });
     return () => {
@@ -38,7 +39,7 @@ const AlbumSongsList = props => {
           <div className="AlbumSongsList-container">
             <div className="AlbumSongsList-playlistItems">
               {album &&
-                album.tracks.items.map(track => (
+                album.tracks.items.map((track) => (
                   <div key={track.id} className="AlbumSongsList-songItem-container">
                     <div className="AlbumSongsList-songItem-image">
                       <img src={spotifyImage} alt={track.name}></img>
@@ -62,6 +63,10 @@ const AlbumSongsList = props => {
       </Grid>
     </div>
   );
+};
+
+AlbumSongsList.propTypes = {
+  albumId: PropTypes.number,
 };
 
 export default AlbumSongsList;

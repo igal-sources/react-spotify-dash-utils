@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { getPlaylist } from "../../../apis";
 
@@ -12,7 +13,7 @@ const PlaylistItem = ({ name, images, id }) => {
 
   useEffect(() => {
     !isCancelled.current &&
-      getPlaylist(token, id, playlist => {
+      getPlaylist(token, id, (playlist) => {
         setPlaylist(playlist);
       });
     return () => {
@@ -32,6 +33,12 @@ const PlaylistItem = ({ name, images, id }) => {
       <div className="playlist-item-name">{name}</div>
     </div>
   );
+};
+
+PlaylistItem.propTypes = {
+  name: PropTypes.string,
+  images: PropTypes.array,
+  id: PropTypes.string,
 };
 
 export default PlaylistItem;

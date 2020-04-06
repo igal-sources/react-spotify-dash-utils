@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { fetchArtistsAlbums } from "apis";
 import { useTranslation } from "react-i18next";
 import AlbumItem from "../../albums/album-item/AlbumItem";
-// import ArtistAlbumItem from "../artist-album-item/ArtistAlbumItem";
 import "./artist-albums.scss";
 
 const ArtistAlbums = (props) => {
@@ -84,6 +84,10 @@ const ArtistAlbums = (props) => {
       </div>
     </div>
   );
+};
+
+ArtistAlbums.propTypes = {
+  artist: PropTypes.object,
 };
 
 export default ArtistAlbums;

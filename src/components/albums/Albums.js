@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import Spinner from "../main-container/spinner/Spinner";
 import { GetCurrentUsersSavedAlbums } from "apis";
 import AlbumItem from "../albums/album-item/AlbumItem";
@@ -11,7 +12,7 @@ const Albums = ({ token }) => {
 
   const fetchAlbums = () => {
     setLoading(true);
-    GetCurrentUsersSavedAlbums(token, albums => {
+    GetCurrentUsersSavedAlbums(token, (albums) => {
       setAlbums(albums.items);
       setLoading(false);
     });
@@ -36,6 +37,10 @@ const Albums = ({ token }) => {
       </div>
     </div>
   );
+};
+
+Albums.propTypes = {
+  token: PropTypes.string,
 };
 
 export default Albums;

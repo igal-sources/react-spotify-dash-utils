@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import Spinner from "../main-container/spinner/Spinner";
 import PlaylistItem from "../playlists/playlist-item/PlaylistItem";
@@ -20,19 +21,19 @@ const Search = ({ token }) => {
     albums: { items: albumItems } = [],
     artists: { items: artistsItems } = [],
     tracks: { items: tracksItems } = [],
-    playlists: { items: playlistsItems } = []
+    playlists: { items: playlistsItems } = [],
   } = searchResults;
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     const value = event.target.value;
     setSearchValue(value);
   };
 
-  const doSearch = event => {
+  const doSearch = (event) => {
     // keyCode:13 = Enter
     if (event.keyCode === 13) {
       setLoading(true);
-      search(token, searchValue, "album,artist,playlist,track", 20, result => {
+      search(token, searchValue, "album,artist,playlist,track", 20, (result) => {
         setSearchResults(result);
         setLoading(false);
       });
@@ -58,7 +59,7 @@ const Search = ({ token }) => {
           <section className="Search-section album">
             <h1>{t("albums")}</h1>
             <div className="Search-items">
-              {albumItems.map(item => (
+              {albumItems.map((item) => (
                 <AlbumItem key={item.id} {...item} />
               ))}
             </div>
@@ -68,7 +69,7 @@ const Search = ({ token }) => {
           <section className="Search-section">
             <h1>{t("artists")}</h1>
             <div className="Search-items">
-              {artistsItems.map(item => (
+              {artistsItems.map((item) => (
                 <ArtistItem key={item.id} {...item} />
               ))}
             </div>
@@ -78,7 +79,7 @@ const Search = ({ token }) => {
           <section className="Search-tracks-section">
             <h1>{t("tracks")}</h1>
             <div className="Search-track-items">
-              {tracksItems.map(item => (
+              {tracksItems.map((item) => (
                 <TrackItem key={item.id} {...item} />
               ))}
             </div>
@@ -88,7 +89,7 @@ const Search = ({ token }) => {
           <section className="Search-section">
             <h1>{t("playlists")}</h1>
             <div className="Search-items">
-              {playlistsItems.map(item => (
+              {playlistsItems.map((item) => (
                 <PlaylistItem key={item.id} {...item} />
               ))}
             </div>
@@ -97,6 +98,10 @@ const Search = ({ token }) => {
       </div>
     </div>
   );
+};
+
+Search.propTypes = {
+  token: PropTypes.string,
 };
 
 export default Search;

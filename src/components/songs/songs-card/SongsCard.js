@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import "./songs-card.scss";
 
 const SongsCard = ({ name, images }) => {
@@ -6,7 +7,7 @@ const SongsCard = ({ name, images }) => {
   const [imageUrl, setImageUrl] = useState(undefined);
 
   const getImage = () => {
-    const imageItem = images.filter(item => item.url);
+    const imageItem = images.filter((item) => item.url);
     setImageUrl(imageItem && imageItem[0].url);
   };
 
@@ -23,7 +24,7 @@ const SongsCard = ({ name, images }) => {
     backgroundImage: `url(${imageUrl})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
   };
   return (
     <div className="SongsCard-container">
@@ -33,6 +34,11 @@ const SongsCard = ({ name, images }) => {
       </div>
     </div>
   );
+};
+
+SongsCard.propTypes = {
+  name: PropTypes.string,
+  images: PropTypes.array,
 };
 
 export default SongsCard;

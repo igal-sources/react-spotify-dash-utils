@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Grid } from "semantic-ui-react";
 import TrackItem from "../../tracks/TrackItem";
 import SongsCard from "../../songs/songs-card/SongsCard";
 import "./playlist-songs-list.scss";
 
-const PlaylistSongsList = props => {
+const PlaylistSongsList = (props) => {
   let { playlist } = props.location.state;
 
   return (
@@ -25,6 +26,10 @@ const PlaylistSongsList = props => {
       </Grid>
     </div>
   );
+};
+
+PlaylistSongsList.propTypes = {
+  playlist: PropTypes.object,
 };
 
 export default PlaylistSongsList;

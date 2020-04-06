@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { CurrentUsersPlaylists } from "apis";
 import Spinner from "../main-container/spinner/Spinner";
 import PlaylistItem from "./playlist-item/PlaylistItem";
@@ -11,7 +12,7 @@ const Playlists = ({ token }) => {
 
   const fetchPlaylist = () => {
     setLoading(true);
-    CurrentUsersPlaylists(token, playlists => {
+    CurrentUsersPlaylists(token, (playlists) => {
       setPlaylists(playlists.items);
       setLoading(false);
     });
@@ -30,12 +31,16 @@ const Playlists = ({ token }) => {
     <div className="Playlists-container">
       <Spinner isLoading={loading} />
       <div className="Playlists-items">
-        {playlists.map(playlist => (
+        {playlists.map((playlist) => (
           <PlaylistItem key={playlist.id} {...playlist} />
         ))}
       </div>
     </div>
   );
+};
+
+Playlists.propTypes = {
+  token: PropTypes.string,
 };
 
 export default Playlists;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import spotifyImage from "../../../images/spotify.png";
 import "./album-item.scss";
 
@@ -12,6 +13,12 @@ const AlbumItem = ({ name, images, id }) => {
       <div className="AlbumItem-name">{name}</div>
     </div>
   );
+};
+
+AlbumItem.propTypes = {
+  name: PropTypes.string,
+  images: PropTypes.array,
+  id: PropTypes.string,
 };
 
 export default AlbumItem;

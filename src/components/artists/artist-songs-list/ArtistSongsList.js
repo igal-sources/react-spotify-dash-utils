@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import { Grid } from "semantic-ui-react";
@@ -6,11 +7,11 @@ import spotifyImage from "../../../images/spotify.png";
 import SongsCard from "../../songs/songs-card/SongsCard";
 import "./artist-songs-list.scss";
 
-const ArtistSongsList = props => {
+const ArtistSongsList = (props) => {
   const { artist } = props.location.state;
   const dispatch = useDispatch();
 
-  const handleClickPlayTrack = trackUrl =>
+  const handleClickPlayTrack = (trackUrl) =>
     dispatch(allActions.songActions.playSong({ songId: trackUrl }));
 
   return (
@@ -22,7 +23,7 @@ const ArtistSongsList = props => {
         <Grid.Column className="ArtistSongsList-list" width={11}>
           <div className="ArtistSongsList-container">
             <div className="ArtistSongsList-playlistItems">
-              {artist.tracks.items.map(track => (
+              {artist.tracks.items.map((track) => (
                 <div key={track.id} className="ArtistSongsList-songItem-container">
                   <div className="ArtistSongsList-songItem-image">
                     <img src={spotifyImage} alt={track.name}></img>
@@ -46,6 +47,10 @@ const ArtistSongsList = props => {
       </Grid>
     </div>
   );
+};
+
+ArtistSongsList.propTypes = {
+  artist: PropTypes.object,
 };
 
 export default ArtistSongsList;

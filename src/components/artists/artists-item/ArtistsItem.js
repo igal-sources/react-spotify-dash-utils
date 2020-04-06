@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { fetchArtist } from "../../../apis";
 import spotifyImage from "../../../images/spotify.png";
@@ -11,7 +12,7 @@ const ArtistItem = ({ name, images, id }) => {
 
   useEffect(() => {
     !isCancelled.current &&
-      fetchArtist(token, id, artist => {
+      fetchArtist(token, id, (artist) => {
         setArtist(artist);
       });
     return () => {
@@ -28,6 +29,12 @@ const ArtistItem = ({ name, images, id }) => {
       <div className="ArtistItem-name">{name}</div>
     </div>
   );
+};
+
+ArtistItem.propTypes = {
+  name: PropTypes.string,
+  images: PropTypes.array,
+  id: PropTypes.string,
 };
 
 export default ArtistItem;

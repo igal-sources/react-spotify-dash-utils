@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import {
@@ -134,6 +135,10 @@ const Dashboard = ({ token }) => {
       </div>
     </div>
   );
+};
+
+Dashboard.propTypes = {
+  token: PropTypes.string,
 };
 
 export default Dashboard;

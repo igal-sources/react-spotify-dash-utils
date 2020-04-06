@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import allActions from "actions";
 import "./track-item.scss";
@@ -6,17 +7,17 @@ import "./track-item.scss";
 const TrackItem = ({ name, album: { images, name: albumName }, uri }) => {
   const dispatch = useDispatch();
 
-  const handleClickPlayTrack = trackUrl =>
+  const handleClickPlayTrack = (trackUrl) =>
     dispatch(allActions.songActions.playSong({ songId: trackUrl }));
 
-  const getImage = images => {
+  const getImage = (images) => {
     if (images.length === 0) {
       return undefined;
     }
     if (images.length === 1) {
       return images[0].url;
     }
-    const imageItem = images.filter(item => {
+    const imageItem = images.filter((item) => {
       return item.height === 64;
     });
 
@@ -38,6 +39,12 @@ const TrackItem = ({ name, album: { images, name: albumName }, uri }) => {
       </div>
     </div>
   );
+};
+
+TrackItem.propTypes = {
+  name: PropTypes.string,
+  images: PropTypes.array,
+  albumName: PropTypes.string,
 };
 
 export default TrackItem;
