@@ -4,16 +4,16 @@ var tree = {
       "7": null,
       "8": {
         "10": {
-          "11": null
-        }
+          "11": null,
+        },
       },
-      "9": null
+      "9": null,
     },
     "3": null,
     "4": null,
     "5": null,
-    "6": null
-  }
+    "6": null,
+  },
 };
 
 function dfs(theObject, itemToFind) {
@@ -48,7 +48,7 @@ function bfs(theObject, findItem) {
     for (let item in node) {
       console.log(item);
 
-      if (node[findItem] !== undefined) {
+      if (node[findItem] !== null) {
         return node[findItem];
       }
       if (node[item] instanceof Object) {

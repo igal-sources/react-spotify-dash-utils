@@ -1,11 +1,5 @@
 .ArtistItem-image img {
-  width: 180px;
-  height: 180px;
+  width: var(--image-item-width);
+  height: var(--image-item-height);
   border-radius: 5%;
-}
-
-.ArtistItem-name {
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-align: center;
 }

@@ -1,11 +1,5 @@
 .playlist-item-image img {
-  width: 180px;
-  height: 180px;
+  width: var(--image-item-width);
+  height: var(--image-item-height);
   border-radius: 5%;
-}
-
-.playlist-item-name {
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import LongTextTooltip from "../../../shared/custom-components/LongTextTooltip";
 import spotifyImage from "../../../images/spotify.png";
 import "./album-item.scss";
 
@@ -10,7 +11,7 @@ const AlbumItem = ({ name, images, id }) => {
       <Link to={`/album-songs/${id}`} className="AlbumItem-image">
         {<img src={images[0] ? images[0].url : spotifyImage} alt={name} />}
       </Link>
-      <div className="AlbumItem-name">{name}</div>
+      <LongTextTooltip className="AlbumItem-name">{name}</LongTextTooltip>
     </div>
   );
 };
