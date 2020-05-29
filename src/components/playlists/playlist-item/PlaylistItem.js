@@ -31,7 +31,7 @@ const PlaylistItem = ({ name, images, id }) => {
       >
         {<img src={images[0] ? images[0].url : spotifyImage} alt={name} />}
       </Link>
-      <LongTextTooltip>{name}</LongTextTooltip>
+      <LongTextTooltip className="PlaylistItem-name">{name}</LongTextTooltip>
     </div>
   );
 };
